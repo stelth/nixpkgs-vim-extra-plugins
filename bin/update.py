@@ -91,7 +91,6 @@ class VimEditor(pluginupdate.Editor):
                     """
                 { lib, buildVimPluginFrom2Nix, fetchFromGitHub, fetchgit }:
 
-                final: prev:
                 {
                 """
                 )
