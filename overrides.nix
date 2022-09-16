@@ -28,7 +28,9 @@ final: prev: let
     lib.mapAttrs (attrName: dependencies:
       super.${attrName}.overrideAttrs (_: {
         inherit dependencies;
-      })) (with final.vimPlugins; {});
+      })) (with final.vimPlugins; {
+      neovim-tasks = [plenary-nvim];
+    });
 
   /*
   * Add plugins that were once here but now officially maintained.
