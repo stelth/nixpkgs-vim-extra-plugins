@@ -12,9 +12,9 @@ import csv
 import functools
 import http
 import json
+import logging
 import os
 import subprocess
-import logging
 import sys
 import time
 import traceback
@@ -22,14 +22,14 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from dataclasses import asdict, dataclass
 from datetime import datetime
 from functools import wraps
 from multiprocessing.dummy import Pool
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple, Union, Any, Callable
-from urllib.parse import urljoin, urlparse
 from tempfile import NamedTemporaryFile
-from dataclasses import dataclass, asdict
+from typing import Any, Callable, Dict, List, Optional, Tuple, Union
+from urllib.parse import urljoin, urlparse
 
 import git
 
@@ -472,8 +472,6 @@ class Editor:
 class CleanEnvironment(object):
     def __enter__(self) -> None:
         self.old_environ = os.environ.copy()
-        local_pkgs = str(Path(__file__).parent.parent.parent)
-        os.environ["NIX_PATH"] = f"localpkgs={local_pkgs}"
         self.empty_config = NamedTemporaryFile()
         self.empty_config.write(b"{}")
         self.empty_config.flush()

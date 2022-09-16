@@ -21,5 +21,6 @@ stdenvNoCC.mkDerivation {
     install bin/update.py -m 755 $out/bin/update-vim-plugins
     install bin/pluginupdate.py -m 755 $out/bin/pluginupdate.py
     install bin/update-shell.nix -m 755 $out/bin/update-shell.nix
+    install generated.nix -m 755 $out/generated.nix
   '';
 }

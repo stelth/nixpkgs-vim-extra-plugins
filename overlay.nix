@@ -1,7 +1,7 @@
 final: prev:
 prev.lib.composeManyExtensions [
   (self: super: let
-    origin = self.callPackage ./pkgs/vim-plugins.nix {
+    origin = self.callPackage ./generated.nix {
       inherit (self.vimUtils) buildVimPluginsFrom2Nix;
     };
   in {

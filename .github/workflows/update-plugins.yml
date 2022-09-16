@@ -1,0 +1,33 @@
+name: Update plugins
+
+on:
+  push:
+    paths:
+      - vim-plugin-names
+    branches:
+      - main
+  schedule:
+    - cron: "0 2 * * *"
+
+jobs:
+  update-plugins:
+    runs-on: ubuntu-latest
+    name: Update plugins
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: cachix/install-nix-action@v17
+        with:
+          extra_nix_config: |
+            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+      - run: nix run .#update-vim-plugins -- --no-commit --input vim-plugin-names --out ./generated.nix
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: stefanweifel/git-auto-commit-action@v4
+        with:
+          commit_user_name: pluginbot
+          commit_user_email: pluginbot@users.noreply.github.com
+          commit_author: Jason Cox <steel300@gmail.com>
+          commit_message: "chore(plugins): auto update plugins"
+          push_options: "--force"

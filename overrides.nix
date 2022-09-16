@@ -12,7 +12,7 @@ final: prev: let
     {};
 
   /*
-  * Add licenses if missing or incorrect in generated ./pkgs/vim-plugins.nix.
+  * Add licenses if missing or incorrect in generated ./generated.nix.
   */
   fixLicenses = self: super:
     lib.mapAttrs (attrName: license:
@@ -22,7 +22,7 @@ final: prev: let
       });
 
   /*
-  * Add dependencies to vim plugins if missing or incorrect in generated ./pkgs/vim-plugins.nix
+  * Add dependencies to vim plugins if missing or incorrect in generated ./generated.nix
   */
   fixDependencies = self: super:
     lib.mapAttrs (attrName: dependencies:
