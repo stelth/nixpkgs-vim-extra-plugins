@@ -45,9 +45,9 @@ from pluginupdate import PluginDesc, run_nix_expr
 
 GET_PLUGINS = f"""(with import <nixpkgs> {{}};
 let
-  inherit (vimUtils.override {{inherit vim;}}) buildVimPluginFrom2Nix;
+  inherit (vimUtils.override {{inherit vim;}}) buildVimPluginsFrom2Nix;
   generated = callPackage {ROOT}/generated.nix {{
-    inherit buildVimPluginFrom2Nix;
+    inherit buildVimPluginsFrom2Nix;
   }};
   hasChecksum = value: lib.isAttrs value && lib.hasAttrByPath ["src" "outputHash"] value;
   getChecksum = name: value:
@@ -119,7 +119,7 @@ class VimEditor(pluginupdate.Editor):
 """.format(
             buildFn="buildNeovimPluginFrom2Nix"
             if isNeovim
-            else "buildVimPluginFrom2Nix",
+            else "buildVimPluginsFrom2Nix",
             plugin=plugin,
             src_nix=src_nix,
             repo=repo,
