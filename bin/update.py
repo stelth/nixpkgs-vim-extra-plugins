@@ -89,7 +89,7 @@ class VimEditor(pluginupdate.Editor):
             f.write(
                 textwrap.dedent(
                     """
-                { lib, buildVimPluginFrom2Nix, fetchFromGitHub, fetchgit }:
+                { lib, buildVimPluginsFrom2Nix, fetchFromGitHub, fetchgit }:
 
                 final: prev:
                 {
