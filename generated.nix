@@ -2,18 +2,6 @@
 { lib, buildVimPluginFrom2Nix, fetchFromGitHub, fetchgit }:
 
 {
-  neovim-session-manager = buildVimPluginFrom2Nix {
-    pname = "neovim-session-manager";
-    version = "2022-09-13";
-    src = fetchFromGitHub {
-      owner = "shatur";
-      repo = "neovim-session-manager";
-      rev = "3e8410cdad6e65c49c70d519477912035a4e91b8";
-      sha256 = "1pwj8njad0nrmphdqiyp9zg8kjyjcq22dimw3mdrqmvgdq22rxaf";
-    };
-    meta.homepage = "https://github.com/shatur/neovim-session-manager/";
-  };
-
   neovim-tasks = buildVimPluginFrom2Nix {
     pname = "neovim-tasks";
     version = "2022-09-13";
