@@ -4,12 +4,12 @@
 {
   neovim-tasks = buildVimPluginFrom2Nix {
     pname = "neovim-tasks";
-    version = "2022-09-13";
+    version = "2022-09-21";
     src = fetchFromGitHub {
       owner = "shatur";
       repo = "neovim-tasks";
-      rev = "43abad5f75202db2f4d2a7a86571a3f789d00974";
-      sha256 = "1j9w0v1ixfv4ffqw391dhi4bnbq46yakfa6mxpjn01l1hpw2y8ra";
+      rev = "0c1838e9bdc0e134319a0e61e8e490c241a62a95";
+      sha256 = "0643415gsn8ic1sd0ilzf405sd7rxwq2cbzq9xnyg2ib5g108jwb";
     };
     meta.homepage = "https://github.com/shatur/neovim-tasks/";
   };
