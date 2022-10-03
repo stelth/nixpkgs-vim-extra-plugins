@@ -14,5 +14,17 @@
     meta.homepage = "https://github.com/shatur/neovim-tasks/";
   };
 
+  noice-nvim = buildVimPluginFrom2Nix {
+    pname = "noice.nvim";
+    version = "2022-10-03";
+    src = fetchFromGitHub {
+      owner = "folke";
+      repo = "noice.nvim";
+      rev = "4924d4a8a33ccc00309cee15c8334cfe2b3838aa";
+      sha256 = "0d679whkccmf6jndmxq7fznyjvzj9f20fqyxyqs0rg9bszcmcv5x";
+    };
+    meta.homepage = "https://github.com/folke/noice.nvim/";
+  };
+
 
 }
