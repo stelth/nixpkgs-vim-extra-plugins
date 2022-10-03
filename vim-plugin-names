@@ -1,3 +1,4 @@
 repo,branch,alias
 https://github.com/shatur/neovim-tasks/,,
 https://github.com/folke/noice.nvim/,,
+https://github.com/monaqa/dial.nvim,,
