@@ -14,6 +14,18 @@
     meta.homepage = "https://github.com/monaqa/dial.nvim/";
   };
 
+  github-notifications-nvim = buildVimPluginFrom2Nix {
+    pname = "github-notifications.nvim";
+    version = "2021-10-18";
+    src = fetchFromGitHub {
+      owner = "rlch";
+      repo = "github-notifications.nvim";
+      rev = "0e9dbc0fed82c4bdbd7cb25b42b3a4c5dce0eb79";
+      sha256 = "0rfnk0zswpn2sniz7hfmm4727d78jrzpgayy56bbsckfr1s03lwm";
+    };
+    meta.homepage = "https://github.com/rlch/github-notifications.nvim/";
+  };
+
   lualine-nvim = buildVimPluginFrom2Nix {
     pname = "lualine.nvim";
     version = "2022-09-11";
@@ -60,18 +72,6 @@
       sha256 = "1qs02qkjzq0lczc4sdds0p2rrr1klnmw7n7n3hy6i4sr6gycfg1v";
     };
     meta.homepage = "https://github.com/SmiteshP/nvim-navic/";
-  };
-
-  github-notifications-nvim = buildVimPluginFrom2Nix {
-    pname = "github-notifications.nvim";
-    version = "2021-10-18";
-    src = fetchFromGitHub {
-      owner = "rlch";
-      repo = "github-notifications.nvim";
-      rev = "0e9dbc0fed82c4bdbd7cb25b42b3a4c5dce0eb79";
-      sha256 = "0rfnk0zswpn2sniz7hfmm4727d78jrzpgayy56bbsckfr1s03lwm";
-    };
-    meta.homepage = "https://github.com/rlch/github-notifications.nvim/";
   };
 
 
