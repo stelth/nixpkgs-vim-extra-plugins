@@ -2,6 +2,18 @@
 { lib, buildVimPluginFrom2Nix, fetchFromGitHub, fetchgit }:
 
 {
+  dial-nvim = buildVimPluginFrom2Nix {
+    pname = "dial.nvim";
+    version = "2022-08-29";
+    src = fetchFromGitHub {
+      owner = "monaqa";
+      repo = "dial.nvim";
+      rev = "d2d7a57fb030c82b8b0d6712d9c35dfb49d9aa3c";
+      sha256 = "1zm116xd7b79piaiia9fn56h7ivnmy0dip02q3n61fmn1sqijggr";
+    };
+    meta.homepage = "https://github.com/monaqa/dial.nvim/";
+  };
+
   neovim-tasks = buildVimPluginFrom2Nix {
     pname = "neovim-tasks";
     version = "2022-09-28";
@@ -20,22 +32,34 @@
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "e326604e35df5d8afae4db94dbc0bab2411702fb";
-      sha256 = "17g4czpmfbk4k4mdp9bncy7hjl0x2ffmxjwhii32m1jw0y0w37ca";
+      rev = "664f3214df392ff9bb3a8b933d01db244049fe0f";
+      sha256 = "1636z85wg6y09ddwr4wvrx436mjfvn3qw9dsg77jwdbxkq40lisl";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
 
-  dial-nvim = buildVimPluginFrom2Nix {
-    pname = "dial.nvim";
-    version = "2022-08-29";
+  lualine-nvim = buildVimPluginFrom2Nix {
+    pname = "lualine.nvim";
+    version = "2022-09-11";
     src = fetchFromGitHub {
-      owner = "monaqa";
-      repo = "dial.nvim";
-      rev = "d2d7a57fb030c82b8b0d6712d9c35dfb49d9aa3c";
-      sha256 = "1zm116xd7b79piaiia9fn56h7ivnmy0dip02q3n61fmn1sqijggr";
+      owner = "nvim-lualine";
+      repo = "lualine.nvim";
+      rev = "a52f078026b27694d2290e34efa61a6e4a690621";
+      sha256 = "0cz9vpbd1z3986qbd166h747az8rqgwls0mhi1imqz0z9b66hrbc";
     };
-    meta.homepage = "https://github.com/monaqa/dial.nvim/";
+    meta.homepage = "https://github.com/nvim-lualine/lualine.nvim/";
+  };
+
+  nvim-navic = buildVimPluginFrom2Nix {
+    pname = "nvim-navic";
+    version = "2022-09-30";
+    src = fetchFromGitHub {
+      owner = "SmiteshP";
+      repo = "nvim-navic";
+      rev = "132b273773768b36e9ecab2138b82234a9faf5ed";
+      sha256 = "1qs02qkjzq0lczc4sdds0p2rrr1klnmw7n7n3hy6i4sr6gycfg1v";
+    };
+    meta.homepage = "https://github.com/SmiteshP/nvim-navic/";
   };
 
 
