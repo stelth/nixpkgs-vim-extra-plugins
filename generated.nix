@@ -14,6 +14,18 @@
     meta.homepage = "https://github.com/monaqa/dial.nvim/";
   };
 
+  lualine-nvim = buildVimPluginFrom2Nix {
+    pname = "lualine.nvim";
+    version = "2022-09-11";
+    src = fetchFromGitHub {
+      owner = "nvim-lualine";
+      repo = "lualine.nvim";
+      rev = "a52f078026b27694d2290e34efa61a6e4a690621";
+      sha256 = "0cz9vpbd1z3986qbd166h747az8rqgwls0mhi1imqz0z9b66hrbc";
+    };
+    meta.homepage = "https://github.com/nvim-lualine/lualine.nvim/";
+  };
+
   neovim-tasks = buildVimPluginFrom2Nix {
     pname = "neovim-tasks";
     version = "2022-09-28";
@@ -38,18 +50,6 @@
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
 
-  lualine-nvim = buildVimPluginFrom2Nix {
-    pname = "lualine.nvim";
-    version = "2022-09-11";
-    src = fetchFromGitHub {
-      owner = "nvim-lualine";
-      repo = "lualine.nvim";
-      rev = "a52f078026b27694d2290e34efa61a6e4a690621";
-      sha256 = "0cz9vpbd1z3986qbd166h747az8rqgwls0mhi1imqz0z9b66hrbc";
-    };
-    meta.homepage = "https://github.com/nvim-lualine/lualine.nvim/";
-  };
-
   nvim-navic = buildVimPluginFrom2Nix {
     pname = "nvim-navic";
     version = "2022-09-30";
@@ -60,6 +60,18 @@
       sha256 = "1qs02qkjzq0lczc4sdds0p2rrr1klnmw7n7n3hy6i4sr6gycfg1v";
     };
     meta.homepage = "https://github.com/SmiteshP/nvim-navic/";
+  };
+
+  github-notifications-nvim = buildVimPluginFrom2Nix {
+    pname = "github-notifications.nvim";
+    version = "2021-10-18";
+    src = fetchFromGitHub {
+      owner = "rlch";
+      repo = "github-notifications.nvim";
+      rev = "0e9dbc0fed82c4bdbd7cb25b42b3a4c5dce0eb79";
+      sha256 = "0rfnk0zswpn2sniz7hfmm4727d78jrzpgayy56bbsckfr1s03lwm";
+    };
+    meta.homepage = "https://github.com/rlch/github-notifications.nvim/";
   };
 
 
