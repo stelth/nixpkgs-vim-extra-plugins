@@ -28,12 +28,12 @@
 
   lualine-nvim = buildVimPluginFrom2Nix {
     pname = "lualine.nvim";
-    version = "2022-09-11";
+    version = "2022-10-05";
     src = fetchFromGitHub {
       owner = "nvim-lualine";
       repo = "lualine.nvim";
-      rev = "a52f078026b27694d2290e34efa61a6e4a690621";
-      sha256 = "0cz9vpbd1z3986qbd166h747az8rqgwls0mhi1imqz0z9b66hrbc";
+      rev = "f564015a23b7874ee83ae1b1c9ace723d915e16d";
+      sha256 = "010bpp9b2qp612qjnjzpvnragmzz95rsp6qlabqfiidnw8gsy906";
     };
     meta.homepage = "https://github.com/nvim-lualine/lualine.nvim/";
   };
@@ -52,12 +52,12 @@
 
   noice-nvim = buildVimPluginFrom2Nix {
     pname = "noice.nvim";
-    version = "2022-10-04";
+    version = "2022-10-05";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "ed6c0b9a4b0bda7321120d3d36aabfc5b7ae6fea";
-      sha256 = "08qnf7dv9s3cjcw9xs250cr6a4pwkrb90dn8r4605p7ryk8f09aa";
+      rev = "dc3fbbda6fff8de69c4b20d9d3677670b51b8bbb";
+      sha256 = "1xly639ffw891z0npzz5rmirj412shp0yx3jb02m7k98g1wxk4s9";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
