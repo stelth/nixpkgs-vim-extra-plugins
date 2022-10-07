@@ -74,5 +74,17 @@
     meta.homepage = "https://github.com/SmiteshP/nvim-navic/";
   };
 
+  true-zen-nvim = buildVimPluginFrom2Nix {
+    pname = "true-zen.nvim";
+    version = "2022-08-07";
+    src = fetchFromGitHub {
+      owner = "Pocco81";
+      repo = "true-zen.nvim";
+      rev = "98740c76254c65576ec294551028b65081053588";
+      sha256 = "1g7wwb081yliqzpzmgjgvv9fn9qcry9k4xbgv0zcgz7z1lbhmyj1";
+    };
+    meta.homepage = "https://github.com/Pocco81/true-zen.nvim/";
+  };
+
 
 }
