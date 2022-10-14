@@ -52,12 +52,12 @@
 
   noice-nvim = buildVimPluginFrom2Nix {
     pname = "noice.nvim";
-    version = "2022-10-12";
+    version = "2022-10-13";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "be8cd5daa91791e89683eebfd43305230501a3dd";
-      sha256 = "11809sv1pqkvix44ii8g34y5qjsim0c4dpwh3pdavcz3nm9xa8hk";
+      rev = "7913e1b39b162b9c883c60a82f889768fe00539f";
+      sha256 = "1w1607rl2pzp2jk0d1wl6pql6zv4ra36piq92jmfrkz8rrnghdrk";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
