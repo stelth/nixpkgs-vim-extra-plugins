@@ -52,12 +52,12 @@
 
   noice-nvim = buildVimPluginFrom2Nix {
     pname = "noice.nvim";
-    version = "2022-10-16";
+    version = "2022-10-17";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "956bc053799c06baffeb1540476a15baf324be1c";
-      sha256 = "1pykacaw56vifigc8gmmg4qin9gnqcfjrhirmy8686vxqj6q20c7";
+      rev = "373959cd5d982e5216a6f8e46ce3b99fe24e1024";
+      sha256 = "0i4daaw2yfnxvhis6zh909sj3vqwb7g5vckri8b0487pgn825vmv";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
@@ -84,6 +84,18 @@
       sha256 = "1g7wwb081yliqzpzmgjgvv9fn9qcry9k4xbgv0zcgz7z1lbhmyj1";
     };
     meta.homepage = "https://github.com/Pocco81/true-zen.nvim/";
+  };
+
+  neodev-nvim = buildVimPluginFrom2Nix {
+    pname = "neodev.nvim";
+    version = "2022-10-17";
+    src = fetchFromGitHub {
+      owner = "folke";
+      repo = "neodev.nvim";
+      rev = "e250296d86d8269eff527f6b9acd543fb09876d5";
+      sha256 = "12fcvj323y9pjgpladqmqx04bl6rxrkwsd40kh9hzqli632gsf67";
+    };
+    meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
 
 
