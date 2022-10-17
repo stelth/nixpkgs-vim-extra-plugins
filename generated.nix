@@ -4,12 +4,12 @@
 {
   dial-nvim = buildVimPluginFrom2Nix {
     pname = "dial.nvim";
-    version = "2022-10-15";
+    version = "2022-10-16";
     src = fetchFromGitHub {
       owner = "monaqa";
       repo = "dial.nvim";
-      rev = "6bf54a83cd40448f1ba5171358f0d6f48bd970fd";
-      sha256 = "1pqpg3if707w42mdzskbn5rjwiwsbqvp3f2y6mx778b796ikw4d1";
+      rev = "54b503f906bc9e5ab85288414840a1b86d40769f";
+      sha256 = "1hz3xg3xbgq760sxjnvyi9k2r03illgb4yl9423aw32nk7hfgmpf";
     };
     meta.homepage = "https://github.com/monaqa/dial.nvim/";
   };
@@ -52,12 +52,12 @@
 
   noice-nvim = buildVimPluginFrom2Nix {
     pname = "noice.nvim";
-    version = "2022-10-15";
+    version = "2022-10-16";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "27adc00728261a4368206105b4bc1b4a6fb196f8";
-      sha256 = "0m4ydgvifvibglaqzriyfxx9dk6vxzmdhk10xpzwxkfvqd6xckb7";
+      rev = "956bc053799c06baffeb1540476a15baf324be1c";
+      sha256 = "1pykacaw56vifigc8gmmg4qin9gnqcfjrhirmy8686vxqj6q20c7";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
