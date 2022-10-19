@@ -2,54 +2,6 @@
 { lib, buildVimPluginFrom2Nix, fetchFromGitHub, fetchgit }:
 
 {
-  true-zen-nvim = buildVimPluginFrom2Nix {
-    pname = "true-zen.nvim";
-    version = "2022-08-07";
-    src = fetchFromGitHub {
-      owner = "Pocco81";
-      repo = "true-zen.nvim";
-      rev = "98740c76254c65576ec294551028b65081053588";
-      sha256 = "1g7wwb081yliqzpzmgjgvv9fn9qcry9k4xbgv0zcgz7z1lbhmyj1";
-    };
-    meta.homepage = "https://github.com/Pocco81/true-zen.nvim/";
-  };
-
-  nvim-navic = buildVimPluginFrom2Nix {
-    pname = "nvim-navic";
-    version = "2022-09-30";
-    src = fetchFromGitHub {
-      owner = "SmiteshP";
-      repo = "nvim-navic";
-      rev = "132b273773768b36e9ecab2138b82234a9faf5ed";
-      sha256 = "1qs02qkjzq0lczc4sdds0p2rrr1klnmw7n7n3hy6i4sr6gycfg1v";
-    };
-    meta.homepage = "https://github.com/SmiteshP/nvim-navic/";
-  };
-
-  neodev-nvim = buildVimPluginFrom2Nix {
-    pname = "neodev.nvim";
-    version = "2022-10-18";
-    src = fetchFromGitHub {
-      owner = "folke";
-      repo = "neodev.nvim";
-      rev = "e0c04db82d58f6a73b0f3630e80883b6c478e611";
-      sha256 = "17487p8y5b3z0wnpcylnjirg6aljp6vy86kwsbgqw3kcn3726y4y";
-    };
-    meta.homepage = "https://github.com/folke/neodev.nvim/";
-  };
-
-  noice-nvim = buildVimPluginFrom2Nix {
-    pname = "noice.nvim";
-    version = "2022-10-18";
-    src = fetchFromGitHub {
-      owner = "folke";
-      repo = "noice.nvim";
-      rev = "730c0335ef7506fd7632b3bcd60ba571417d9aea";
-      sha256 = "0fhm0qw1jl2ri0y3bsmgnrwp5i7kpkpazd8lplp8sh0ya5bgqgxg";
-    };
-    meta.homepage = "https://github.com/folke/noice.nvim/";
-  };
-
   dial-nvim = buildVimPluginFrom2Nix {
     pname = "dial.nvim";
     version = "2022-10-18";
@@ -60,18 +12,6 @@
       sha256 = "10yp92776vn8g19bdn7m9rrb8vx5p2r326xz6ssy6s140g3sg0hc";
     };
     meta.homepage = "https://github.com/monaqa/dial.nvim/";
-  };
-
-  lualine-nvim = buildVimPluginFrom2Nix {
-    pname = "lualine.nvim";
-    version = "2022-10-06";
-    src = fetchFromGitHub {
-      owner = "nvim-lualine";
-      repo = "lualine.nvim";
-      rev = "edca2b03c724f22bdc310eee1587b1523f31ec7c";
-      sha256 = "06gy6jy3gfhhjcy61fx9myhs4bmknhlfsmnsi1mmcydhm4gcbm2b";
-    };
-    meta.homepage = "https://github.com/nvim-lualine/lualine.nvim/";
   };
 
   github-notifications-nvim = buildVimPluginFrom2Nix {
@@ -86,6 +26,42 @@
     meta.homepage = "https://github.com/rlch/github-notifications.nvim/";
   };
 
+  inlay-hints-nvim = buildVimPluginFrom2Nix {
+    pname = "inlay-hints.nvim";
+    version = "2022-08-13";
+    src = fetchFromGitHub {
+      owner = "simrat39";
+      repo = "inlay-hints.nvim";
+      rev = "006b0898f5d3874e8e528352103733142e705834";
+      sha256 = "111h7zxf6hrsx7253r010rnandqvs7zg2qccarwi6dkyqg9v2dbh";
+    };
+    meta.homepage = "https://github.com/simrat39/inlay-hints.nvim/";
+  };
+
+  lualine-nvim = buildVimPluginFrom2Nix {
+    pname = "lualine.nvim";
+    version = "2022-10-19";
+    src = fetchFromGitHub {
+      owner = "nvim-lualine";
+      repo = "lualine.nvim";
+      rev = "dcd194f700511feda581f3b1b0f4bde3084df64e";
+      sha256 = "0qr6niak9ck896w0wmd96jhh8b82pz9r7i1d5qzwqbay9rsj3flc";
+    };
+    meta.homepage = "https://github.com/nvim-lualine/lualine.nvim/";
+  };
+
+  neodev-nvim = buildVimPluginFrom2Nix {
+    pname = "neodev.nvim";
+    version = "2022-10-19";
+    src = fetchFromGitHub {
+      owner = "folke";
+      repo = "neodev.nvim";
+      rev = "dbd7bc1da13522eaad4022325f578c8c2d94d9a1";
+      sha256 = "101h55bal3bd25n8fjkz7djz1as1i94glcpikgjw94hcv95hvwk2";
+    };
+    meta.homepage = "https://github.com/folke/neodev.nvim/";
+  };
+
   neovim-tasks = buildVimPluginFrom2Nix {
     pname = "neovim-tasks";
     version = "2022-09-28";
@@ -98,16 +74,40 @@
     meta.homepage = "https://github.com/shatur/neovim-tasks/";
   };
 
-  inlay-hints-nvim = buildVimPluginFrom2Nix {
-    pname = "inlay-hints.nvim";
-    version = "2022-08-13";
+  noice-nvim = buildVimPluginFrom2Nix {
+    pname = "noice.nvim";
+    version = "2022-10-18";
     src = fetchFromGitHub {
-      owner = "simrat39";
-      repo = "inlay-hints.nvim";
-      rev = "006b0898f5d3874e8e528352103733142e705834";
-      sha256 = "111h7zxf6hrsx7253r010rnandqvs7zg2qccarwi6dkyqg9v2dbh";
+      owner = "folke";
+      repo = "noice.nvim";
+      rev = "57d68bff549860b30f22bd2e77b68f68593ad162";
+      sha256 = "1yq5lp0z9qll9rzjy7a5wa94iyxn53yk10ibxpikqi52q158267x";
     };
-    meta.homepage = "https://github.com/simrat39/inlay-hints.nvim/";
+    meta.homepage = "https://github.com/folke/noice.nvim/";
+  };
+
+  nvim-navic = buildVimPluginFrom2Nix {
+    pname = "nvim-navic";
+    version = "2022-09-30";
+    src = fetchFromGitHub {
+      owner = "SmiteshP";
+      repo = "nvim-navic";
+      rev = "132b273773768b36e9ecab2138b82234a9faf5ed";
+      sha256 = "1qs02qkjzq0lczc4sdds0p2rrr1klnmw7n7n3hy6i4sr6gycfg1v";
+    };
+    meta.homepage = "https://github.com/SmiteshP/nvim-navic/";
+  };
+
+  true-zen-nvim = buildVimPluginFrom2Nix {
+    pname = "true-zen.nvim";
+    version = "2022-08-07";
+    src = fetchFromGitHub {
+      owner = "Pocco81";
+      repo = "true-zen.nvim";
+      rev = "98740c76254c65576ec294551028b65081053588";
+      sha256 = "1g7wwb081yliqzpzmgjgvv9fn9qcry9k4xbgv0zcgz7z1lbhmyj1";
+    };
+    meta.homepage = "https://github.com/Pocco81/true-zen.nvim/";
   };
 
 
