@@ -2,88 +2,16 @@
 { lib, buildVimPluginFrom2Nix, fetchFromGitHub, fetchgit }:
 
 {
-  dial-nvim = buildVimPluginFrom2Nix {
-    pname = "dial.nvim";
-    version = "2022-10-18";
+  true-zen-nvim = buildVimPluginFrom2Nix {
+    pname = "true-zen.nvim";
+    version = "2022-08-07";
     src = fetchFromGitHub {
-      owner = "monaqa";
-      repo = "dial.nvim";
-      rev = "fa74b74732520e224ed05cb8bc938806258011ce";
-      sha256 = "10yp92776vn8g19bdn7m9rrb8vx5p2r326xz6ssy6s140g3sg0hc";
+      owner = "Pocco81";
+      repo = "true-zen.nvim";
+      rev = "98740c76254c65576ec294551028b65081053588";
+      sha256 = "1g7wwb081yliqzpzmgjgvv9fn9qcry9k4xbgv0zcgz7z1lbhmyj1";
     };
-    meta.homepage = "https://github.com/monaqa/dial.nvim/";
-  };
-
-  github-notifications-nvim = buildVimPluginFrom2Nix {
-    pname = "github-notifications.nvim";
-    version = "2021-10-18";
-    src = fetchFromGitHub {
-      owner = "rlch";
-      repo = "github-notifications.nvim";
-      rev = "0e9dbc0fed82c4bdbd7cb25b42b3a4c5dce0eb79";
-      sha256 = "0rfnk0zswpn2sniz7hfmm4727d78jrzpgayy56bbsckfr1s03lwm";
-    };
-    meta.homepage = "https://github.com/rlch/github-notifications.nvim/";
-  };
-
-  inlay-hints-nvim = buildVimPluginFrom2Nix {
-    pname = "inlay-hints.nvim";
-    version = "2022-08-13";
-    src = fetchFromGitHub {
-      owner = "simrat39";
-      repo = "inlay-hints.nvim";
-      rev = "006b0898f5d3874e8e528352103733142e705834";
-      sha256 = "111h7zxf6hrsx7253r010rnandqvs7zg2qccarwi6dkyqg9v2dbh";
-    };
-    meta.homepage = "https://github.com/simrat39/inlay-hints.nvim/";
-  };
-
-  lualine-nvim = buildVimPluginFrom2Nix {
-    pname = "lualine.nvim";
-    version = "2022-10-19";
-    src = fetchFromGitHub {
-      owner = "nvim-lualine";
-      repo = "lualine.nvim";
-      rev = "abb03129e0b0b7f4c992b1b4c98245cd4422e7d5";
-      sha256 = "1lwwhiwqv5f1i0v6a6g6zbmj5pfs5ya3mnxn3d36q8zf4ssz8xfh";
-    };
-    meta.homepage = "https://github.com/nvim-lualine/lualine.nvim/";
-  };
-
-  neodev-nvim = buildVimPluginFrom2Nix {
-    pname = "neodev.nvim";
-    version = "2022-10-20";
-    src = fetchFromGitHub {
-      owner = "folke";
-      repo = "neodev.nvim";
-      rev = "218d9b06f6b91a0d5b9d8d9c165c5c286f9521ea";
-      sha256 = "0m88ykblj7nssw7l6492h742zl8cm0mhv23sb1nj73m5x95h4d4c";
-    };
-    meta.homepage = "https://github.com/folke/neodev.nvim/";
-  };
-
-  neovim-tasks = buildVimPluginFrom2Nix {
-    pname = "neovim-tasks";
-    version = "2022-09-28";
-    src = fetchFromGitHub {
-      owner = "shatur";
-      repo = "neovim-tasks";
-      rev = "d4b683739e4f1b530eb66e0783a1e3dad5e4b21b";
-      sha256 = "0bf0x685w42k7fgmz2055n3gn4kcpvzg1das18acla8m4rqify3d";
-    };
-    meta.homepage = "https://github.com/shatur/neovim-tasks/";
-  };
-
-  noice-nvim = buildVimPluginFrom2Nix {
-    pname = "noice.nvim";
-    version = "2022-10-20";
-    src = fetchFromGitHub {
-      owner = "folke";
-      repo = "noice.nvim";
-      rev = "26266b0a4eec836e259544e28973d9d22f09b5bb";
-      sha256 = "0d4c65sjbk91xp731mr5f90zb4hq3sl0a1ifk4jqzd06sqbm4926";
-    };
-    meta.homepage = "https://github.com/folke/noice.nvim/";
+    meta.homepage = "https://github.com/Pocco81/true-zen.nvim/";
   };
 
   nvim-navic = buildVimPluginFrom2Nix {
@@ -98,18 +26,6 @@
     meta.homepage = "https://github.com/SmiteshP/nvim-navic/";
   };
 
-  true-zen-nvim = buildVimPluginFrom2Nix {
-    pname = "true-zen.nvim";
-    version = "2022-08-07";
-    src = fetchFromGitHub {
-      owner = "Pocco81";
-      repo = "true-zen.nvim";
-      rev = "98740c76254c65576ec294551028b65081053588";
-      sha256 = "1g7wwb081yliqzpzmgjgvv9fn9qcry9k4xbgv0zcgz7z1lbhmyj1";
-    };
-    meta.homepage = "https://github.com/Pocco81/true-zen.nvim/";
-  };
-
   incline-nvim = buildVimPluginFrom2Nix {
     pname = "incline.nvim";
     version = "2022-07-28";
@@ -120,6 +36,102 @@
       sha256 = "0aygnczz0ysdhb63dvxbfa1zd0pd5ynj8c1mk2mf9jhmhwmrjyd1";
     };
     meta.homepage = "https://github.com/b0o/incline.nvim/";
+  };
+
+  neodev-nvim = buildVimPluginFrom2Nix {
+    pname = "neodev.nvim";
+    version = "2022-10-20";
+    src = fetchFromGitHub {
+      owner = "folke";
+      repo = "neodev.nvim";
+      rev = "218d9b06f6b91a0d5b9d8d9c165c5c286f9521ea";
+      sha256 = "0m88ykblj7nssw7l6492h742zl8cm0mhv23sb1nj73m5x95h4d4c";
+    };
+    meta.homepage = "https://github.com/folke/neodev.nvim/";
+  };
+
+  noice-nvim = buildVimPluginFrom2Nix {
+    pname = "noice.nvim";
+    version = "2022-10-20";
+    src = fetchFromGitHub {
+      owner = "folke";
+      repo = "noice.nvim";
+      rev = "26266b0a4eec836e259544e28973d9d22f09b5bb";
+      sha256 = "0d4c65sjbk91xp731mr5f90zb4hq3sl0a1ifk4jqzd06sqbm4926";
+    };
+    meta.homepage = "https://github.com/folke/noice.nvim/";
+  };
+
+  dial-nvim = buildVimPluginFrom2Nix {
+    pname = "dial.nvim";
+    version = "2022-10-18";
+    src = fetchFromGitHub {
+      owner = "monaqa";
+      repo = "dial.nvim";
+      rev = "fa74b74732520e224ed05cb8bc938806258011ce";
+      sha256 = "10yp92776vn8g19bdn7m9rrb8vx5p2r326xz6ssy6s140g3sg0hc";
+    };
+    meta.homepage = "https://github.com/monaqa/dial.nvim/";
+  };
+
+  lualine-nvim = buildVimPluginFrom2Nix {
+    pname = "lualine.nvim";
+    version = "2022-10-19";
+    src = fetchFromGitHub {
+      owner = "nvim-lualine";
+      repo = "lualine.nvim";
+      rev = "abb03129e0b0b7f4c992b1b4c98245cd4422e7d5";
+      sha256 = "1lwwhiwqv5f1i0v6a6g6zbmj5pfs5ya3mnxn3d36q8zf4ssz8xfh";
+    };
+    meta.homepage = "https://github.com/nvim-lualine/lualine.nvim/";
+  };
+
+  github-notifications-nvim = buildVimPluginFrom2Nix {
+    pname = "github-notifications.nvim";
+    version = "2021-10-18";
+    src = fetchFromGitHub {
+      owner = "rlch";
+      repo = "github-notifications.nvim";
+      rev = "0e9dbc0fed82c4bdbd7cb25b42b3a4c5dce0eb79";
+      sha256 = "0rfnk0zswpn2sniz7hfmm4727d78jrzpgayy56bbsckfr1s03lwm";
+    };
+    meta.homepage = "https://github.com/rlch/github-notifications.nvim/";
+  };
+
+  neovim-tasks = buildVimPluginFrom2Nix {
+    pname = "neovim-tasks";
+    version = "2022-09-28";
+    src = fetchFromGitHub {
+      owner = "shatur";
+      repo = "neovim-tasks";
+      rev = "d4b683739e4f1b530eb66e0783a1e3dad5e4b21b";
+      sha256 = "0bf0x685w42k7fgmz2055n3gn4kcpvzg1das18acla8m4rqify3d";
+    };
+    meta.homepage = "https://github.com/shatur/neovim-tasks/";
+  };
+
+  inlay-hints-nvim = buildVimPluginFrom2Nix {
+    pname = "inlay-hints.nvim";
+    version = "2022-08-13";
+    src = fetchFromGitHub {
+      owner = "simrat39";
+      repo = "inlay-hints.nvim";
+      rev = "006b0898f5d3874e8e528352103733142e705834";
+      sha256 = "111h7zxf6hrsx7253r010rnandqvs7zg2qccarwi6dkyqg9v2dbh";
+    };
+    meta.homepage = "https://github.com/simrat39/inlay-hints.nvim/";
+  };
+
+  notifier-nvim = buildVimPluginFrom2Nix {
+    pname = "notifier.nvim";
+    version = "2022-10-07";
+    src = fetchFromGitHub {
+      owner = "vigoux";
+      repo = "notifier.nvim";
+      rev = "afc9bf7ef8c31cfc716a2b849c34943a9788508b";
+      sha256 = "03lp4l97laayxsj2370x80rhziz5b8q3zdd9fkqlnf14h0m29yy2";
+    };
+    meta.homepage = "https://github.com/vigoux/notifier.nvim/";
   };
 
 
