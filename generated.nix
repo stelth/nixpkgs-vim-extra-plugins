@@ -76,12 +76,12 @@
 
   noice-nvim = buildVimPluginFrom2Nix {
     pname = "noice.nvim";
-    version = "2022-10-19";
+    version = "2022-10-20";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "2122caf02fc2bf89c605371818c4b5451791b67c";
-      sha256 = "0nzijfzi1dxa2in0vmx2dvxivy84j7g9wzv5hmjx8lwhyjmglyqc";
+      rev = "26266b0a4eec836e259544e28973d9d22f09b5bb";
+      sha256 = "0d4c65sjbk91xp731mr5f90zb4hq3sl0a1ifk4jqzd06sqbm4926";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
@@ -108,6 +108,18 @@
       sha256 = "1g7wwb081yliqzpzmgjgvv9fn9qcry9k4xbgv0zcgz7z1lbhmyj1";
     };
     meta.homepage = "https://github.com/Pocco81/true-zen.nvim/";
+  };
+
+  incline-nvim = buildVimPluginFrom2Nix {
+    pname = "incline.nvim";
+    version = "2022-07-28";
+    src = fetchFromGitHub {
+      owner = "b0o";
+      repo = "incline.nvim";
+      rev = "44d4e6f4dcf2f98cf7b62a14e3c10749fc5c6e35";
+      sha256 = "0aygnczz0ysdhb63dvxbfa1zd0pd5ynj8c1mk2mf9jhmhwmrjyd1";
+    };
+    meta.homepage = "https://github.com/b0o/incline.nvim/";
   };
 
 
