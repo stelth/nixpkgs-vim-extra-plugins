@@ -4,12 +4,12 @@
 {
   dial-nvim = buildVimPluginFrom2Nix {
     pname = "dial.nvim";
-    version = "2022-10-18";
+    version = "2022-10-22";
     src = fetchFromGitHub {
       owner = "monaqa";
       repo = "dial.nvim";
-      rev = "fa74b74732520e224ed05cb8bc938806258011ce";
-      sha256 = "10yp92776vn8g19bdn7m9rrb8vx5p2r326xz6ssy6s140g3sg0hc";
+      rev = "9ba17c2ee636a8e7fdef5b69d6aac54dd26f4384";
+      sha256 = "0c22dg8mscgv8kgxmynj0vagp2lrccp1mjv0ski3mr5d4gq83x9q";
     };
     meta.homepage = "https://github.com/monaqa/dial.nvim/";
   };
@@ -64,12 +64,12 @@
 
   neodev-nvim = buildVimPluginFrom2Nix {
     pname = "neodev.nvim";
-    version = "2022-10-21";
+    version = "2022-10-22";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "neodev.nvim";
-      rev = "79f25aca24953e86425014d58fe8c8b90ff73fef";
-      sha256 = "143gl1rh560zprs8cn4kd4qlrhmwh2lpwj6phc2m1f4i8macdiml";
+      rev = "0c2cba85fd2fb3202912dfea85f103da2307c3c5";
+      sha256 = "11ivsczc1wbsm0dmh4w35da8c07d84wp7gvd2ka917raw1wiahs1";
     };
     meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
@@ -134,6 +134,18 @@
     meta.homepage = "https://github.com/Pocco81/true-zen.nvim/";
   };
 
+  which-key-nvim = buildVimPluginFrom2Nix {
+    pname = "which-key.nvim";
+    version = "2022-10-21";
+    src = fetchFromGitHub {
+      owner = "folke";
+      repo = "which-key.nvim";
+      rev = "a03265ed97ef52680732809f274ae18ac4a61a33";
+      sha256 = "0cnnjbx0swz8k7zjxm8cr0mivfghdaaydpzmgdc7rp4lgxr5b4sh";
+    };
+    meta.homepage = "https://github.com/folke/which-key.nvim/";
+  };
+
   yanky-nvim = buildVimPluginFrom2Nix {
     pname = "yanky.nvim";
     version = "2022-10-05";
@@ -145,18 +157,6 @@
       fetchSubmodules = true;
     };
     meta.homepage = "https://github.com/gbprod/yanky.nvim/";
-  };
-
-  which-key-nvim = buildVimPluginFrom2Nix {
-    pname = "which-key.nvim";
-    version = "2022-10-21";
-    src = fetchFromGitHub {
-      owner = "folke";
-      repo = "which-key.nvim";
-      rev = "a03265ed97ef52680732809f274ae18ac4a61a33";
-      sha256 = "0cnnjbx0swz8k7zjxm8cr0mivfghdaaydpzmgdc7rp4lgxr5b4sh";
-    };
-    meta.homepage = "https://github.com/folke/which-key.nvim/";
   };
 
 
