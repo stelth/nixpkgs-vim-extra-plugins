@@ -1,5 +1,5 @@
 final: prev: let
-  inherit (final) lib;
+  inherit (final) lib pkgs;
 
   /*
   * Mark broken packages here.
