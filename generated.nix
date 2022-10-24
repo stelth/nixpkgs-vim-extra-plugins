@@ -68,8 +68,8 @@
     src = fetchFromGitHub {
       owner = "folke";
       repo = "neodev.nvim";
-      rev = "bdbc9e9cdb235df42fb073373f286bd07de643e2";
-      sha256 = "1grmwpvrdys68hynch7k8dlihkya8kcc7zppkk21c4gg32ik9y3b";
+      rev = "f629cf6812c4ebdc9e1eb306f9def56a28f47b54";
+      sha256 = "11l35a2kmrnla3h6wfdq9nmndbrpljxlapihgdab8skjmj0dcym5";
     };
     meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
@@ -88,12 +88,12 @@
 
   noice-nvim = buildVimPluginFrom2Nix {
     pname = "noice.nvim";
-    version = "2022-10-23";
+    version = "2022-10-24";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "2b1ef6a958502c3fa6b50d1e20738d98f9309d90";
-      sha256 = "18964dyfpd48gav8i7z9ahlhmg6f0xagkfvzkmv217fv83zrbdhw";
+      rev = "eb20b841ece58050394b4741935686506842028c";
+      sha256 = "1qnd4919qsw1pahj91dqicaf5phhhl3gzhg2xmqmxd1l9nl2j9kl";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
@@ -157,6 +157,18 @@
       fetchSubmodules = true;
     };
     meta.homepage = "https://github.com/gbprod/yanky.nvim/";
+  };
+
+  peek-nvim = buildVimPluginFrom2Nix {
+    pname = "peek.nvim";
+    version = "2022-10-20";
+    src = fetchFromGitHub {
+      owner = "toppair";
+      repo = "peek.nvim";
+      rev = "2b4726da009aa00338f6af4ff2b9039b64415980";
+      sha256 = "0shmg4yq7sp7salblp1fkshf53yq2bdssg6s51zirr0fc9mdhhh9";
+    };
+    meta.homepage = "https://github.com/toppair/peek.nvim/";
   };
 
 
