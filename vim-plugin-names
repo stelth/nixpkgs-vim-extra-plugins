@@ -1,6 +1,7 @@
 repo,branch,alias
 https://github.com/monaqa/dial.nvim/,,
 https://github.com/rlch/github-notifications.nvim/,,
+https://github.com/smjonas/inc-rename.nvim/,,
 https://github.com/b0o/incline.nvim/,,
 https://github.com/simrat39/inlay-hints.nvim/,,
 https://github.com/nvim-lualine/lualine.nvim/,,
@@ -13,4 +14,3 @@ https://github.com/toppair/peek.nvim/,,
 https://github.com/Pocco81/true-zen.nvim/,,
 https://github.com/folke/which-key.nvim/,,
 https://github.com/gbprod/yanky.nvim/,,
-https://github.com/smjonas/inc-rename.nvim/,,

@@ -92,8 +92,8 @@
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "eb20b841ece58050394b4741935686506842028c";
-      sha256 = "1qnd4919qsw1pahj91dqicaf5phhhl3gzhg2xmqmxd1l9nl2j9kl";
+      rev = "42722b24e8bf63e78101bfe77c569d891604d01e";
+      sha256 = "01ii49ln2b8wpv6595pgfv3g73ba4zywp4f8rm8pmdhyk1nh4nf0";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
@@ -120,6 +120,18 @@
       sha256 = "1qs02qkjzq0lczc4sdds0p2rrr1klnmw7n7n3hy6i4sr6gycfg1v";
     };
     meta.homepage = "https://github.com/SmiteshP/nvim-navic/";
+  };
+
+  peek-nvim = buildVimPluginFrom2Nix {
+    pname = "peek.nvim";
+    version = "2022-10-20";
+    src = fetchFromGitHub {
+      owner = "toppair";
+      repo = "peek.nvim";
+      rev = "2b4726da009aa00338f6af4ff2b9039b64415980";
+      sha256 = "0shmg4yq7sp7salblp1fkshf53yq2bdssg6s51zirr0fc9mdhhh9";
+    };
+    meta.homepage = "https://github.com/toppair/peek.nvim/";
   };
 
   true-zen-nvim = buildVimPluginFrom2Nix {
@@ -159,16 +171,16 @@
     meta.homepage = "https://github.com/gbprod/yanky.nvim/";
   };
 
-  peek-nvim = buildVimPluginFrom2Nix {
-    pname = "peek.nvim";
-    version = "2022-10-20";
+  inc-rename-nvim = buildVimPluginFrom2Nix {
+    pname = "inc-rename.nvim";
+    version = "2022-10-21";
     src = fetchFromGitHub {
-      owner = "toppair";
-      repo = "peek.nvim";
-      rev = "2b4726da009aa00338f6af4ff2b9039b64415980";
-      sha256 = "0shmg4yq7sp7salblp1fkshf53yq2bdssg6s51zirr0fc9mdhhh9";
+      owner = "smjonas";
+      repo = "inc-rename.nvim";
+      rev = "ce0e1d795608dc567c8ae3cd56c44f0516ea3276";
+      sha256 = "1jv5r3x46i2bwim8pjlngh1h3j582gi0r598l7i1phxs6gd0pqzr";
     };
-    meta.homepage = "https://github.com/toppair/peek.nvim/";
+    meta.homepage = "https://github.com/smjonas/inc-rename.nvim/";
   };
 
 
