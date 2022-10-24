@@ -31,6 +31,7 @@ final: prev: let
       })) (with final.vimPlugins; {
       neovim-tasks = [plenary-nvim];
       noice-nvim = [nui-nvim];
+      peek-nvim = [pkgs.deno];
       yanky-nvim = [sqlite-lua];
     });
 
