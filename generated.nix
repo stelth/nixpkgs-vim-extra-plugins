@@ -267,6 +267,18 @@
     meta.homepage = "https://github.com/l3mon4d3/luasnip/";
   };
 
+  mini-nvim = buildVimPluginFrom2Nix {
+    pname = "mini.nvim";
+    version = "2022-10-24";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.nvim";
+      rev = "8b0f423d4d95aaa165b687a687b4651401040986";
+      sha256 = "1k10fbam4fllkfrqcg54b5p9kcsyhbhyx1n2m0cliq72ygpnm4vv";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.nvim/";
+  };
+
   neodev-nvim = buildVimPluginFrom2Nix {
     pname = "neodev.nvim";
     version = "2022-10-25";
@@ -746,18 +758,6 @@
       sha256 = "04i8d7dlxmzgxiysy9jffxkpkw8h3qjkrv3l74z7pfksdmhlbbwz";
     };
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
-  };
-
-  mini-nvim = buildVimPluginFrom2Nix {
-    pname = "mini.nvim";
-    version = "2022-10-24";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.nvim";
-      rev = "8b0f423d4d95aaa165b687a687b4651401040986";
-      sha256 = "1k10fbam4fllkfrqcg54b5p9kcsyhbhyx1n2m0cliq72ygpnm4vv";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.nvim/";
   };
 
 
