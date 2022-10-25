@@ -45,7 +45,8 @@ from pluginupdate import PluginDesc, run_nix_expr
 
 GET_PLUGINS = f"""(with import <nixpkgs> {{}};
 let
-  inherit (vimUtils.override {{inherit vim;}}) buildNeovimPluginFrom2Nix buildVimPluginFrom2Nix;
+  inherit (vimUtils.override {{inherit vim;}}) buildVimPluginFrom2Nix;
+  inherit (neovimUtils) bulldNeovimPluginFrom2Nix;
   generated = callPackage {ROOT}/generated.nix {{
     inherit buildNeovimPluginFrom2Nix buildVimPluginFrom2Nix;
   }};
