@@ -1,5 +1,5 @@
 final: prev: let
-  inherit (final) lib pkgs;
+  inherit (final) lib pkgs tree-sitter;
 
   /*
   * Mark broken packages here.
@@ -28,36 +28,44 @@ final: prev: let
     lib.mapAttrs (attrName: dependencies:
       super.${attrName}.overrideAttrs (_: {
         inherit dependencies;
-      })) (with final.vimPlugins; {
+      })) (with final.vimExtraPlugins; {
+      cmp-dap = [nvim-cmp nvim-dap];
+      cmp-git = [nvim-cmp pkgs.curl pkgs.git];
+      diffview-nvim = [plenary-nvim];
       neovim-tasks = [plenary-nvim];
-      noice-nvim = [nui-nvim];
+      noice-nvim = [nui-nvim nvim-notify];
+      null-ls-nvim = [plenary-nvim];
+      nvim-dap-python = [nvim-dap];
       peek-nvim = [pkgs.deno];
+      telescope-nvim = [plenary-nvim];
       yanky-nvim = [sqlite-lua];
     });
-
-  /*
-  * Add plugins that were once here but now officially maintained.
-  */
-  onceHereButNowOfficiallyMaintainedPlugins = self: super:
-    {
-      inherit
-        (final.vimPlugins)
-        ;
-    }
-    // (with final.vimPlugins; {
-      });
 
   /*
   * Add other overrides here
   */
   otherOverrides = self: super: {
+    nvim-treesitter = super.nvim-treesitter.overrides (old: {
+      passthru.withPlugins = grammarFn:
+        self.nvim-treesitter.overrideAttrs (_: {
+          postPatch = let
+            grammars = tree-sitter.withPlugins grammarFn;
+          in ''
+            rm -r parser
+            ln -s ${grammars} parser
+          '';
+        });
+    });
+    diffview-nvim = super.diffview-nvim.overrideAttrs (old: {
+      doInstallCheck = true;
+      nvimRequireCheck = true;
+    });
   };
 in {
   vimExtraPlugins = prev.vimExtraPlugins.extend (lib.composeManyExtensions [
     markBrokenPackages
     fixLicenses
     fixDependencies
-    onceHereButNowOfficiallyMaintainedPlugins
     otherOverrides
   ]);
 }
