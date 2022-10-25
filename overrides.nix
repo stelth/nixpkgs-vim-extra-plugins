@@ -56,7 +56,7 @@ final: prev: let
           '';
         });
     });
-    sqlige-lua = super.sqlite-lua.overrideAttrs (old: {
+    sqlite-lua = super.sqlite-lua.overrideAttrs (old: {
         postPatch = let
           libsqlite = "${sqlite.out}/lib/libsqlite3${stdenv.hostPlatform.extensions.sharedLibrary}";
         in ''
