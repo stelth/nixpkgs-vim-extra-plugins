@@ -116,9 +116,7 @@ class VimEditor(pluginupdate.Editor):
   }};
 
 """.format(
-            buildFn="buildNeovimPluginFrom2Nix"
-            if isNeovim
-            else "buildVimPluginFrom2Nix",
+            buildFn="buildVimPluginFrom2Nix",
             plugin=plugin,
             src_nix=src_nix,
             repo=repo,
