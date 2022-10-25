@@ -31,7 +31,7 @@ final: prev: let
       })) (with final.vimExtraPlugins; {
       cmp-dap = [nvim-cmp nvim-dap];
       cmp-git = [nvim-cmp pkgs.curl pkgs.git];
-      # diffview-nvim = [plenary-nvim];
+      diffview-nvim = [plenary-nvim];
       neovim-tasks = [plenary-nvim];
       noice-nvim = [nui-nvim nvim-notify];
       null-ls-nvim = [plenary-nvim];
@@ -55,11 +55,6 @@ final: prev: let
             ln -s ${grammars} parser
           '';
         });
-    });
-    diffview-nvim = super.diffview-nvim.overrideAttrs (old: {
-      dependencies = [final.vimExtraPlugins.plenary-nvim];
-      doInstallCheck = true;
-      nvimRequireCheck = true;
     });
   };
 in {
