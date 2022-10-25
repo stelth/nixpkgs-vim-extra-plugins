@@ -1,5 +1,5 @@
 final: prev: let
-  inherit (final) lib pkgs tree-sitter sqlite;
+  inherit (final) lib pkgs tree-sitter sqlite stdenv;
 
   /*
   * Mark broken packages here.
