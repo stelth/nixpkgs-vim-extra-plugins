@@ -158,6 +158,18 @@
     meta.homepage = "https://github.com/rlch/github-notifications.nvim/";
   };
 
+  hop-nvim = buildVimPluginFrom2Nix {
+    pname = "hop.nvim";
+    version = "2022-10-09";
+    src = fetchFromGitHub {
+      owner = "phaazon";
+      repo = "hop.nvim";
+      rev = "6591b3656b75ff313cc38dc662a7ee8f75f1c165";
+      sha256 = "1y6jvl8q8j46zy1c18xi0hfdbma2cq7g3k0ymw05qghvvjyv65bq";
+    };
+    meta.homepage = "https://github.com/phaazon/hop.nvim/";
+  };
+
   impatient-nvim = buildVimPluginFrom2Nix {
     pname = "impatient.nvim";
     version = "2022-08-19";
@@ -734,18 +746,6 @@
       sha256 = "04i8d7dlxmzgxiysy9jffxkpkw8h3qjkrv3l74z7pfksdmhlbbwz";
     };
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
-  };
-
-  hop-nvim = buildVimPluginFrom2Nix {
-    pname = "hop.nvim";
-    version = "2022-10-09";
-    src = fetchFromGitHub {
-      owner = "phaazon";
-      repo = "hop.nvim";
-      rev = "6591b3656b75ff313cc38dc662a7ee8f75f1c165";
-      sha256 = "1y6jvl8q8j46zy1c18xi0hfdbma2cq7g3k0ymw05qghvvjyv65bq";
-    };
-    meta.homepage = "https://github.com/phaazon/hop.nvim/";
   };
 
 
