@@ -45,7 +45,7 @@ final: prev: let
   * Add other overrides here
   */
   otherOverrides = self: super: {
-    nvim-treesitter = super.nvim-treesitter.overrides (old: {
+    nvim-treesitter = super.nvim-treesitter.overrideAttrs (old: {
       passthru.withPlugins = grammarFn:
         self.nvim-treesitter.overrideAttrs (_: {
           postPatch = let
