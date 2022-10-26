@@ -1,5 +1,5 @@
 final: prev: let
-  inherit (final) lib pkgs tree-sitter sqlite stdenv;
+  inherit (final) lib nodejs nodePackages pkgs sqlite stdenv tree-sitter;
 
   /*
   * Mark broken packages here.
@@ -32,6 +32,7 @@ final: prev: let
       cmp-dap = [nvim-cmp nvim-dap];
       cmp-git = [nvim-cmp pkgs.curl pkgs.git];
       diffview-nvim = [plenary-nvim];
+      glow-nvim = [pkgs.glow];
       neovim-tasks = [plenary-nvim];
       noice-nvim = [nui-nvim nvim-notify];
       null-ls-nvim = [plenary-nvim];
@@ -57,13 +58,27 @@ final: prev: let
         });
     });
     sqlite-lua = super.sqlite-lua.overrideAttrs (old: {
-        postPatch = let
-          libsqlite = "${sqlite.out}/lib/libsqlite3${stdenv.hostPlatform.extensions.sharedLibrary}";
-        in ''
-          substituteInPlace lua/sqlite/defs.lua \
-            --replace "path = vim.g.sqlite_clib_path" "path = vim.g.sqlite_clib_path or ${lib.escapeShellArg libsqlite}"
-        '';
-      });
+      postPatch = let
+        libsqlite = "${sqlite.out}/lib/libsqlite3${stdenv.hostPlatform.extensions.sharedLibrary}";
+      in ''
+        substituteInPlace lua/sqlite/defs.lua \
+          --replace "path = vim.g.sqlite_clib_path" "path = vim.g.sqlite_clib_path or ${lib.escapeShellArg libsqlite}"
+      '';
+    });
+    markdown-preview-nvim = super.markdown-preview-nvim.overrideAttrs (
+      old: let
+        nodeDep = nodePackages."markdown-preview-nvim-./markdown-preview-nvim".overrideAttrs (old: {
+          dontNpmInstall = true;
+        });
+      in {
+        patches = [
+          (substituteAll {
+            src = ./markdown-preview-nvim/fix-node-paths.patch;
+            node = "${nodejs}/bin/node";
+          })
+        ];
+      }
+    );
   };
 in {
   vimExtraPlugins = prev.vimExtraPlugins.extend (lib.composeManyExtensions [
