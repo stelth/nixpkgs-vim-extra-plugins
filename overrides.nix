@@ -1,5 +1,5 @@
 final: prev: let
-  inherit (final) lib nodejs nodePackages pkgs sqlite stdenv tree-sitter;
+  inherit (final) lib nodejs nodePackages pkgs sqlite stdenv substituteAll tree-sitter;
 
   /*
   * Mark broken packages here.
