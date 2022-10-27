@@ -170,6 +170,18 @@
     meta.homepage = "https://github.com/lewis6991/gitsigns.nvim/";
   };
 
+  glow-nvim = buildVimPluginFrom2Nix {
+    pname = "glow.nvim";
+    version = "2022-10-07";
+    src = fetchFromGitHub {
+      owner = "ellisonleao";
+      repo = "glow.nvim";
+      rev = "9038d7cdd76a930973b6158d800c8dbc02236a4b";
+      sha256 = "0x49l7g84m1328fqad501f4iqqy3imbl8r8rh4rxsi1zam46f2ba";
+    };
+    meta.homepage = "https://github.com/ellisonleao/glow.nvim/";
+  };
+
   hop-nvim = buildVimPluginFrom2Nix {
     pname = "hop.nvim";
     version = "2022-10-09";
@@ -279,6 +291,18 @@
     meta.homepage = "https://github.com/l3mon4d3/luasnip/";
   };
 
+  markdown-preview-nvim = buildVimPluginFrom2Nix {
+    pname = "markdown-preview.nvim";
+    version = "2022-05-13";
+    src = fetchFromGitHub {
+      owner = "iamcco";
+      repo = "markdown-preview.nvim";
+      rev = "02cc3874738bc0f86e4b91f09b8a0ac88aef8e96";
+      sha256 = "0hd51c7n8hr5bdhd8xl4gr4jgasdjr90rmcjaxylp475xyz6wl3v";
+    };
+    meta.homepage = "https://github.com/iamcco/markdown-preview.nvim/";
+  };
+
   mini-nvim = buildVimPluginFrom2Nix {
     pname = "mini.nvim";
     version = "2022-10-25";
@@ -293,12 +317,12 @@
 
   neodev-nvim = buildVimPluginFrom2Nix {
     pname = "neodev.nvim";
-    version = "2022-10-26";
+    version = "2022-10-27";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "neodev.nvim";
-      rev = "92ab5e8b9bce76352d8c45de5b194dc739125437";
-      sha256 = "0jnlngj0qdngc5fgyab3xsf0f5imjq20z6g0dblz1hqa670yrzyw";
+      rev = "9f2bd5ca1b7bdc184069a0b2db8d7be1c377d3ac";
+      sha256 = "0zqzjlq2x576vc7z4bc72a6d7vp5fvg5fq4qvppv7zyhvgwmg1jk";
     };
     meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
@@ -321,8 +345,8 @@
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "5bd6e308a10324e0c3d8a320aae234d9ce0a9610";
-      sha256 = "09zhxxisqrlyy9pv73y0hbzryv43yipcd9k82z722nmjkazhh8f4";
+      rev = "9102aef70431cd9959add7bc50d507c18f0089de";
+      sha256 = "14mr8kknpqjgwn9h6avf0qcliy1f8pkvp2cg8xbs072y5qyhz1n7";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
@@ -345,8 +369,8 @@
     src = fetchFromGitHub {
       owner = "MunifTanjim";
       repo = "nui.nvim";
-      rev = "a86c733e7d30596d80927b5eaf6869aa9a3d30af";
-      sha256 = "1pdx7d0ykw9l2vzcki5i05h182gskf2p74c0sfkr4fgmz919n7wh";
+      rev = "e3806ee34700727e9cc0b420be226f41929b7d22";
+      sha256 = "0vm0b65i3m98zf3pk4hrcphx5bcwcqsmmbp4pm2mrkzfplm49chz";
     };
     meta.homepage = "https://github.com/MunifTanjim/nui.nvim/";
   };
@@ -413,12 +437,12 @@
 
   nvim-dap-ui = buildVimPluginFrom2Nix {
     pname = "nvim-dap-ui";
-    version = "2022-10-20";
+    version = "2022-10-26";
     src = fetchFromGitHub {
       owner = "rcarriga";
       repo = "nvim-dap-ui";
-      rev = "0a63115d72e071223e1711ce630e9e7b5737c948";
-      sha256 = "1swwyf498g69mm47whdyka7250pqg630fnhwkg0bzslv9ph891rg";
+      rev = "111236ecba3a9061502bd0fa0b74022475572ecd";
+      sha256 = "16j7cgjf7rcid9f1qxbik9x1mvw4axm0qx67iva1x2yw84jzg55g";
     };
     meta.homepage = "https://github.com/rcarriga/nvim-dap-ui/";
   };
@@ -713,12 +737,12 @@
 
   vim-matchup = buildVimPluginFrom2Nix {
     pname = "vim-matchup";
-    version = "2022-10-01";
+    version = "2022-10-27";
     src = fetchFromGitHub {
       owner = "andymass";
       repo = "vim-matchup";
-      rev = "3fa1b2283e957784922fe891de361a2342b90bca";
-      sha256 = "0x86wmph3pb4bkqddb1zm381q9214hvf7cq9ydch4hjbx0vmbjwi";
+      rev = "09576fd767cc55ca934a95f9bdcf91aa12c32cd0";
+      sha256 = "08909dsf8gll8j3rky6zf9i4jlcp2cfkwmy15xmcm6avcy1ziagg";
     };
     meta.homepage = "https://github.com/andymass/vim-matchup/";
   };
@@ -770,30 +794,6 @@
       sha256 = "04i8d7dlxmzgxiysy9jffxkpkw8h3qjkrv3l74z7pfksdmhlbbwz";
     };
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
-  };
-
-  glow-nvim = buildVimPluginFrom2Nix {
-    pname = "glow.nvim";
-    version = "2022-10-07";
-    src = fetchFromGitHub {
-      owner = "ellisonleao";
-      repo = "glow.nvim";
-      rev = "9038d7cdd76a930973b6158d800c8dbc02236a4b";
-      sha256 = "0x49l7g84m1328fqad501f4iqqy3imbl8r8rh4rxsi1zam46f2ba";
-    };
-    meta.homepage = "https://github.com/ellisonleao/glow.nvim/";
-  };
-
-  markdown-preview-nvim = buildVimPluginFrom2Nix {
-    pname = "markdown-preview.nvim";
-    version = "2022-05-13";
-    src = fetchFromGitHub {
-      owner = "iamcco";
-      repo = "markdown-preview.nvim";
-      rev = "02cc3874738bc0f86e4b91f09b8a0ac88aef8e96";
-      sha256 = "0hd51c7n8hr5bdhd8xl4gr4jgasdjr90rmcjaxylp475xyz6wl3v";
-    };
-    meta.homepage = "https://github.com/iamcco/markdown-preview.nvim/";
   };
 
 
