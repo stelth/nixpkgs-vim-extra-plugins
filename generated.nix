@@ -579,6 +579,18 @@
     meta.homepage = "https://github.com/kylechui/nvim-surround/";
   };
 
+  nvim-terminal-lua = buildVimPluginFrom2Nix {
+    pname = "nvim-terminal.lua";
+    version = "2019-10-17";
+    src = fetchFromGitHub {
+      owner = "norcalli";
+      repo = "nvim-terminal.lua";
+      rev = "095f98aaa7265628a72cd2706350c091544b5602";
+      sha256 = "09hass19v3wrqgxjcr3b59w462lp2nw533zwb1nnmiz99gx1znpx";
+    };
+    meta.homepage = "https://github.com/norcalli/nvim-terminal.lua/";
+  };
+
   nvim-treesitter = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter";
     version = "2022-10-28";
@@ -868,16 +880,16 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
-  nvim-terminal-lua = buildVimPluginFrom2Nix {
-    pname = "nvim-terminal.lua";
-    version = "2019-10-17";
+  toggleterm-nvim = buildVimPluginFrom2Nix {
+    pname = "toggleterm.nvim";
+    version = "2022-10-26";
     src = fetchFromGitHub {
-      owner = "norcalli";
-      repo = "nvim-terminal.lua";
-      rev = "095f98aaa7265628a72cd2706350c091544b5602";
-      sha256 = "09hass19v3wrqgxjcr3b59w462lp2nw533zwb1nnmiz99gx1znpx";
+      owner = "akinsho";
+      repo = "toggleterm.nvim";
+      rev = "8f302c9a05ff53fc3f891cbf09c5f959b10392a3";
+      sha256 = "1nvq4zridnz0pr9j9ivcl4b5w8srli8szhjy6ry22vw9c5xllzx3";
     };
-    meta.homepage = "https://github.com/norcalli/nvim-terminal.lua/";
+    meta.homepage = "https://github.com/akinsho/toggleterm.nvim/";
   };
 
 
