@@ -194,6 +194,18 @@
     meta.homepage = "https://github.com/ellisonleao/glow.nvim/";
   };
 
+  hlargs-nvim = buildVimPluginFrom2Nix {
+    pname = "hlargs.nvim";
+    version = "2022-10-20";
+    src = fetchFromGitHub {
+      owner = "m-demare";
+      repo = "hlargs.nvim";
+      rev = "e75b0501f47564099a6c3b4502232e650fdd8e82";
+      sha256 = "00r809ld5ipiwd42a83ccvp7m22r50ip4wdifpr3bvqzsbxk94ib";
+    };
+    meta.homepage = "https://github.com/m-demare/hlargs.nvim/";
+  };
+
   hop-nvim = buildVimPluginFrom2Nix {
     pname = "hop.nvim";
     version = "2022-10-09";
@@ -856,16 +868,16 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
-  hlargs-nvim = buildVimPluginFrom2Nix {
-    pname = "hlargs.nvim";
-    version = "2022-10-20";
+  nvim-terminal-lua = buildVimPluginFrom2Nix {
+    pname = "nvim-terminal.lua";
+    version = "2019-10-17";
     src = fetchFromGitHub {
-      owner = "m-demare";
-      repo = "hlargs.nvim";
-      rev = "e75b0501f47564099a6c3b4502232e650fdd8e82";
-      sha256 = "00r809ld5ipiwd42a83ccvp7m22r50ip4wdifpr3bvqzsbxk94ib";
+      owner = "norcalli";
+      repo = "nvim-terminal.lua";
+      rev = "095f98aaa7265628a72cd2706350c091544b5602";
+      sha256 = "09hass19v3wrqgxjcr3b59w462lp2nw533zwb1nnmiz99gx1znpx";
     };
-    meta.homepage = "https://github.com/m-demare/hlargs.nvim/";
+    meta.homepage = "https://github.com/norcalli/nvim-terminal.lua/";
   };
 
 
