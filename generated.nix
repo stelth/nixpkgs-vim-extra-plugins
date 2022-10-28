@@ -531,6 +531,18 @@
     meta.homepage = "https://github.com/rcarriga/nvim-notify/";
   };
 
+  nvim-scrollbar = buildVimPluginFrom2Nix {
+    pname = "nvim-scrollbar";
+    version = "2022-10-26";
+    src = fetchFromGitHub {
+      owner = "petertriho";
+      repo = "nvim-scrollbar";
+      rev = "49b5a0f2e2d275df4f2e224f3e1cd7f4c64ecafe";
+      sha256 = "0i6g9ww2jvvqb45fqvqfa2vwpgq8jpyndmvjv2amirvk1ilhx2i8";
+    };
+    meta.homepage = "https://github.com/petertriho/nvim-scrollbar/";
+  };
+
   nvim-surround = buildVimPluginFrom2Nix {
     pname = "nvim-surround";
     version = "2022-10-28";
@@ -832,16 +844,16 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
-  nvim-scrollbar = buildVimPluginFrom2Nix {
-    pname = "nvim-scrollbar";
-    version = "2022-10-26";
+  neogen = buildVimPluginFrom2Nix {
+    pname = "neogen";
+    version = "2022-10-21";
     src = fetchFromGitHub {
-      owner = "petertriho";
-      repo = "nvim-scrollbar";
-      rev = "49b5a0f2e2d275df4f2e224f3e1cd7f4c64ecafe";
-      sha256 = "0i6g9ww2jvvqb45fqvqfa2vwpgq8jpyndmvjv2amirvk1ilhx2i8";
+      owner = "danymat";
+      repo = "neogen";
+      rev = "c9ee823ec2ecdeae8c404a43a3394553d37a6d4c";
+      sha256 = "11wnp5rr69pz4qz40bv6azxmc13z023pdxsnzz56wgz6zj81jxgp";
     };
-    meta.homepage = "https://github.com/petertriho/nvim-scrollbar/";
+    meta.homepage = "https://github.com/danymat/neogen/";
   };
 
 
