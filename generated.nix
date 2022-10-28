@@ -2,6 +2,18 @@
 { lib, buildVimPluginFrom2Nix, buildNeovimPluginFrom2Nix, fetchFromGitHub, fetchgit }:
 
 {
+  animation-nvim = buildVimPluginFrom2Nix {
+    pname = "animation.nvim";
+    version = "2022-09-18";
+    src = fetchFromGitHub {
+      owner = "anuvyklack";
+      repo = "animation.nvim";
+      rev = "fb77091ab72ec9971aee0562e7081182527aaa6a";
+      sha256 = "0yaxp3l33af1k6na0jikwmr0nxk862ihpq8r0042mll1ily7689b";
+    };
+    meta.homepage = "https://github.com/anuvyklack/animation.nvim/";
+  };
+
   cmp-buffer = buildVimPluginFrom2Nix {
     pname = "cmp-buffer";
     version = "2022-08-10";
@@ -303,6 +315,18 @@
     meta.homepage = "https://github.com/iamcco/markdown-preview.nvim/";
   };
 
+  middleclass = buildVimPluginFrom2Nix {
+    pname = "middleclass";
+    version = "2022-09-20";
+    src = fetchFromGitHub {
+      owner = "anuvyklack";
+      repo = "middleclass";
+      rev = "9fab4d5bca67262614960960ca35c4740eb2be2c";
+      sha256 = "1r68dh0vz08i37g9jmdgr799j35kr7z4r9cx8q0scrymigp5ghmi";
+    };
+    meta.homepage = "https://github.com/anuvyklack/middleclass/";
+  };
+
   mini-nvim = buildVimPluginFrom2Nix {
     pname = "mini.nvim";
     version = "2022-10-25";
@@ -345,8 +369,8 @@
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "36f1a5628c84b145bdf16e6d2aeea7d43fd7ade5";
-      sha256 = "1p3b5c54jpvnv98i609gfq1ajfp55vhhfrmdx5hcdq9q9ai6b314";
+      rev = "58f52e345d8a2fe4d9b56829986a6c5b3661fdf6";
+      sha256 = "1wslb5xrshck10qfygphqnwfag1ajy6lsvshvah96jz46kp29nss";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
@@ -771,6 +795,18 @@
     meta.homepage = "https://github.com/folke/which-key.nvim/";
   };
 
+  windows-nvim = buildVimPluginFrom2Nix {
+    pname = "windows.nvim";
+    version = "2022-10-22";
+    src = fetchFromGitHub {
+      owner = "anuvyklack";
+      repo = "windows.nvim";
+      rev = "e88fd8b18eb266dae90bf828802d418386c8637f";
+      sha256 = "01lby85gqqzvpinngh4j4xr3d8dkszzv50dz09syfzfqyr4blnr5";
+    };
+    meta.homepage = "https://github.com/anuvyklack/windows.nvim/";
+  };
+
   yanky-nvim = buildVimPluginFrom2Nix {
     pname = "yanky.nvim";
     version = "2022-10-05";
@@ -796,40 +832,16 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
-  windows-nvim = buildVimPluginFrom2Nix {
-    pname = "windows.nvim";
-    version = "2022-10-22";
+  nvim-scrollbar = buildVimPluginFrom2Nix {
+    pname = "nvim-scrollbar";
+    version = "2022-10-26";
     src = fetchFromGitHub {
-      owner = "anuvyklack";
-      repo = "windows.nvim";
-      rev = "e88fd8b18eb266dae90bf828802d418386c8637f";
-      sha256 = "01lby85gqqzvpinngh4j4xr3d8dkszzv50dz09syfzfqyr4blnr5";
+      owner = "petertriho";
+      repo = "nvim-scrollbar";
+      rev = "49b5a0f2e2d275df4f2e224f3e1cd7f4c64ecafe";
+      sha256 = "0i6g9ww2jvvqb45fqvqfa2vwpgq8jpyndmvjv2amirvk1ilhx2i8";
     };
-    meta.homepage = "https://github.com/anuvyklack/windows.nvim/";
-  };
-
-  middleclass = buildVimPluginFrom2Nix {
-    pname = "middleclass";
-    version = "2022-09-20";
-    src = fetchFromGitHub {
-      owner = "anuvyklack";
-      repo = "middleclass";
-      rev = "9fab4d5bca67262614960960ca35c4740eb2be2c";
-      sha256 = "1r68dh0vz08i37g9jmdgr799j35kr7z4r9cx8q0scrymigp5ghmi";
-    };
-    meta.homepage = "https://github.com/anuvyklack/middleclass/";
-  };
-
-  animation-nvim = buildVimPluginFrom2Nix {
-    pname = "animation.nvim";
-    version = "2022-09-18";
-    src = fetchFromGitHub {
-      owner = "anuvyklack";
-      repo = "animation.nvim";
-      rev = "fb77091ab72ec9971aee0562e7081182527aaa6a";
-      sha256 = "0yaxp3l33af1k6na0jikwmr0nxk862ihpq8r0042mll1ily7689b";
-    };
-    meta.homepage = "https://github.com/anuvyklack/animation.nvim/";
+    meta.homepage = "https://github.com/petertriho/nvim-scrollbar/";
   };
 
 
