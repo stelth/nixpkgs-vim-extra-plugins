@@ -351,6 +351,18 @@
     meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
 
+  neogen = buildVimPluginFrom2Nix {
+    pname = "neogen";
+    version = "2022-10-21";
+    src = fetchFromGitHub {
+      owner = "danymat";
+      repo = "neogen";
+      rev = "c9ee823ec2ecdeae8c404a43a3394553d37a6d4c";
+      sha256 = "11wnp5rr69pz4qz40bv6azxmc13z023pdxsnzz56wgz6zj81jxgp";
+    };
+    meta.homepage = "https://github.com/danymat/neogen/";
+  };
+
   neovim-tasks = buildVimPluginFrom2Nix {
     pname = "neovim-tasks";
     version = "2022-09-28";
@@ -844,16 +856,16 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
-  neogen = buildVimPluginFrom2Nix {
-    pname = "neogen";
-    version = "2022-10-21";
+  hlargs-nvim = buildVimPluginFrom2Nix {
+    pname = "hlargs.nvim";
+    version = "2022-10-20";
     src = fetchFromGitHub {
-      owner = "danymat";
-      repo = "neogen";
-      rev = "c9ee823ec2ecdeae8c404a43a3394553d37a6d4c";
-      sha256 = "11wnp5rr69pz4qz40bv6azxmc13z023pdxsnzz56wgz6zj81jxgp";
+      owner = "m-demare";
+      repo = "hlargs.nvim";
+      rev = "e75b0501f47564099a6c3b4502232e650fdd8e82";
+      sha256 = "00r809ld5ipiwd42a83ccvp7m22r50ip4wdifpr3bvqzsbxk94ib";
     };
-    meta.homepage = "https://github.com/danymat/neogen/";
+    meta.homepage = "https://github.com/m-demare/hlargs.nvim/";
   };
 
 
