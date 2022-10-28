@@ -796,5 +796,41 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
+  windows-nvim = buildVimPluginFrom2Nix {
+    pname = "windows.nvim";
+    version = "2022-10-22";
+    src = fetchFromGitHub {
+      owner = "anuvyklack";
+      repo = "windows.nvim";
+      rev = "e88fd8b18eb266dae90bf828802d418386c8637f";
+      sha256 = "01lby85gqqzvpinngh4j4xr3d8dkszzv50dz09syfzfqyr4blnr5";
+    };
+    meta.homepage = "https://github.com/anuvyklack/windows.nvim/";
+  };
+
+  middleclass = buildVimPluginFrom2Nix {
+    pname = "middleclass";
+    version = "2022-09-20";
+    src = fetchFromGitHub {
+      owner = "anuvyklack";
+      repo = "middleclass";
+      rev = "9fab4d5bca67262614960960ca35c4740eb2be2c";
+      sha256 = "1r68dh0vz08i37g9jmdgr799j35kr7z4r9cx8q0scrymigp5ghmi";
+    };
+    meta.homepage = "https://github.com/anuvyklack/middleclass/";
+  };
+
+  animation-nvim = buildVimPluginFrom2Nix {
+    pname = "animation.nvim";
+    version = "2022-09-18";
+    src = fetchFromGitHub {
+      owner = "anuvyklack";
+      repo = "animation.nvim";
+      rev = "fb77091ab72ec9971aee0562e7081182527aaa6a";
+      sha256 = "0yaxp3l33af1k6na0jikwmr0nxk862ihpq8r0042mll1ily7689b";
+    };
+    meta.homepage = "https://github.com/anuvyklack/animation.nvim/";
+  };
+
 
 }
