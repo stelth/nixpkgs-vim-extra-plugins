@@ -796,17 +796,5 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
-  incline-nvim = buildVimPluginFrom2Nix {
-    pname = "incline.nvim";
-    version = "2022-07-28";
-    src = fetchFromGitHub {
-      owner = "b0o";
-      repo = "incline.nvim";
-      rev = "44d4e6f4dcf2f98cf7b62a14e3c10749fc5c6e35";
-      sha256 = "0aygnczz0ysdhb63dvxbfa1zd0pd5ynj8c1mk2mf9jhmhwmrjyd1";
-    };
-    meta.homepage = "https://github.com/b0o/incline.nvim/";
-  };
-
 
 }
