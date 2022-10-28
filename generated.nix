@@ -393,8 +393,8 @@
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "58f52e345d8a2fe4d9b56829986a6c5b3661fdf6";
-      sha256 = "1wslb5xrshck10qfygphqnwfag1ajy6lsvshvah96jz46kp29nss";
+      rev = "a2acf3b238eaa978f633e1af7d19d9ef26f154f9";
+      sha256 = "0fhgbv8336hk9z10h7v3sdzzk1rv0rkpq4dy8fr953pcrvhjg53p";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
@@ -711,6 +711,18 @@
     meta.homepage = "https://github.com/folke/todo-comments.nvim/";
   };
 
+  toggleterm-nvim = buildVimPluginFrom2Nix {
+    pname = "toggleterm.nvim";
+    version = "2022-10-26";
+    src = fetchFromGitHub {
+      owner = "akinsho";
+      repo = "toggleterm.nvim";
+      rev = "8f302c9a05ff53fc3f891cbf09c5f959b10392a3";
+      sha256 = "1nvq4zridnz0pr9j9ivcl4b5w8srli8szhjy6ry22vw9c5xllzx3";
+    };
+    meta.homepage = "https://github.com/akinsho/toggleterm.nvim/";
+  };
+
   tokyonight-nvim = buildVimPluginFrom2Nix {
     pname = "tokyonight.nvim";
     version = "2022-10-27";
@@ -880,16 +892,16 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
-  toggleterm-nvim = buildVimPluginFrom2Nix {
-    pname = "toggleterm.nvim";
-    version = "2022-10-26";
+  specs-nvim = buildVimPluginFrom2Nix {
+    pname = "specs.nvim";
+    version = "2022-09-20";
     src = fetchFromGitHub {
-      owner = "akinsho";
-      repo = "toggleterm.nvim";
-      rev = "8f302c9a05ff53fc3f891cbf09c5f959b10392a3";
-      sha256 = "1nvq4zridnz0pr9j9ivcl4b5w8srli8szhjy6ry22vw9c5xllzx3";
+      owner = "edluffy";
+      repo = "specs.nvim";
+      rev = "2743e412bbe21c9d73954c403d01e8de7377890d";
+      sha256 = "1ycqvxrn13bfimf9k03bmm1baml8gyq5lxqjxh1fya44s2bg714r";
     };
-    meta.homepage = "https://github.com/akinsho/toggleterm.nvim/";
+    meta.homepage = "https://github.com/edluffy/specs.nvim/";
   };
 
 
