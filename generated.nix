@@ -663,6 +663,18 @@
     meta.homepage = "https://github.com/simrat39/rust-tools.nvim/";
   };
 
+  specs-nvim = buildVimPluginFrom2Nix {
+    pname = "specs.nvim";
+    version = "2022-09-20";
+    src = fetchFromGitHub {
+      owner = "edluffy";
+      repo = "specs.nvim";
+      rev = "2743e412bbe21c9d73954c403d01e8de7377890d";
+      sha256 = "1ycqvxrn13bfimf9k03bmm1baml8gyq5lxqjxh1fya44s2bg714r";
+    };
+    meta.homepage = "https://github.com/edluffy/specs.nvim/";
+  };
+
   sqlite-lua = buildVimPluginFrom2Nix {
     pname = "sqlite.lua";
     version = "2022-10-01";
@@ -892,16 +904,16 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
-  specs-nvim = buildVimPluginFrom2Nix {
-    pname = "specs.nvim";
-    version = "2022-09-20";
+  nvim-colorizer-lua = buildVimPluginFrom2Nix {
+    pname = "nvim-colorizer.lua";
+    version = "2020-06-11";
     src = fetchFromGitHub {
-      owner = "edluffy";
-      repo = "specs.nvim";
-      rev = "2743e412bbe21c9d73954c403d01e8de7377890d";
-      sha256 = "1ycqvxrn13bfimf9k03bmm1baml8gyq5lxqjxh1fya44s2bg714r";
+      owner = "norcalli";
+      repo = "nvim-colorizer.lua";
+      rev = "36c610a9717cc9ec426a07c8e6bf3b3abcb139d6";
+      sha256 = "0gvqdfkqf6k9q46r0vcc3nqa6w45gsvp8j4kya1bvi24vhifg2p9";
     };
-    meta.homepage = "https://github.com/edluffy/specs.nvim/";
+    meta.homepage = "https://github.com/norcalli/nvim-colorizer.lua/";
   };
 
 
