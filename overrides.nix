@@ -39,6 +39,7 @@ final: prev: let
       nvim-dap-python = [nvim-dap];
       peek-nvim = [pkgs.deno];
       telescope-nvim = [plenary-nvim];
+      windows-nvim = [middleclass animation-nvim];
       yanky-nvim = [sqlite-lua];
     });
 
