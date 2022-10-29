@@ -353,12 +353,12 @@
 
   neodev-nvim = buildVimPluginFrom2Nix {
     pname = "neodev.nvim";
-    version = "2022-10-28";
+    version = "2022-10-29";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "neodev.nvim";
-      rev = "1d311ffb45779650d03f16d3e5215212a857cbc0";
-      sha256 = "1vzf2jsz1ichi27g0kj2sknsjp9kicc45af36shvwfmcnahl87gd";
+      rev = "1d5b7f0e335c81c5f2549d8d2b234ae7aa6b5a7c";
+      sha256 = "01nc7yr5wpiw3fsk6829riys2n9w9dfd70wjan057j39xqgh2ibf";
     };
     meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
@@ -393,8 +393,8 @@
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "a2acf3b238eaa978f633e1af7d19d9ef26f154f9";
-      sha256 = "0fhgbv8336hk9z10h7v3sdzzk1rv0rkpq4dy8fr953pcrvhjg53p";
+      rev = "ab1d78d587db24f97293419d79cdbbf761986ab3";
+      sha256 = "1xj9x9wsd7v0vxxn06f3k6glplwp4f64l1p8np4hfx016zp2h848";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
@@ -449,14 +449,26 @@
 
   nvim-cmp = buildNeovimPluginFrom2Nix {
     pname = "nvim-cmp";
-    version = "2022-10-22";
+    version = "2022-10-29";
     src = fetchFromGitHub {
       owner = "hrsh7th";
       repo = "nvim-cmp";
-      rev = "cdb77665bbf23bd2717d424ddf4bf98057c30bb3";
-      sha256 = "1yyg4ja7vsf1wwjydq6hx6zdgq1pdbklagzh09nh14p98kw4rdqj";
+      rev = "9bb8ee6e2d6ab3c8cc53323b79f05886bc722faa";
+      sha256 = "1z7b53yxamph255rvrs5a4pq5hbqa0nbwpdh1xy8fvfc71gap80n";
     };
     meta.homepage = "https://github.com/hrsh7th/nvim-cmp/";
+  };
+
+  nvim-colorizer-lua = buildVimPluginFrom2Nix {
+    pname = "nvim-colorizer.lua";
+    version = "2022-09-28";
+    src = fetchFromGitHub {
+      owner = "NvChad";
+      repo = "nvim-colorizer.lua";
+      rev = "9dd7ecde55b06b5114e1fa67c522433e7e59db8b";
+      sha256 = "1lmvxz8k680yfjhadkh0km2v16vhg8p07xbkkvc0jhkp6hg4sxx4";
+    };
+    meta.homepage = "https://github.com/NvChad/nvim-colorizer.lua/";
   };
 
   nvim-dap = buildVimPluginFrom2Nix {
@@ -737,12 +749,12 @@
 
   tokyonight-nvim = buildVimPluginFrom2Nix {
     pname = "tokyonight.nvim";
-    version = "2022-10-27";
+    version = "2022-10-28";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "tokyonight.nvim";
-      rev = "8756c99d08f3605534600e70f9fae64035a287dc";
-      sha256 = "1g7j3fzvs94bi67h277xmjd6rafsqbs58fsgrc0jlhi1zhbablr3";
+      rev = "29e2c689c10679f723ae1deadf7f0067d394a545";
+      sha256 = "06c1zav7w3izc543iwp0q02zy8qdajx34ifrwqb8ih6mvs0zbav6";
     };
     meta.homepage = "https://github.com/folke/tokyonight.nvim/";
   };
@@ -785,12 +797,12 @@
 
   vim-dadbod = buildVimPluginFrom2Nix {
     pname = "vim-dadbod";
-    version = "2022-10-13";
+    version = "2022-10-29";
     src = fetchFromGitHub {
       owner = "tpope";
       repo = "vim-dadbod";
-      rev = "69c419194ee708a58a297d567bdcfd3dcf606574";
-      sha256 = "0qng34n5sm01qs4pyfsx1nl7lhjhxkzcz7bx5747c041hb1ia3jm";
+      rev = "87785156a7919f51409f3e6656ea2b3a9e0e8e97";
+      sha256 = "0rbrp8cnkngfnvfvrfv2nfs3c7ryyv9zs738xay15nmcgif4by1s";
     };
     meta.homepage = "https://github.com/tpope/vim-dadbod/";
   };
@@ -902,18 +914,6 @@
       sha256 = "04i8d7dlxmzgxiysy9jffxkpkw8h3qjkrv3l74z7pfksdmhlbbwz";
     };
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
-  };
-
-  nvim-colorizer-lua = buildVimPluginFrom2Nix {
-    pname = "nvim-colorizer.lua";
-    version = "2022-09-28";
-    src = fetchFromGitHub {
-      owner = "NvChad";
-      repo = "nvim-colorizer.lua";
-      rev = "9dd7ecde55b06b5114e1fa67c522433e7e59db8b";
-      sha256 = "1lmvxz8k680yfjhadkh0km2v16vhg8p07xbkkvc0jhkp6hg4sxx4";
-    };
-    meta.homepage = "https://github.com/NvChad/nvim-colorizer.lua/";
   };
 
 
