@@ -172,12 +172,12 @@
 
   gitsigns-nvim = buildNeovimPluginFrom2Nix {
     pname = "gitsigns.nvim";
-    version = "2022-10-29";
+    version = "2022-10-31";
     src = fetchFromGitHub {
       owner = "lewis6991";
       repo = "gitsigns.nvim";
-      rev = "9110ea15a134b421723cc45c3a8775a6491df39a";
-      sha256 = "16mvlivkcfnvchlw9lqfxhs3bw4nbrv0jmkpqbm4adxz4wmplfna";
+      rev = "d3a8ba0b0d34bbac482b963e52b346065169fa20";
+      sha256 = "0v4gyzgl9k463i66xpj80h02gbxy96hawm0lqffvyzhqkgab143n";
     };
     meta.homepage = "https://github.com/lewis6991/gitsigns.nvim/";
   };
@@ -339,6 +339,174 @@
     meta.homepage = "https://github.com/anuvyklack/middleclass/";
   };
 
+  mini-ai = buildVimPluginFrom2Nix {
+    pname = "mini.ai";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.ai";
+      rev = "d4d68a1d75295c4763a089bea9b6a5a7ab51809c";
+      sha256 = "07mgvmjf533wqa2hiqnczcmhkgdbmq6vyrsnbxxhdwb5pqbfwkgx";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.ai/";
+  };
+
+  mini-align = buildVimPluginFrom2Nix {
+    pname = "mini.align";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.align";
+      rev = "ee44aa185f6dfd3e4c8a29b82f19d143feb2a8d1";
+      sha256 = "0wqkq6ffp9y0qqlsgmmlmw7nr90blsk45kch71jxbdl34pkn6xg9";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.align/";
+  };
+
+  mini-base16 = buildVimPluginFrom2Nix {
+    pname = "mini.base16";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.base16";
+      rev = "24bf228952094f8915133b070ecf4ec3ea9a3b39";
+      sha256 = "165h6bdqjq0b0340bbbnn5yd4kc7rgkpf6yahzmqwwd6wwydraba";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.base16/";
+  };
+
+  mini-bufremove = buildVimPluginFrom2Nix {
+    pname = "mini.bufremove";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.bufremove";
+      rev = "4e25a9ac39d8fde765bd25b88dd15bbb69c86627";
+      sha256 = "05jjrkz69r1a0nfmhs7cy9aaybs1hnfmnafddfy90rxxji6aia9x";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.bufremove/";
+  };
+
+  mini-comment = buildVimPluginFrom2Nix {
+    pname = "mini.comment";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.comment";
+      rev = "8f51e90fdc8564abfa49f90cbba74f6040111784";
+      sha256 = "1d9dmlzkfwf0nxq6sgd70iyf4l2n0895fqzihk2gq9ri6lf2lg5q";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.comment/";
+  };
+
+  mini-completion = buildVimPluginFrom2Nix {
+    pname = "mini.completion";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.completion";
+      rev = "9072d4d8463a2008feb97c9c18e6cb0337d91f67";
+      sha256 = "1qxjkfz0bxagf1730nnn749x1hgisp3srj3dwwxv15r2pga4nf5j";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.completion/";
+  };
+
+  mini-cursorword = buildVimPluginFrom2Nix {
+    pname = "mini.cursorword";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.cursorword";
+      rev = "e804d2fbd168d31728beb0b0bd5478023c7b54a8";
+      sha256 = "1081zarvbq83y5qhn6an006gx9hxz0w2f01pfjzzcficsnswmry4";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.cursorword/";
+  };
+
+  mini-doc = buildVimPluginFrom2Nix {
+    pname = "mini.doc";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.doc";
+      rev = "6e8b94e32f2f0cd2bd10473c7437b7f3b547acd2";
+      sha256 = "09pkzrv4j1832k30nx3j256320ygqi1m4x0g6x4yjczzlipgih1n";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.doc/";
+  };
+
+  mini-fuzzy = buildVimPluginFrom2Nix {
+    pname = "mini.fuzzy";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.fuzzy";
+      rev = "66e2cfad1711c88a620338b116be7a3d58ecdb4f";
+      sha256 = "1n0rnyw4kscdndk107knicdz6czisa6pva153sfj4p6x4sq4m0gx";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.fuzzy/";
+  };
+
+  mini-indentscope = buildVimPluginFrom2Nix {
+    pname = "mini.indentscope";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.indentscope";
+      rev = "3b67622d3584f344c827a031a2a99cb72a5d92e3";
+      sha256 = "0hi058yn8469gc6np1j481yb6c4kizm4p6pkki7k7pk8b24wsjqv";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.indentscope/";
+  };
+
+  mini-jump = buildVimPluginFrom2Nix {
+    pname = "mini.jump";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.jump";
+      rev = "2ed84fee7fbc6ae7b57c1ba10ad7e852aa0be729";
+      sha256 = "1q8qxikf59386x5l3hsnzn4xvlkkn295jqxc5mc29pcyfybcnbbi";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.jump/";
+  };
+
+  mini-jump2d = buildVimPluginFrom2Nix {
+    pname = "mini.jump2d";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.jump2d";
+      rev = "8173c70290238a58dbfd3be0acc88d03319e1fd8";
+      sha256 = "0abll3z6inxrw5v38vmssx89j5n6vawpfgi1jab72x4z01jxzys5";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.jump2d/";
+  };
+
+  mini-map = buildVimPluginFrom2Nix {
+    pname = "mini.map";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.map";
+      rev = "cdb894c28dcf30d7e0eece0cfab0261dfd562c06";
+      sha256 = "19668s2kqcyhswi8v3b04kl2mwl8s9kf5xw05xrjb83iw2nnxpzl";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.map/";
+  };
+
+  mini-misc = buildVimPluginFrom2Nix {
+    pname = "mini.misc";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.misc";
+      rev = "ae391e13125a8c0af4575f074807be0212838932";
+      sha256 = "12ckx1bsjw1glkv9pi9y8zzzzazj59adfzbh4l59jn31ibznv8dc";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.misc/";
+  };
+
   mini-nvim = buildVimPluginFrom2Nix {
     pname = "mini.nvim";
     version = "2022-10-30";
@@ -351,14 +519,110 @@
     meta.homepage = "https://github.com/echasnovski/mini.nvim/";
   };
 
+  mini-pairs = buildVimPluginFrom2Nix {
+    pname = "mini.pairs";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.pairs";
+      rev = "fc1964d2f61cba0964bdf5adffc7954792d3c017";
+      sha256 = "1dsiz8bfg96z076lli82ic8g04db3pxklypp9z3m70asjyr7xm7l";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.pairs/";
+  };
+
+  mini-sessions = buildVimPluginFrom2Nix {
+    pname = "mini.sessions";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.sessions";
+      rev = "5d424b417e43a580d76ab1c148c8f554c3a8031e";
+      sha256 = "013sf0z95qlkv4wq98l311s8svfkfy6ycbagi3i9z24ixz0a287l";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.sessions/";
+  };
+
+  mini-starter = buildVimPluginFrom2Nix {
+    pname = "mini.starter";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.starter";
+      rev = "bebcf87c20a3514f8349f140e0b6f01143737a7e";
+      sha256 = "00f37fkp8s5mic8fl2sv93x7nns9gq0l1wkfz9qwpkhrz81cc7mk";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.starter/";
+  };
+
+  mini-statusline = buildVimPluginFrom2Nix {
+    pname = "mini.statusline";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.statusline";
+      rev = "481a1edce15f080806006ae1ea305a8f7291e42f";
+      sha256 = "197adwpqc79c9ddh1ls74y0y6klh3688bnkp1rwm4cvq807ycg1a";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.statusline/";
+  };
+
+  mini-surround = buildVimPluginFrom2Nix {
+    pname = "mini.surround";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.surround";
+      rev = "1fe2a37fd44cafda815868229c4af9a25cb606aa";
+      sha256 = "110r73r6j5x958n9kj0r46vhdchm3xm7iidqp74lqjdyc8s4rbhr";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.surround/";
+  };
+
+  mini-tabline = buildVimPluginFrom2Nix {
+    pname = "mini.tabline";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.tabline";
+      rev = "d32409cca89fc6f8f0a4a9044d79f45e1a164198";
+      sha256 = "1i82hmgkw9jm6xy6ssp873rf84kz5m54n5rb82a8x8j904f322cb";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.tabline/";
+  };
+
+  mini-test = buildVimPluginFrom2Nix {
+    pname = "mini.test";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.test";
+      rev = "046ac21a488f194a1ac9f12d7286d4108cbf99af";
+      sha256 = "0mhvj70k978lw008pykxxfsxdks002lkgzfv4mxail4fkp01b28f";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.test/";
+  };
+
+  mini-trailspace = buildVimPluginFrom2Nix {
+    pname = "mini.trailspace";
+    version = "2022-10-30";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.trailspace";
+      rev = "df147d3378570b42a64fb46b95a939b5901435f3";
+      sha256 = "0kh9gxw8lvbnwbyhcpl5ybqms19bwafw7mbilyhwrgal1ri727r4";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.trailspace/";
+  };
+
   neodev-nvim = buildVimPluginFrom2Nix {
     pname = "neodev.nvim";
-    version = "2022-10-31";
+    version = "2022-11-01";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "neodev.nvim";
-      rev = "532f0be0c5f505098c7be06250884b1e63a7f61c";
-      sha256 = "10qag6r7jmbrv4fpk23vpk18ibj6il0gfld3l4gwj832y2l9iki9";
+      rev = "93909dc388a1fb50c5168a736b7c591be6ba42c1";
+      sha256 = "0mp1i47a0nvca70c45p30gw6g2d745x22kv741szlc8615jbxc9i";
     };
     meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
@@ -713,12 +977,12 @@
 
   telescope-nvim = buildVimPluginFrom2Nix {
     pname = "telescope.nvim";
-    version = "2022-10-26";
+    version = "2022-10-31";
     src = fetchFromGitHub {
       owner = "nvim-telescope";
       repo = "telescope.nvim";
-      rev = "97847309cbffbb33e442f07b8877d20322a26922";
-      sha256 = "16haarhd71n6p0ndkl67casbk3ysbxbnsm9dkqaa4cjizdqckbj0";
+      rev = "4bd4205028d6588cf2e0a1346687a6039b0f0a7c";
+      sha256 = "1vs8jgxam37qrxsxgda2fw4b1qb720wvzjwyq9d5c0hbzv7iqz2b";
     };
     meta.homepage = "https://github.com/nvim-telescope/telescope.nvim/";
   };
@@ -833,12 +1097,12 @@
 
   vim-illuminate = buildVimPluginFrom2Nix {
     pname = "vim-illuminate";
-    version = "2022-10-04";
+    version = "2022-11-01";
     src = fetchFromGitHub {
       owner = "RRethy";
       repo = "vim-illuminate";
-      rev = "0603e75fc4ecde1ee5a1b2fc8106ed6704f34d14";
-      sha256 = "01361ss6g7kcap7hjma9ij8xa75zlvy878s4p7r5sxxbdwwpqarg";
+      rev = "eb67b1317df846cb12091c43e7c555f915f56578";
+      sha256 = "1qq8d7cicb7qgr36y8y24q2gi5zhsbncqkpwix9j7lndw25pxmcy";
     };
     meta.homepage = "https://github.com/RRethy/vim-illuminate/";
   };
@@ -914,270 +1178,6 @@
       sha256 = "04i8d7dlxmzgxiysy9jffxkpkw8h3qjkrv3l74z7pfksdmhlbbwz";
     };
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
-  };
-
-  mini-trailspace = buildVimPluginFrom2Nix {
-    pname = "mini.trailspace";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.trailspace";
-      rev = "df147d3378570b42a64fb46b95a939b5901435f3";
-      sha256 = "0kh9gxw8lvbnwbyhcpl5ybqms19bwafw7mbilyhwrgal1ri727r4";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.trailspace/";
-  };
-
-  mini-test = buildVimPluginFrom2Nix {
-    pname = "mini.test";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.test";
-      rev = "046ac21a488f194a1ac9f12d7286d4108cbf99af";
-      sha256 = "0mhvj70k978lw008pykxxfsxdks002lkgzfv4mxail4fkp01b28f";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.test/";
-  };
-
-  mini-tabline = buildVimPluginFrom2Nix {
-    pname = "mini.tabline";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.tabline";
-      rev = "d32409cca89fc6f8f0a4a9044d79f45e1a164198";
-      sha256 = "1i82hmgkw9jm6xy6ssp873rf84kz5m54n5rb82a8x8j904f322cb";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.tabline/";
-  };
-
-  mini-surround = buildVimPluginFrom2Nix {
-    pname = "mini.surround";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.surround";
-      rev = "1fe2a37fd44cafda815868229c4af9a25cb606aa";
-      sha256 = "110r73r6j5x958n9kj0r46vhdchm3xm7iidqp74lqjdyc8s4rbhr";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.surround/";
-  };
-
-  mini-statusline = buildVimPluginFrom2Nix {
-    pname = "mini.statusline";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.statusline";
-      rev = "481a1edce15f080806006ae1ea305a8f7291e42f";
-      sha256 = "197adwpqc79c9ddh1ls74y0y6klh3688bnkp1rwm4cvq807ycg1a";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.statusline/";
-  };
-
-  mini-starter = buildVimPluginFrom2Nix {
-    pname = "mini.starter";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.starter";
-      rev = "bebcf87c20a3514f8349f140e0b6f01143737a7e";
-      sha256 = "00f37fkp8s5mic8fl2sv93x7nns9gq0l1wkfz9qwpkhrz81cc7mk";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.starter/";
-  };
-
-  mini-sessions = buildVimPluginFrom2Nix {
-    pname = "mini.sessions";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.sessions";
-      rev = "5d424b417e43a580d76ab1c148c8f554c3a8031e";
-      sha256 = "013sf0z95qlkv4wq98l311s8svfkfy6ycbagi3i9z24ixz0a287l";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.sessions/";
-  };
-
-  mini-pairs = buildVimPluginFrom2Nix {
-    pname = "mini.pairs";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.pairs";
-      rev = "fc1964d2f61cba0964bdf5adffc7954792d3c017";
-      sha256 = "1dsiz8bfg96z076lli82ic8g04db3pxklypp9z3m70asjyr7xm7l";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.pairs/";
-  };
-
-  mini-misc = buildVimPluginFrom2Nix {
-    pname = "mini.misc";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.misc";
-      rev = "ae391e13125a8c0af4575f074807be0212838932";
-      sha256 = "12ckx1bsjw1glkv9pi9y8zzzzazj59adfzbh4l59jn31ibznv8dc";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.misc/";
-  };
-
-  mini-map = buildVimPluginFrom2Nix {
-    pname = "mini.map";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.map";
-      rev = "cdb894c28dcf30d7e0eece0cfab0261dfd562c06";
-      sha256 = "19668s2kqcyhswi8v3b04kl2mwl8s9kf5xw05xrjb83iw2nnxpzl";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.map/";
-  };
-
-  mini-jump2d = buildVimPluginFrom2Nix {
-    pname = "mini.jump2d";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.jump2d";
-      rev = "8173c70290238a58dbfd3be0acc88d03319e1fd8";
-      sha256 = "0abll3z6inxrw5v38vmssx89j5n6vawpfgi1jab72x4z01jxzys5";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.jump2d/";
-  };
-
-  mini-jump = buildVimPluginFrom2Nix {
-    pname = "mini.jump";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.jump";
-      rev = "2ed84fee7fbc6ae7b57c1ba10ad7e852aa0be729";
-      sha256 = "1q8qxikf59386x5l3hsnzn4xvlkkn295jqxc5mc29pcyfybcnbbi";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.jump/";
-  };
-
-  mini-indentscope = buildVimPluginFrom2Nix {
-    pname = "mini.indentscope";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.indentscope";
-      rev = "3b67622d3584f344c827a031a2a99cb72a5d92e3";
-      sha256 = "0hi058yn8469gc6np1j481yb6c4kizm4p6pkki7k7pk8b24wsjqv";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.indentscope/";
-  };
-
-  mini-fuzzy = buildVimPluginFrom2Nix {
-    pname = "mini.fuzzy";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.fuzzy";
-      rev = "66e2cfad1711c88a620338b116be7a3d58ecdb4f";
-      sha256 = "1n0rnyw4kscdndk107knicdz6czisa6pva153sfj4p6x4sq4m0gx";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.fuzzy/";
-  };
-
-  mini-doc = buildVimPluginFrom2Nix {
-    pname = "mini.doc";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.doc";
-      rev = "6e8b94e32f2f0cd2bd10473c7437b7f3b547acd2";
-      sha256 = "09pkzrv4j1832k30nx3j256320ygqi1m4x0g6x4yjczzlipgih1n";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.doc/";
-  };
-
-  mini-cursorword = buildVimPluginFrom2Nix {
-    pname = "mini.cursorword";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.cursorword";
-      rev = "e804d2fbd168d31728beb0b0bd5478023c7b54a8";
-      sha256 = "1081zarvbq83y5qhn6an006gx9hxz0w2f01pfjzzcficsnswmry4";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.cursorword/";
-  };
-
-  mini-completion = buildVimPluginFrom2Nix {
-    pname = "mini.completion";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.completion";
-      rev = "9072d4d8463a2008feb97c9c18e6cb0337d91f67";
-      sha256 = "1qxjkfz0bxagf1730nnn749x1hgisp3srj3dwwxv15r2pga4nf5j";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.completion/";
-  };
-
-  mini-comment = buildVimPluginFrom2Nix {
-    pname = "mini.comment";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.comment";
-      rev = "8f51e90fdc8564abfa49f90cbba74f6040111784";
-      sha256 = "1d9dmlzkfwf0nxq6sgd70iyf4l2n0895fqzihk2gq9ri6lf2lg5q";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.comment/";
-  };
-
-  mini-bufremove = buildVimPluginFrom2Nix {
-    pname = "mini.bufremove";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.bufremove";
-      rev = "4e25a9ac39d8fde765bd25b88dd15bbb69c86627";
-      sha256 = "05jjrkz69r1a0nfmhs7cy9aaybs1hnfmnafddfy90rxxji6aia9x";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.bufremove/";
-  };
-
-  mini-base16 = buildVimPluginFrom2Nix {
-    pname = "mini.base16";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.base16";
-      rev = "24bf228952094f8915133b070ecf4ec3ea9a3b39";
-      sha256 = "165h6bdqjq0b0340bbbnn5yd4kc7rgkpf6yahzmqwwd6wwydraba";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.base16/";
-  };
-
-  mini-align = buildVimPluginFrom2Nix {
-    pname = "mini.align";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.align";
-      rev = "ee44aa185f6dfd3e4c8a29b82f19d143feb2a8d1";
-      sha256 = "0wqkq6ffp9y0qqlsgmmlmw7nr90blsk45kch71jxbdl34pkn6xg9";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.align/";
-  };
-
-  mini-ai = buildVimPluginFrom2Nix {
-    pname = "mini.ai";
-    version = "2022-10-30";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.ai";
-      rev = "d4d68a1d75295c4763a089bea9b6a5a7ab51809c";
-      sha256 = "07mgvmjf533wqa2hiqnczcmhkgdbmq6vyrsnbxxhdwb5pqbfwkgx";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.ai/";
   };
 
 
