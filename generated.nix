@@ -617,24 +617,24 @@
 
   neodev-nvim = buildVimPluginFrom2Nix {
     pname = "neodev.nvim";
-    version = "2022-11-02";
+    version = "2022-11-03";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "neodev.nvim";
-      rev = "04ceb2cd068af0bbbde22ca1ef57d25cb1a397e6";
-      sha256 = "0yr2nr5l8hrnh3pp2vpl9lkbyn00af8bc82hymry3gsjykc8a1gj";
+      rev = "a9ddee2951ee43ca678b45bcc604592ea49a9456";
+      sha256 = "0fv5gavyll59xwm1qnjjf1wyl9h7icmp9np51y6pfjd1vf9zpf9l";
     };
     meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
 
   neogen = buildVimPluginFrom2Nix {
     pname = "neogen";
-    version = "2022-10-21";
+    version = "2022-11-02";
     src = fetchFromGitHub {
       owner = "danymat";
       repo = "neogen";
-      rev = "c9ee823ec2ecdeae8c404a43a3394553d37a6d4c";
-      sha256 = "11wnp5rr69pz4qz40bv6azxmc13z023pdxsnzz56wgz6zj81jxgp";
+      rev = "da04629ffa27bff6265c2c03927e4fd96ed1fc70";
+      sha256 = "1q1jic77j4hnlwg6m61s0s6rzds7d2wdg2ainbqhyjxr18gpm5p4";
     };
     meta.homepage = "https://github.com/danymat/neogen/";
   };
@@ -809,12 +809,12 @@
 
   nvim-navic = buildVimPluginFrom2Nix {
     pname = "nvim-navic";
-    version = "2022-10-29";
+    version = "2022-11-02";
     src = fetchFromGitHub {
       owner = "SmiteshP";
       repo = "nvim-navic";
-      rev = "eebc4f15132c587c52fcd2ce2f0da78fc19a16c0";
-      sha256 = "1pwshw6r90ycc315f0savp2iid4rchqplphq9ms36nb4x36894mq";
+      rev = "2fad33454cd6e37527a2d41f310d77b552d8c1e0";
+      sha256 = "1zdcnazqawkyab9gyfqi1mvnzzil9xvzj7mz7hjqd1w6g9r2c1ip";
     };
     meta.homepage = "https://github.com/SmiteshP/nvim-navic/";
   };
@@ -869,12 +869,12 @@
 
   nvim-treesitter = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter";
-    version = "2022-11-01";
+    version = "2022-11-02";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter";
-      rev = "c6992f69d303cee0b43fd59125cb7afb0262d8fe";
-      sha256 = "1rq78ai855il6d7013sr348xl1mz7bxwv8jznvlb0297pkbf5i1q";
+      rev = "54a9ca47f7d834cf3814a556f514a9c49861133e";
+      sha256 = "1gnlb7l1ad4pd15mrnl73xfxkrn7m9v8szhjmshnm33lm5wxyk1i";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
   };
@@ -1097,12 +1097,12 @@
 
   vim-illuminate = buildVimPluginFrom2Nix {
     pname = "vim-illuminate";
-    version = "2022-11-01";
+    version = "2022-11-02";
     src = fetchFromGitHub {
       owner = "RRethy";
       repo = "vim-illuminate";
-      rev = "7a4eccd0fffe8b5dd14ad0d0400d3eab6d80c4b3";
-      sha256 = "0a0d16vjr23a3q6mmz653xn1hmnd7h8dbkldvmsr4dx0spqfydp8";
+      rev = "fb83d835eac50baeef49aac20c524a80727db0ac";
+      sha256 = "0xk5hhsb3gv3yrfcr3gnxj9g9bcdab8nlfi06q5c7nqgy4fryp6n";
     };
     meta.homepage = "https://github.com/RRethy/vim-illuminate/";
   };
