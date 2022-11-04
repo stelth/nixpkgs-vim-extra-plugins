@@ -47,17 +47,10 @@ final: prev: let
   * Add other overrides here
   */
   otherOverrides = self: super: {
-    nvim-treesitter = super.nvim-treesitter.overrideAttrs (old: {
-      passthru.withPlugins = grammarFn:
-        self.nvim-treesitter.overrideAttrs (_: {
-          postPatch = let
-            grammars = tree-sitter.withPlugins grammarFn;
-          in ''
-            rm -r parser
-            ln -s ${grammars} parser
-          '';
-        });
-    });
+    nvim-treesitter = super.nvim-treesitter.overrideAttrs (
+      old:
+        pkgs.callPackage ./nvim-treesitter/overrides.nix {} self super
+    );
     sqlite-lua = super.sqlite-lua.overrideAttrs (old: {
       postPatch = let
         libsqlite = "${sqlite.out}/lib/libsqlite3${stdenv.hostPlatform.extensions.sharedLibrary}";
