@@ -172,12 +172,12 @@
 
   gitsigns-nvim = buildNeovimPluginFrom2Nix {
     pname = "gitsigns.nvim";
-    version = "2022-10-31";
+    version = "2022-11-04";
     src = fetchFromGitHub {
       owner = "lewis6991";
       repo = "gitsigns.nvim";
-      rev = "d3a8ba0b0d34bbac482b963e52b346065169fa20";
-      sha256 = "0v4gyzgl9k463i66xpj80h02gbxy96hawm0lqffvyzhqkgab143n";
+      rev = "2b4fc5e2ae8b546b1a2b4ab1bbc4283248e52a17";
+      sha256 = "03s4lvymxvm7iwn56289gy55k2hdr8sfcadzljzfd6sa5hqfrir4";
     };
     meta.homepage = "https://github.com/lewis6991/gitsigns.nvim/";
   };
@@ -232,12 +232,12 @@
 
   inc-rename-nvim = buildVimPluginFrom2Nix {
     pname = "inc-rename.nvim";
-    version = "2022-10-28";
+    version = "2022-11-04";
     src = fetchFromGitHub {
       owner = "smjonas";
       repo = "inc-rename.nvim";
-      rev = "b71ff4b6dd761a59b36b85bdb3294ac8f49ea86d";
-      sha256 = "0rvlawvp49bw3hq9nyffhdpmv3kn1dnq8n1dx141m03v2hpkxw7z";
+      rev = "48c4aa2be19f79e79b465a9bb37ee9fbe6c606f5";
+      sha256 = "0qj9zjm13d73r6wcm19rchwaf7lgcsy66x90bsa26y2g22a8xgxq";
     };
     meta.homepage = "https://github.com/smjonas/inc-rename.nvim/";
   };
@@ -617,12 +617,12 @@
 
   neodev-nvim = buildVimPluginFrom2Nix {
     pname = "neodev.nvim";
-    version = "2022-11-04";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "neodev.nvim";
-      rev = "d41f7e1713f3421c3c8f71c3fe4a026084227a5d";
-      sha256 = "17ffq90vhy5w42h3vqczlxpvj7vxl5sznhbbmlf90psl3s1f20sf";
+      rev = "b543daedfa65fe1526403d5686850f91ec47f05b";
+      sha256 = "10bcfx1ixf9n4l9zac2i3q9201nn27ll69ljz1bbnm3mcdi3b4m1";
     };
     meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
@@ -737,12 +737,12 @@
 
   nvim-dap = buildVimPluginFrom2Nix {
     pname = "nvim-dap";
-    version = "2022-10-19";
+    version = "2022-11-04";
     src = fetchFromGitHub {
       owner = "mfussenegger";
       repo = "nvim-dap";
-      rev = "3d0d7312bb2a8491eb2927504e5cfa6e81b66de4";
-      sha256 = "0apzpy1mchk6iz6gxx218l2cb7rkjwviil56ab9ndk5jdd1irjag";
+      rev = "6fd283f540f4af6fbd80d6d72e1a0ea6c245aab0";
+      sha256 = "0ivl3g3083vai3dyrgqrjd2sm9n5jl8pd28zqn3dx5q3isjm7b60";
     };
     meta.homepage = "https://github.com/mfussenegger/nvim-dap/";
   };
