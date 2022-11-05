@@ -11,9 +11,9 @@
   allGrammars = lib.filter lib.isDerivation (lib.attrValues builtGrammars);
 
   # Usage:
-  # pkgs.vimPlugins.nvim-treesitter.withPlugins (p: [ p.c p.java ... ])
+  # pkgs.vimExtraPlugins.nvim-treesitter.withPlugins (p: [ p.c p.java ... ])
   # or for all grammars:
-  # pkgs.vimPlugins.nvim-treesitter.withAllGrammars
+  # pkgs.vimExtraPlugins.nvim-treesitter.withAllGrammars
   withPlugins = grammarFn:
     self.nvim-treesitter.overrideAttrs (_: {
       postPatch = let

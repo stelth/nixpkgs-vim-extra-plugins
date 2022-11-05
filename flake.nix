@@ -30,6 +30,7 @@
       };
 
       update-vim-plugins = pkgs.callPackage ./pkgs/update-vim-plugins.nix {};
+      update-treesitter-grammars = pkgs.callPackage ./pkgs/update-treesitter-grammars.nix {};
     in {
       packages = flake-utils.lib.filterPackages system pkgs.vimExtraPlugins;
 
@@ -37,17 +38,22 @@
         update-vim-plugins = flake-utils.lib.mkApp {
           drv = update-vim-plugins;
         };
+        update-treesitter-grammars = flake-utils.lib.mkApp {
+          drv = update-treesitter-grammars;
+        };
       };
 
       checks =
         self.packages.${system}
         // {
           inherit update-vim-plugins;
+          inherit update-treesitter-grammars;
         };
 
       devShells.default = pkgs.mkShell {
         inputsFrom = [
           update-vim-plugins
+          update-treesitter-grammars
         ];
         buildInputs =
           [
