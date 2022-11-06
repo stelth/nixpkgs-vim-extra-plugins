@@ -341,36 +341,36 @@
 
   mini-ai = buildVimPluginFrom2Nix {
     pname = "mini.ai";
-    version = "2022-11-03";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.ai";
-      rev = "99bede2868b8b9a67890cfb0533951c513d2a2f0";
-      sha256 = "1m6q72qfrh63kp3f7pwqvsvqkcal62b1dn9v8d5aq4mwr2rvm3q9";
+      rev = "ca4c17dce5a5cdaebcb981cd1e1122d46d9657d2";
+      sha256 = "16mihw0ydpfp7kq32ga89fa6swazpf6ci9gw1yy4p874nkliyk1n";
     };
     meta.homepage = "https://github.com/echasnovski/mini.ai/";
   };
 
   mini-align = buildVimPluginFrom2Nix {
     pname = "mini.align";
-    version = "2022-11-03";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.align";
-      rev = "771579f90c236e2c5662674398a5bc707d658cfc";
-      sha256 = "1zhaaid5yjh0pckawlq9qkpck3dcfvcq8pznc3lbvi56ahfjqgp0";
+      rev = "b5072950f0348c8daf6483ef03a9b9c5611b9e5f";
+      sha256 = "15ph6ri8ri8m53qw8kppkg60fds0syx8l0cy161wk1151l5xwlas";
     };
     meta.homepage = "https://github.com/echasnovski/mini.align/";
   };
 
   mini-base16 = buildVimPluginFrom2Nix {
     pname = "mini.base16";
-    version = "2022-11-03";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.base16";
-      rev = "623dcfee69dd8a689e8e0e11ce424f4136268907";
-      sha256 = "0zxpl7q4vqaqcwdinbjr3n20scg3b02s47i6zllya0g13nvllrhh";
+      rev = "96048ba8ee5cf52ddafb2f1db1e4ae02449547bb";
+      sha256 = "18bf9qk25f96wkvll0iq5d7cjr2fgvhilzm8in6wphgqwmy83hgi";
     };
     meta.homepage = "https://github.com/echasnovski/mini.base16/";
   };
@@ -461,36 +461,36 @@
 
   mini-jump = buildVimPluginFrom2Nix {
     pname = "mini.jump";
-    version = "2022-11-03";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.jump";
-      rev = "9acac828b865a7ec316e378ca4c67619dd34a5e3";
-      sha256 = "1fkns2gkliw7kqj02mv4kr11zsf6dw9bgawf82zlrky96yn40l7p";
+      rev = "0c7af40be57abc879a3a6bc0a59e026fa74ae36d";
+      sha256 = "0gd6i9yisai1s328ngs69mbfpij4nh9sa4c9s5fjl5nlzsadfr41";
     };
     meta.homepage = "https://github.com/echasnovski/mini.jump/";
   };
 
   mini-jump2d = buildVimPluginFrom2Nix {
     pname = "mini.jump2d";
-    version = "2022-11-03";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.jump2d";
-      rev = "57b445c585c4907c6003ef6fe2c56b8b589bdc23";
-      sha256 = "0bmksjkzn84z7k96nqwb9qy4rh5c3048i8hbxbkcqmcgnx9gln6j";
+      rev = "61eaad2ba82dae7f02e4374c98b0e13ec5d307b1";
+      sha256 = "0r69wkxmnxnkhyqwwg9cm5ym21llbr774hyi1pdgg5n4890hk2wp";
     };
     meta.homepage = "https://github.com/echasnovski/mini.jump2d/";
   };
 
   mini-map = buildVimPluginFrom2Nix {
     pname = "mini.map";
-    version = "2022-10-30";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.map";
-      rev = "cdb894c28dcf30d7e0eece0cfab0261dfd562c06";
-      sha256 = "19668s2kqcyhswi8v3b04kl2mwl8s9kf5xw05xrjb83iw2nnxpzl";
+      rev = "2da52be0f26d5e66c437729516c3f0812e0b9f16";
+      sha256 = "1psv23bpscqz54ldkmlnhhdi2lfy8wiwd43igh56g1074xxx3rd7";
     };
     meta.homepage = "https://github.com/echasnovski/mini.map/";
   };
@@ -509,12 +509,12 @@
 
   mini-nvim = buildVimPluginFrom2Nix {
     pname = "mini.nvim";
-    version = "2022-11-03";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.nvim";
-      rev = "993e8d200ff6d2a354e717b2beb7b31bd91b2ee4";
-      sha256 = "02gbnc28bg9sjhjmclwrkf2nh3spqibhan0xy0qdnlswms2cpp6s";
+      rev = "1f20d07b1ee8b79537559ac02bef9a33440a38b5";
+      sha256 = "0s03nmkprn47rz17jdn34v1fr4bd51imnrrc4wj0qrwdphrd3qq7";
     };
     meta.homepage = "https://github.com/echasnovski/mini.nvim/";
   };
@@ -533,12 +533,12 @@
 
   mini-sessions = buildVimPluginFrom2Nix {
     pname = "mini.sessions";
-    version = "2022-11-03";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.sessions";
-      rev = "dede140eb7eb9a39cccd5e70a279ea341579df75";
-      sha256 = "157gqq0p7k2q34g5qbby5g0bc28axwk30l2nmkq7fga3mj0xm2pw";
+      rev = "0377fbd47f6a536f10f7ca4646136b4b9e595b5f";
+      sha256 = "1bn70sw9xb7wkdcvkzp695nln5jfdjnc70w7m9a039348fphh4gi";
     };
     meta.homepage = "https://github.com/echasnovski/mini.sessions/";
   };
@@ -557,24 +557,24 @@
 
   mini-statusline = buildVimPluginFrom2Nix {
     pname = "mini.statusline";
-    version = "2022-11-03";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.statusline";
-      rev = "03eeef26dd1b976fdc1e7b0063ae60a918228136";
-      sha256 = "0j4pkcx0pnkgyyfr6ny9mr8l46nglwyb9dvxi24qkwag2if7cjjw";
+      rev = "52b88d35862443f981e765efadd1566339ba5b7b";
+      sha256 = "1sfz1rnck8ajr57mrjg9fbj9s61b5z55v39xrncznd48awbdvbi4";
     };
     meta.homepage = "https://github.com/echasnovski/mini.statusline/";
   };
 
   mini-surround = buildVimPluginFrom2Nix {
     pname = "mini.surround";
-    version = "2022-11-03";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.surround";
-      rev = "46b44644839ccdef97e73eb0e4c51d5b2d946ded";
-      sha256 = "1zqrm590vzrm66b7x0jiz2iiqjb5hhnzxbl8iai70pr22qa0bq7k";
+      rev = "0ea1977566468a8b7f0c769c9ceafe3b245377c9";
+      sha256 = "1vny27hdiylr11dmgrx2p4xyfan5zbzyhrsqaw0pvh56xqvyxqg5";
     };
     meta.homepage = "https://github.com/echasnovski/mini.surround/";
   };
@@ -593,12 +593,12 @@
 
   mini-test = buildVimPluginFrom2Nix {
     pname = "mini.test";
-    version = "2022-11-03";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.test";
-      rev = "ff9b7558a0be1ec7091bcf1766ebf8a80ff632bd";
-      sha256 = "1sdyahxz2ayry6ac8qkfvi50y626q0ggxwxz1362jn7lj7bl8pf2";
+      rev = "7509c4cc9000321b9333be7b1805a1fd9531f0ab";
+      sha256 = "1h5412a7rqql352pajlvflyswlf551410nrwmk6vr0waa0z9258n";
     };
     meta.homepage = "https://github.com/echasnovski/mini.test/";
   };
@@ -617,12 +617,12 @@
 
   neodev-nvim = buildVimPluginFrom2Nix {
     pname = "neodev.nvim";
-    version = "2022-11-05";
+    version = "2022-11-06";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "neodev.nvim";
-      rev = "b543daedfa65fe1526403d5686850f91ec47f05b";
-      sha256 = "10bcfx1ixf9n4l9zac2i3q9201nn27ll69ljz1bbnm3mcdi3b4m1";
+      rev = "b00d5243aa437f192cce4f61f6e97268ce538aa2";
+      sha256 = "1gcc5wy1svcgnd08pny46yawnzj4zm2xgkyv2hjiyhjjhj9w187w";
     };
     meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
@@ -737,12 +737,12 @@
 
   nvim-dap = buildVimPluginFrom2Nix {
     pname = "nvim-dap";
-    version = "2022-11-04";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "mfussenegger";
       repo = "nvim-dap";
-      rev = "6fd283f540f4af6fbd80d6d72e1a0ea6c245aab0";
-      sha256 = "0ivl3g3083vai3dyrgqrjd2sm9n5jl8pd28zqn3dx5q3isjm7b60";
+      rev = "61643680dcb771a29073cd432894e2f81a7c2ae3";
+      sha256 = "0qcf6rsg610wcyz4663jjl0d6570pyxg66x6k01yyxbjsqv0jdzm";
     };
     meta.homepage = "https://github.com/mfussenegger/nvim-dap/";
   };
@@ -761,12 +761,12 @@
 
   nvim-dap-ui = buildVimPluginFrom2Nix {
     pname = "nvim-dap-ui";
-    version = "2022-11-03";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "rcarriga";
       repo = "nvim-dap-ui";
-      rev = "6a8271505e95913b82305eff63406ef22baad778";
-      sha256 = "139qh9m28zv11xy9rjplpwb4r7g4slxcwwfzvha53bzpshn0w2v6";
+      rev = "0f385f7f5268f408a546772c049271121b0d71c9";
+      sha256 = "0rrjpmsn4r7aicly4lfmzmjy4a9k1mb6d3vl3nkj8g0hir237jw2";
     };
     meta.homepage = "https://github.com/rcarriga/nvim-dap-ui/";
   };
@@ -869,12 +869,12 @@
 
   nvim-treesitter = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter";
-    version = "2022-11-03";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter";
-      rev = "58f61e563fadd1788052586f4d6869a99022df3c";
-      sha256 = "075645lkq6cr22kfab4kz7ay1cf5r0bg41r3nbhpdb52g1klrz5k";
+      rev = "3256eb2cc5b2cbe17d1d55a6e5605ab55be25693";
+      sha256 = "1gpi46b1z8a3n7z9ydxnsqkc53jbh32qnw7b328wyfdmg258fb6c";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
   };
@@ -893,12 +893,12 @@
 
   nvim-web-devicons = buildVimPluginFrom2Nix {
     pname = "nvim-web-devicons";
-    version = "2022-10-17";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "nvim-tree";
       repo = "nvim-web-devicons";
-      rev = "9061e2d355ecaa2b588b71a35e7a11358a7e51e1";
-      sha256 = "04qzvk4cpvs1yariwr5mw9034vfx182drdpz2iwplr5dqlmkv64j";
+      rev = "520776f30a3b39ed56402bffbdae57549e778b40";
+      sha256 = "177gsxp2s2qkn6xr5rz9y45mns31v35g6dc93azj0h3dpa2ds2km";
     };
     meta.homepage = "https://github.com/nvim-tree/nvim-web-devicons/";
   };
@@ -929,12 +929,12 @@
 
   rust-tools-nvim = buildVimPluginFrom2Nix {
     pname = "rust-tools.nvim";
-    version = "2022-09-02";
+    version = "2022-11-06";
     src = fetchFromGitHub {
       owner = "simrat39";
       repo = "rust-tools.nvim";
-      rev = "86a2b4e31f504c00715d0dd082a6b8b5d4afbf03";
-      sha256 = "1623d6s05wx2qfcrsfg0avx9cwp0ahz4sbpnp2b3miq7r0nbl7yd";
+      rev = "99fd1238c6068d0637df30b6cee9a264334015e9";
+      sha256 = "0y95kj77p4zjskn6j7bp04scrlgg5l8827zc3m6f18cgcy1qnngf";
     };
     meta.homepage = "https://github.com/simrat39/rust-tools.nvim/";
   };
@@ -1109,12 +1109,12 @@
 
   vim-matchup = buildVimPluginFrom2Nix {
     pname = "vim-matchup";
-    version = "2022-10-27";
+    version = "2022-11-05";
     src = fetchFromGitHub {
       owner = "andymass";
       repo = "vim-matchup";
-      rev = "09576fd767cc55ca934a95f9bdcf91aa12c32cd0";
-      sha256 = "08909dsf8gll8j3rky6zf9i4jlcp2cfkwmy15xmcm6avcy1ziagg";
+      rev = "d37643c3d276799ce5f55fad5d6a7bbd6d185a9f";
+      sha256 = "1nd3xb5cd6k5hkmvgh4hd6b88nckqampvahaaifwsyy8s2cnjqvq";
     };
     meta.homepage = "https://github.com/andymass/vim-matchup/";
   };
