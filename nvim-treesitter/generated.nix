@@ -694,12 +694,12 @@
 
   julia = buildGrammar {
     language = "julia";
-    version = "2f885ef";
+    version = "bedd19f";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-julia";
-      rev = "2f885efd38a6a6abfefc81d53ecdd99812dcde69";
-      hash = "sha256-KnjAPlXxvXF1J7OEAYb5W8Xxu//3NUfG5dCFxFGTnPo=";
+      rev = "bedd19f3c3d745c3da8451a35c7bfc5f48d07ee6";
+      hash = "sha256-bkq57PlhDFqbeQoKxNu3IruQk3RuMhTTd/JF41wG1zI=";
     };
   };
 
@@ -1078,12 +1078,12 @@
 
   racket = buildGrammar {
     language = "racket";
-    version = "69ca563";
+    version = "09cb27a";
     source = fetchFromGitHub {
       owner = "6cdh";
       repo = "tree-sitter-racket";
-      rev = "69ca563af3bcf9d67220532e0814786f2dc34db1";
-      hash = "sha256-GLBi/NM7dFsPtmZWbFm/vM0gOwqbihOqXnxMR5k8hWE=";
+      rev = "09cb27a06415bce529a26774a842f5a80d50d362";
+      hash = "sha256-+chEzpHh4eBTEpx2+sFXDMco18zNPFUu5HMQ3dB+LwI=";
     };
   };
 
@@ -1177,12 +1177,12 @@
 
   scheme = buildGrammar {
     language = "scheme";
-    version = "af0fd1f";
+    version = "bdcd2c8";
     source = fetchFromGitHub {
       owner = "6cdh";
       repo = "tree-sitter-scheme";
-      rev = "af0fd1fa452cb2562dc7b5c8a8c55551c39273b9";
-      hash = "sha256-K3+zmykjq2DpCnk17Ko9LOyGQTBZb1/dgVXIVynCYd4=";
+      rev = "bdcd2c8496701153506a9e3e1b76dfed852873ba";
+      hash = "sha256-KfcWGE92nx9lrs3V/lKeE0pPqCqFC/mHamkyryrcdoo=";
     };
   };
 
