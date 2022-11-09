@@ -584,12 +584,12 @@
 
   hocon = buildGrammar {
     language = "hocon";
-    version = "dd53316";
+    version = "c390f10";
     source = fetchFromGitHub {
       owner = "antosha417";
       repo = "tree-sitter-hocon";
-      rev = "dd53316168106fd921e7234d75aa94e47b119479";
-      hash = "sha256-NLtXwwPzjQhtg2pcSEh3d0LjeVG2wJ2d2N27ESuUSHo=";
+      rev = "c390f10519ae69fdb03b3e5764f5592fb6924bcc";
+      hash = "sha256-9Zo3YYoo9mJ4Buyj7ofSrlZURrwstBo0vgzeTq1jMGw=";
     };
   };
 
