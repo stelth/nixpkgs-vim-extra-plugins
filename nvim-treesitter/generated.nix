@@ -81,12 +81,12 @@
 
   c_sharp = buildGrammar {
     language = "c_sharp";
-    version = "aa65ad5";
+    version = "3ef3f7f";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-c-sharp";
-      rev = "aa65ad51f04e4c9d41dce117597f2b4d24a16bfb";
-      hash = "sha256-m/hR7Q/PGma8m/dTW9L4uf8acS+X6q+vymBbYL9t24g=";
+      rev = "3ef3f7f99e16e528e6689eae44dff35150993307";
+      hash = "sha256-xBRSwuodQTrKHjwx3JVgnwsAkp9EO+6su3hc2d+6DBQ=";
     };
   };
 

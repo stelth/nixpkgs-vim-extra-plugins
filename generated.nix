@@ -172,12 +172,12 @@
 
   gitsigns-nvim = buildNeovimPluginFrom2Nix {
     pname = "gitsigns.nvim";
-    version = "2022-11-08";
+    version = "2022-11-09";
     src = fetchFromGitHub {
       owner = "lewis6991";
       repo = "gitsigns.nvim";
-      rev = "9d73a30e9cc524ab3d1c7095c74de9fb87684461";
-      sha256 = "1nbr1cr8zc05gqjhxjf8pvscbmy41kcqlkkqcrhmw6m94nzckz8j";
+      rev = "9ff7dfb051e5104088ff80556203634fc8f8546d";
+      sha256 = "0cfssyyhcjndwr2xlk91rxzyir4ng5hk1f4fgij5hgrhhh3wgjdv";
     };
     meta.homepage = "https://github.com/lewis6991/gitsigns.nvim/";
   };
@@ -653,12 +653,12 @@
 
   noice-nvim = buildVimPluginFrom2Nix {
     pname = "noice.nvim";
-    version = "2022-11-08";
+    version = "2022-11-09";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "edc8df60a16bb0f2709110b29fef98c6cc616d42";
-      sha256 = "0gydjg5aa0wcjpayls4gvknrrjzc787id31p3v0ch5glqxvkc7hl";
+      rev = "99b1339cb2adc7f9d3586a6e4c2c6777e915eb49";
+      sha256 = "0az42fr7s4azy12h935m8fbxr10p7cvz70c1pl1a4r7xgsn7nkkf";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
@@ -713,12 +713,12 @@
 
   nvim-cmp = buildNeovimPluginFrom2Nix {
     pname = "nvim-cmp";
-    version = "2022-10-29";
+    version = "2022-11-10";
     src = fetchFromGitHub {
       owner = "hrsh7th";
       repo = "nvim-cmp";
-      rev = "9bb8ee6e2d6ab3c8cc53323b79f05886bc722faa";
-      sha256 = "1z7b53yxamph255rvrs5a4pq5hbqa0nbwpdh1xy8fvfc71gap80n";
+      rev = "16ec8c6b1208ad2221c827a728ca241d87c3acac";
+      sha256 = "0jipjsrpnscz3vngr4i23qddjlp13z9c0yc2mw1fw5swraxg50yb";
     };
     meta.homepage = "https://github.com/hrsh7th/nvim-cmp/";
   };
@@ -797,12 +797,12 @@
 
   nvim-lspconfig = buildVimPluginFrom2Nix {
     pname = "nvim-lspconfig";
-    version = "2022-11-07";
+    version = "2022-11-09";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "nvim-lspconfig";
-      rev = "f40eae01b8e353e9d6e61792567c7d3b9856fd20";
-      sha256 = "0qb42zdss3429nvsid7faysbhvzs6xp3cg4v1jmh228yr2hqgghs";
+      rev = "7429f810f0998688b50cd304a0d25e846513dfc0";
+      sha256 = "06h88bmag9ldqzhdhw5iv00rj7il1ryzpwkbd34byrjbqhvi26xc";
     };
     meta.homepage = "https://github.com/neovim/nvim-lspconfig/";
   };
@@ -821,12 +821,12 @@
 
   nvim-notify = buildVimPluginFrom2Nix {
     pname = "nvim-notify";
-    version = "2022-11-08";
+    version = "2022-11-09";
     src = fetchFromGitHub {
       owner = "rcarriga";
       repo = "nvim-notify";
-      rev = "ba270debc292cf173f5907ab67325947334c6dd8";
-      sha256 = "1zwmzvy900xdqzp7p8dicp7gr6x7256j30y9aqq1s06lskkg9w31";
+      rev = "30e6b5a710319e354c3e362deb7819cb2135c417";
+      sha256 = "0wg4zh8n25q9yhfhpgf9vimgcq5mim3nfj332fzh13vzn2w9z4jp";
     };
     meta.homepage = "https://github.com/rcarriga/nvim-notify/";
   };
@@ -869,12 +869,12 @@
 
   nvim-treesitter = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter";
-    version = "2022-11-08";
+    version = "2022-11-09";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter";
-      rev = "d37fc85a4060352bcd4d8cbed0907cba442deb90";
-      sha256 = "0hf5raqbj4ygvvqhvshrdyvfrch4wjz8ca62vzq584pb6jqpdwzc";
+      rev = "1942f3554184e9d9dfb90dcc6542047b8f6511f2";
+      sha256 = "1mn2lm47y7crrqd8a3gc96a4hmc7d9kh5klbq3mlw8gfli999lkh";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
   };
@@ -905,12 +905,12 @@
 
   peek-nvim = buildVimPluginFrom2Nix {
     pname = "peek.nvim";
-    version = "2022-11-03";
+    version = "2022-11-09";
     src = fetchFromGitHub {
       owner = "toppair";
       repo = "peek.nvim";
-      rev = "4e72779a82cbe65c8a6b66a0464ccd8ae6700170";
-      sha256 = "08w2mq8nhbyqsaym8lfrn5pgvak4kcqnsvdr0v63gmpixnwwd32f";
+      rev = "eacda74ae929ff3c122571c416588ccb3484e978";
+      sha256 = "1hsyqgcj07nywdsxxwxd0q3nb03wh21iwhsfm9lczd26l83yry2g";
     };
     meta.homepage = "https://github.com/toppair/peek.nvim/";
   };
@@ -1178,6 +1178,18 @@
       sha256 = "04i8d7dlxmzgxiysy9jffxkpkw8h3qjkrv3l74z7pfksdmhlbbwz";
     };
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
+  };
+
+  fidget-nvim = buildVimPluginFrom2Nix {
+    pname = "fidget.nvim";
+    version = "2022-10-25";
+    src = fetchFromGitHub {
+      owner = "j-hui";
+      repo = "fidget.nvim";
+      rev = "2cf9997d3bde2323a1a0934826ec553423005a26";
+      sha256 = "04y9lm3cm4ik0hi5b95p1wch6l460wn29dxcrn9abqbsfzwnv3d7";
+    };
+    meta.homepage = "https://github.com/j-hui/fidget.nvim/";
   };
 
 
