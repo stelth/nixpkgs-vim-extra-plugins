@@ -73,6 +73,11 @@ final: prev: let
         ];
       }
     );
+    telescope-fzf-native-nvim = super.telescope-fzf-native-nvim.overrideAttrs (_: {
+      dependencies = with self; [telescope-nvim];
+      buildPhase = "make";
+      meta.platforms = lib.platforms.all;
+    });
   };
 in {
   vimExtraPlugins = prev.vimExtraPlugins.extend (lib.composeManyExtensions [
