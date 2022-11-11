@@ -629,24 +629,24 @@
 
   neodev-nvim = buildVimPluginFrom2Nix {
     pname = "neodev.nvim";
-    version = "2022-11-09";
+    version = "2022-11-11";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "neodev.nvim";
-      rev = "49517dbd66a688d45cfca46ca4eb891965b242dc";
-      sha256 = "00slwrjkqs81hkm9frfzr67mha37m626sznl19f88pfb5xx0sakk";
+      rev = "0c57326e72ec858ca0a985bd43d6c21582fe506e";
+      sha256 = "10is60532z1hpidqcdnl8zyhsc22h7qxcmskhszgl75crnxfhxwm";
     };
     meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
 
   neogen = buildVimPluginFrom2Nix {
     pname = "neogen";
-    version = "2022-11-02";
+    version = "2022-11-10";
     src = fetchFromGitHub {
       owner = "danymat";
       repo = "neogen";
-      rev = "da04629ffa27bff6265c2c03927e4fd96ed1fc70";
-      sha256 = "1q1jic77j4hnlwg6m61s0s6rzds7d2wdg2ainbqhyjxr18gpm5p4";
+      rev = "bc48a0627cc74a700665e7cdb4fd61e9ccd0c735";
+      sha256 = "1xzcrmzjczkfk7rgfimkznzhw8kjvjk65y6a9dsig0m7a1m4sh94";
     };
     meta.homepage = "https://github.com/danymat/neogen/";
   };
@@ -665,12 +665,12 @@
 
   noice-nvim = buildVimPluginFrom2Nix {
     pname = "noice.nvim";
-    version = "2022-11-10";
+    version = "2022-11-11";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "860c8c9edfd4659aa78e14cca142e5cb0bd54897";
-      sha256 = "15psplrd8fwih4rlrhj2qnksxbifjxlihk4dsrabhqwx305ywbzy";
+      rev = "3489e57e198e4b161169a538d2bd71e018de41d0";
+      sha256 = "0xyk6aiq992mj8lfhlgvzzx0q0zmc2hg0k2z1f5j8b74zzd0i9gk";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
@@ -701,12 +701,12 @@
 
   null-ls-nvim = buildVimPluginFrom2Nix {
     pname = "null-ls.nvim";
-    version = "2022-11-08";
+    version = "2022-11-10";
     src = fetchFromGitHub {
       owner = "jose-elias-alvarez";
       repo = "null-ls.nvim";
-      rev = "9c19fb55154e53dadb986d5aceed1c53e3131b35";
-      sha256 = "0m5ma6iijs2khpj9dyqrns7f6g1n7c85gjjjj3273wdg7alps9mj";
+      rev = "07d4ed4c6b561914aafd787453a685598bec510f";
+      sha256 = "1avfwys8lyd6fr2f7bfjr5nlvqw5bn5n5afs8j8j33r8ssi3g3na";
     };
     meta.homepage = "https://github.com/jose-elias-alvarez/null-ls.nvim/";
   };
@@ -725,12 +725,12 @@
 
   nvim-cmp = buildNeovimPluginFrom2Nix {
     pname = "nvim-cmp";
-    version = "2022-11-10";
+    version = "2022-11-11";
     src = fetchFromGitHub {
       owner = "hrsh7th";
       repo = "nvim-cmp";
-      rev = "16ec8c6b1208ad2221c827a728ca241d87c3acac";
-      sha256 = "0jipjsrpnscz3vngr4i23qddjlp13z9c0yc2mw1fw5swraxg50yb";
+      rev = "c37ea78941b93ef6b6bdd8274649ea8a0ce4f87a";
+      sha256 = "1h4iwv3q9vlyi5bpsv5fbn6pcn0fvyplvklv35rmw4s15irxx9hr";
     };
     meta.homepage = "https://github.com/hrsh7th/nvim-cmp/";
   };
@@ -833,24 +833,24 @@
 
   nvim-notify = buildVimPluginFrom2Nix {
     pname = "nvim-notify";
-    version = "2022-11-09";
+    version = "2022-11-10";
     src = fetchFromGitHub {
       owner = "rcarriga";
       repo = "nvim-notify";
-      rev = "30e6b5a710319e354c3e362deb7819cb2135c417";
-      sha256 = "0wg4zh8n25q9yhfhpgf9vimgcq5mim3nfj332fzh13vzn2w9z4jp";
+      rev = "43c54aec682854b39a7e0e89b4c3ba00426d74a8";
+      sha256 = "0ga67fj7wf54mvrbsq423ccw3rvsgrd66dg0pq7cz7x9i7v5dz4d";
     };
     meta.homepage = "https://github.com/rcarriga/nvim-notify/";
   };
 
   nvim-scrollbar = buildVimPluginFrom2Nix {
     pname = "nvim-scrollbar";
-    version = "2022-10-26";
+    version = "2022-11-10";
     src = fetchFromGitHub {
       owner = "petertriho";
       repo = "nvim-scrollbar";
-      rev = "49b5a0f2e2d275df4f2e224f3e1cd7f4c64ecafe";
-      sha256 = "0i6g9ww2jvvqb45fqvqfa2vwpgq8jpyndmvjv2amirvk1ilhx2i8";
+      rev = "bd73e6816a23b8245026ad892ea7f44ce1e24b70";
+      sha256 = "1aksiksh4jasi0c6h18bjgpn7lf5592pq1g84yw63hzh3abgi67m";
     };
     meta.homepage = "https://github.com/petertriho/nvim-scrollbar/";
   };
@@ -989,24 +989,24 @@
 
   telescope-nvim = buildVimPluginFrom2Nix {
     pname = "telescope.nvim";
-    version = "2022-11-06";
+    version = "2022-11-11";
     src = fetchFromGitHub {
       owner = "nvim-telescope";
       repo = "telescope.nvim";
-      rev = "cc77713294892c5bbce26adee665114250624e6b";
-      sha256 = "15570726pdndzagpp2g4w83wrgj0sifbbmirpc9d3fwdnys5gxqz";
+      rev = "7a4ffef931769c3fe7544214ed7ffde5852653f6";
+      sha256 = "0n2cz7pgnn5wbklw0wax0k0gvhbf5gc1rs7i9d1bmwrljipgi4ak";
     };
     meta.homepage = "https://github.com/nvim-telescope/telescope.nvim/";
   };
 
   todo-comments-nvim = buildVimPluginFrom2Nix {
     pname = "todo-comments.nvim";
-    version = "2022-11-08";
+    version = "2022-11-10";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "todo-comments.nvim";
-      rev = "bca0e00644c22a3eecedce703c0db080dd6bdc55";
-      sha256 = "1rb8w2xgnwkf2vv3fwrjmqzw06iwhfmzb33ya01kbs077hp5qyc9";
+      rev = "d73693012b5dd0dae7a49504b93dcc79d189c733";
+      sha256 = "0z6918hri3r4zws15l598rixcbvdj1g82lv5h68baxlg3n7bzmaz";
     };
     meta.homepage = "https://github.com/folke/todo-comments.nvim/";
   };
@@ -1025,12 +1025,12 @@
 
   tokyonight-nvim = buildVimPluginFrom2Nix {
     pname = "tokyonight.nvim";
-    version = "2022-11-08";
+    version = "2022-11-11";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "tokyonight.nvim";
-      rev = "47916dfc48cdb38908bbe43c8bc3bdcb5a662530";
-      sha256 = "0yppnjp57v7s8wn6mjfcg7zn7napqcjjr5y87pa4j67lf3rjjq4d";
+      rev = "03243b13b5040d371c90f85be613ca9fa89348d2";
+      sha256 = "16g0aridafbsavhhz8daw082ng58k4lqd2ra0cqnx36hw6ikh0g5";
     };
     meta.homepage = "https://github.com/folke/tokyonight.nvim/";
   };
@@ -1169,12 +1169,12 @@
 
   yanky-nvim = buildVimPluginFrom2Nix {
     pname = "yanky.nvim";
-    version = "2022-11-08";
+    version = "2022-11-10";
     src = fetchFromGitHub {
       owner = "gbprod";
       repo = "yanky.nvim";
-      rev = "b43ed12a3d4f2814a6648137def522125d8e374d";
-      sha256 = "09578p98zx7c66l6yf7wn6csss8gz5scy86lwzyifjj1nia1mlq5";
+      rev = "b0a209c53405cb25231cdc9d90ea021cea93e160";
+      sha256 = "006b8wyg4vl6rpsppayrj0g8j587da4br105b3m4gv0fffj0qxk2";
       fetchSubmodules = true;
     };
     meta.homepage = "https://github.com/gbprod/yanky.nvim/";
