@@ -1067,12 +1067,12 @@
 
   r = buildGrammar {
     language = "r";
-    version = "0f4f66e";
+    version = "80efda5";
     source = fetchFromGitHub {
       owner = "r-lib";
       repo = "tree-sitter-r";
-      rev = "0f4f66e5050037b759ea040dafd596bcdda1de94";
-      hash = "sha256-5rgc1ZmzFT3Hgv0GKVu5Ns21Nc3Ck8NW2naslvKzguM=";
+      rev = "80efda55672d1293aa738f956c7ae384ecdc31b4";
+      hash = "sha256-qUfyITSZRnSm4zZHfkM/Dm5AeFEFLcCtRrInx0Xs/tg=";
     };
   };
 

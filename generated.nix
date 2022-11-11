@@ -124,12 +124,12 @@
 
   diffview-nvim = buildVimPluginFrom2Nix {
     pname = "diffview.nvim";
-    version = "2022-10-26";
+    version = "2022-11-11";
     src = fetchFromGitHub {
       owner = "sindrets";
       repo = "diffview.nvim";
-      rev = "94a3422415a092db1f2e00af5bd7db4ec1c6b8d7";
-      sha256 = "01cg3dhwfzjmpz8sh3qppr1qdyrvvpiax5dfzqq7bs8jk6niyh3p";
+      rev = "e0c81186dcb96f9199024cbe3400ed367e716037";
+      sha256 = "071ghjvyzh0zlzwx3qrb5chc7wmz2ab21m2wiqjkkdi4ic9pdjmv";
     };
     meta.homepage = "https://github.com/sindrets/diffview.nvim/";
   };
@@ -485,12 +485,12 @@
 
   mini-jump2d = buildVimPluginFrom2Nix {
     pname = "mini.jump2d";
-    version = "2022-11-05";
+    version = "2022-11-11";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.jump2d";
-      rev = "61eaad2ba82dae7f02e4374c98b0e13ec5d307b1";
-      sha256 = "0r69wkxmnxnkhyqwwg9cm5ym21llbr774hyi1pdgg5n4890hk2wp";
+      rev = "6f999c908306b281252f1304bb7411e8ffd0ff75";
+      sha256 = "0n43fihdaiydzvcshlpvhv587kxk3n2kqvza2avsr50f4gshqs6h";
     };
     meta.homepage = "https://github.com/echasnovski/mini.jump2d/";
   };
@@ -521,12 +521,12 @@
 
   mini-nvim = buildVimPluginFrom2Nix {
     pname = "mini.nvim";
-    version = "2022-11-08";
+    version = "2022-11-11";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.nvim";
-      rev = "07ad48937204446ba350837a3413a5d19de22c36";
-      sha256 = "1f78xsb60h25xs7nszgnla4ga4wcbksqv6wr5fkxvqwlx65dhxk7";
+      rev = "9061584513afd62ad6a08757b0aacf5d656bdf36";
+      sha256 = "0pg2ckvnarmfmvqj57plg8bzflz3qxicbb5p699fhh5ggl2f5713";
     };
     meta.homepage = "https://github.com/echasnovski/mini.nvim/";
   };
@@ -641,12 +641,12 @@
 
   neogen = buildVimPluginFrom2Nix {
     pname = "neogen";
-    version = "2022-11-10";
+    version = "2022-11-11";
     src = fetchFromGitHub {
       owner = "danymat";
       repo = "neogen";
-      rev = "bc48a0627cc74a700665e7cdb4fd61e9ccd0c735";
-      sha256 = "1xzcrmzjczkfk7rgfimkznzhw8kjvjk65y6a9dsig0m7a1m4sh94";
+      rev = "91b093f11f9f7131d16a0a0f3de31d32a582d3d0";
+      sha256 = "15lajfykiz7kisgv8jrc1354shi3kgri1zvnvm7ahx3vh77h8mgd";
     };
     meta.homepage = "https://github.com/danymat/neogen/";
   };
@@ -729,8 +729,8 @@
     src = fetchFromGitHub {
       owner = "hrsh7th";
       repo = "nvim-cmp";
-      rev = "c37ea78941b93ef6b6bdd8274649ea8a0ce4f87a";
-      sha256 = "1h4iwv3q9vlyi5bpsv5fbn6pcn0fvyplvklv35rmw4s15irxx9hr";
+      rev = "69c85860d7c3b39e1be3881702e13a8440cd33fc";
+      sha256 = "1pj1q04lr7mqkrcl60pymj6i2ypxn4yqczwnjind0kn263wfihx8";
     };
     meta.homepage = "https://github.com/hrsh7th/nvim-cmp/";
   };
@@ -881,12 +881,12 @@
 
   nvim-treesitter = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter";
-    version = "2022-11-09";
+    version = "2022-11-11";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter";
-      rev = "1942f3554184e9d9dfb90dcc6542047b8f6511f2";
-      sha256 = "1mn2lm47y7crrqd8a3gc96a4hmc7d9kh5klbq3mlw8gfli999lkh";
+      rev = "47bda4171aad2ee990a35ddb6319ceedc4d78b5d";
+      sha256 = "080x8j4crwrnrh4dsnzwvjz3zanmd282ax9z703i7hfavvxrpg5n";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
   };
@@ -917,12 +917,12 @@
 
   peek-nvim = buildVimPluginFrom2Nix {
     pname = "peek.nvim";
-    version = "2022-11-09";
+    version = "2022-11-11";
     src = fetchFromGitHub {
       owner = "toppair";
       repo = "peek.nvim";
-      rev = "eacda74ae929ff3c122571c416588ccb3484e978";
-      sha256 = "1hsyqgcj07nywdsxxwxd0q3nb03wh21iwhsfm9lczd26l83yry2g";
+      rev = "18284b64f6c5103ccf18d6b53f288d2b2de2dc4a";
+      sha256 = "0jcspc2svphzhzyvx4xk71w728kdlqdbrqy5k61kygqf9r8camvs";
     };
     meta.homepage = "https://github.com/toppair/peek.nvim/";
   };
@@ -1029,8 +1029,8 @@
     src = fetchFromGitHub {
       owner = "folke";
       repo = "tokyonight.nvim";
-      rev = "03243b13b5040d371c90f85be613ca9fa89348d2";
-      sha256 = "16g0aridafbsavhhz8daw082ng58k4lqd2ra0cqnx36hw6ikh0g5";
+      rev = "ec144d94a8dbd9c8b4f5e50d933d67a37f589ed8";
+      sha256 = "1nns9y6k5ig8ihv6xcwcvxs8drnr3mrnnfmsyv5174xr524s00yl";
     };
     meta.homepage = "https://github.com/folke/tokyonight.nvim/";
   };
@@ -1109,12 +1109,12 @@
 
   vim-illuminate = buildVimPluginFrom2Nix {
     pname = "vim-illuminate";
-    version = "2022-11-02";
+    version = "2022-11-11";
     src = fetchFromGitHub {
       owner = "RRethy";
       repo = "vim-illuminate";
-      rev = "fb83d835eac50baeef49aac20c524a80727db0ac";
-      sha256 = "0xk5hhsb3gv3yrfcr3gnxj9g9bcdab8nlfi06q5c7nqgy4fryp6n";
+      rev = "a6d0b28ea7d6b9d139374be1f94a16bd120fcda3";
+      sha256 = "0wby253z3njala4syizy3m463gi8l45gcf7rj866r2jhnfxg9ba8";
     };
     meta.homepage = "https://github.com/RRethy/vim-illuminate/";
   };
@@ -1169,12 +1169,12 @@
 
   yanky-nvim = buildVimPluginFrom2Nix {
     pname = "yanky.nvim";
-    version = "2022-11-10";
+    version = "2022-11-11";
     src = fetchFromGitHub {
       owner = "gbprod";
       repo = "yanky.nvim";
-      rev = "b0a209c53405cb25231cdc9d90ea021cea93e160";
-      sha256 = "006b8wyg4vl6rpsppayrj0g8j587da4br105b3m4gv0fffj0qxk2";
+      rev = "eca407c457ff2c4d04d809045e3f3e9620c1dc2c";
+      sha256 = "0apbhg42fkzd0wg4cp679656nxg8f8rcvishdscch03wr3z9wia0";
       fetchSubmodules = true;
     };
     meta.homepage = "https://github.com/gbprod/yanky.nvim/";
@@ -1190,6 +1190,18 @@
       sha256 = "04i8d7dlxmzgxiysy9jffxkpkw8h3qjkrv3l74z7pfksdmhlbbwz";
     };
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
+  };
+
+  telescope-fzf-native-nvim = buildVimPluginFrom2Nix {
+    pname = "telescope-fzf-native.nvim";
+    version = "2022-09-06";
+    src = fetchFromGitHub {
+      owner = "nvim-telescope";
+      repo = "telescope-fzf-native.nvim";
+      rev = "65c0ee3d4bb9cb696e262bca1ea5e9af3938fc90";
+      sha256 = "0nyvhlalrgg6n793lp3yrxgszv5j0ln9sjbh45pxxg0wn15jxm45";
+    };
+    meta.homepage = "https://github.com/nvim-telescope/telescope-fzf-native.nvim/";
   };
 
 
