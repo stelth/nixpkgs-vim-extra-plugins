@@ -725,12 +725,12 @@
 
   nvim-cmp = buildNeovimPluginFrom2Nix {
     pname = "nvim-cmp";
-    version = "2022-11-11";
+    version = "2022-11-12";
     src = fetchFromGitHub {
       owner = "hrsh7th";
       repo = "nvim-cmp";
-      rev = "69c85860d7c3b39e1be3881702e13a8440cd33fc";
-      sha256 = "1pj1q04lr7mqkrcl60pymj6i2ypxn4yqczwnjind0kn263wfihx8";
+      rev = "c53dd36adcf512611fa7c523fced55447bfdbfa5";
+      sha256 = "05kgrqllfd3qd0mhqy99p3k5ikbkxpx05jr5fkxn8wv37w35pvy6";
     };
     meta.homepage = "https://github.com/hrsh7th/nvim-cmp/";
   };
@@ -845,12 +845,12 @@
 
   nvim-scrollbar = buildVimPluginFrom2Nix {
     pname = "nvim-scrollbar";
-    version = "2022-11-10";
+    version = "2022-11-12";
     src = fetchFromGitHub {
       owner = "petertriho";
       repo = "nvim-scrollbar";
-      rev = "bd73e6816a23b8245026ad892ea7f44ce1e24b70";
-      sha256 = "1aksiksh4jasi0c6h18bjgpn7lf5592pq1g84yw63hzh3abgi67m";
+      rev = "02b272d1ef260352896b12a0b0ce7c116b2c8ee3";
+      sha256 = "05wchqijinbdk5yk7k7gifc9x1j06l0wxspa08jdi1qhrv2rlllx";
     };
     meta.homepage = "https://github.com/petertriho/nvim-scrollbar/";
   };
@@ -985,6 +985,18 @@
       sha256 = "1rmxz31rbb4xiisnmgsmcmrx3r1cjhdrj82l99sdjp09cqavd2bw";
     };
     meta.homepage = "https://github.com/nvim-telescope/telescope-file-browser.nvim/";
+  };
+
+  telescope-fzf-native-nvim = buildVimPluginFrom2Nix {
+    pname = "telescope-fzf-native.nvim";
+    version = "2022-09-06";
+    src = fetchFromGitHub {
+      owner = "nvim-telescope";
+      repo = "telescope-fzf-native.nvim";
+      rev = "65c0ee3d4bb9cb696e262bca1ea5e9af3938fc90";
+      sha256 = "0nyvhlalrgg6n793lp3yrxgszv5j0ln9sjbh45pxxg0wn15jxm45";
+    };
+    meta.homepage = "https://github.com/nvim-telescope/telescope-fzf-native.nvim/";
   };
 
   telescope-nvim = buildVimPluginFrom2Nix {
@@ -1190,18 +1202,6 @@
       sha256 = "04i8d7dlxmzgxiysy9jffxkpkw8h3qjkrv3l74z7pfksdmhlbbwz";
     };
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
-  };
-
-  telescope-fzf-native-nvim = buildVimPluginFrom2Nix {
-    pname = "telescope-fzf-native.nvim";
-    version = "2022-09-06";
-    src = fetchFromGitHub {
-      owner = "nvim-telescope";
-      repo = "telescope-fzf-native.nvim";
-      rev = "65c0ee3d4bb9cb696e262bca1ea5e9af3938fc90";
-      sha256 = "0nyvhlalrgg6n793lp3yrxgszv5j0ln9sjbh45pxxg0wn15jxm45";
-    };
-    meta.homepage = "https://github.com/nvim-telescope/telescope-fzf-native.nvim/";
   };
 
 
