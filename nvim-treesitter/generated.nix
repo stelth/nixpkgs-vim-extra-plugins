@@ -694,12 +694,12 @@
 
   julia = buildGrammar {
     language = "julia";
-    version = "bedd19f";
+    version = "58d0701";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-julia";
-      rev = "bedd19f3c3d745c3da8451a35c7bfc5f48d07ee6";
-      hash = "sha256-bkq57PlhDFqbeQoKxNu3IruQk3RuMhTTd/JF41wG1zI=";
+      rev = "58d0701550b4cce02acf433eedada03b634cc524";
+      hash = "sha256-ywliyXSL6A/NtqPnjRU++4C26H9MO6slz/3bIYFgGp4=";
     };
   };
 
