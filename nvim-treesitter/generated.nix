@@ -1276,14 +1276,14 @@
 
   swift = buildGrammar {
     language = "swift";
-    version = "d7808f0";
+    version = "25f8de3";
     source = fetchFromGitHub {
       owner = "alex-pinkus";
       repo = "tree-sitter-swift";
       nativeBuildInputs = [ nodejs tree-sitter ];
       postFetch = "pushd $out && tree-sitter generate && popd";
-      rev = "d7808f030a44dc8768948042baa7566949785e2f";
-      hash = "sha256-7Gjpf2isOpeOV3ZMTMibK+F4C4v8ywOPin2Wv86s+AM=";
+      rev = "25f8de356e3c33099ed691bd3b8b5c0fe3a11e15";
+      hash = "sha256-KCmEE5O7EAA0uUcYkM/FpeEIn9tOqrJosSpYsBvivOk=";
     };
   };
 
@@ -1435,6 +1435,17 @@
       repo = "tree-sitter-verilog";
       rev = "4457145e795b363f072463e697dfe2f6973c9a52";
       hash = "sha256-l4DgThuP9EFU55YQ9lgvVP/8pXojOllQ870gRsBF3FE=";
+    };
+  };
+
+  vhs = buildGrammar {
+    language = "vhs";
+    version = "2f87b9d";
+    source = fetchFromGitHub {
+      owner = "charmbracelet";
+      repo = "tree-sitter-vhs";
+      rev = "2f87b9d973597e69552ecf6a4fe16470fbd8c44e";
+      hash = "sha256-G1ytXVBeGN1606aFrPdNFp3Khlg/BTFq2VS176Knb7k=";
     };
   };
 
