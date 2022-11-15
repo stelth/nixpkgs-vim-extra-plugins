@@ -316,12 +316,12 @@
 
   luasnip = buildVimPluginFrom2Nix {
     pname = "luasnip";
-    version = "2022-11-01";
+    version = "2022-11-14";
     src = fetchFromGitHub {
       owner = "l3mon4d3";
       repo = "luasnip";
-      rev = "619796e2477f7233e5fdff456240676a08482684";
-      sha256 = "1dy46rw1ba7px05h917hmc3mr11dp5q6jy9qs63f59jck24v0xqg";
+      rev = "95ccfd97b2087e22676e2797e4ef024ec5b6b0bb";
+      sha256 = "1nf6qmgyba3miagfjscvar715visabswhvs19qac71cj8j6dba5k";
       fetchSubmodules = true;
     };
     meta.homepage = "https://github.com/l3mon4d3/luasnip/";
@@ -629,12 +629,12 @@
 
   neodev-nvim = buildVimPluginFrom2Nix {
     pname = "neodev.nvim";
-    version = "2022-11-13";
+    version = "2022-11-14";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "neodev.nvim";
-      rev = "72eff54e7c61010d1ef58e3c4553e418fac8a926";
-      sha256 = "125mc05m0vh8386nk5g5pklqcil5ry5dqrxqsldyzjnq74x49lm8";
+      rev = "7f8b73f56d2055efb3b0550a92d62ea78b1e5e41";
+      sha256 = "129w99rafqxc78py1vdbqa3ampp0w581zfc2nkkwc6mxi8c2yn2w";
     };
     meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
@@ -773,12 +773,12 @@
 
   nvim-dap-ui = buildVimPluginFrom2Nix {
     pname = "nvim-dap-ui";
-    version = "2022-11-13";
+    version = "2022-11-14";
     src = fetchFromGitHub {
       owner = "rcarriga";
       repo = "nvim-dap-ui";
-      rev = "1e21b3b50e67700e32285b5a74e645311fd8bbea";
-      sha256 = "1ggyx26a1fqdz21p3wfiwp8i4aaihfnqwm1fyhbjwb47yq71h4z1";
+      rev = "a861906c8d1c457965c64ce6e83ea5e930bf8fd1";
+      sha256 = "0k13dybk67d2mbw269qr7afxyvl53vl1ij2587w2jad3gdvqlqgn";
     };
     meta.homepage = "https://github.com/rcarriga/nvim-dap-ui/";
   };
@@ -845,12 +845,12 @@
 
   nvim-scrollbar = buildVimPluginFrom2Nix {
     pname = "nvim-scrollbar";
-    version = "2022-11-12";
+    version = "2022-11-15";
     src = fetchFromGitHub {
       owner = "petertriho";
       repo = "nvim-scrollbar";
-      rev = "02b272d1ef260352896b12a0b0ce7c116b2c8ee3";
-      sha256 = "05wchqijinbdk5yk7k7gifc9x1j06l0wxspa08jdi1qhrv2rlllx";
+      rev = "3b8782747e2e364c4c51d0a08bd9496880f29c63";
+      sha256 = "09ifjm8xqcl11r5ch8ndj5vpbmn7r2wz9czdwsdqq0dymab8blpy";
     };
     meta.homepage = "https://github.com/petertriho/nvim-scrollbar/";
   };
@@ -905,12 +905,12 @@
 
   nvim-web-devicons = buildVimPluginFrom2Nix {
     pname = "nvim-web-devicons";
-    version = "2022-11-12";
+    version = "2022-11-14";
     src = fetchFromGitHub {
       owner = "nvim-tree";
       repo = "nvim-web-devicons";
-      rev = "c873091fe237f22c915905c4c0c3a82cbfce5f4d";
-      sha256 = "0dawjja54p98hyrc6qigpz7993lshn820vdg0v38kdz8q3rsxgq5";
+      rev = "3b1b794bc17b7ac3df3ae471f1c18f18d1a0f958";
+      sha256 = "1yxrv5kc5prfllgfcj2h8c8b74rydwdc8hm2fwbk1d0d9jcs66w7";
     };
     meta.homepage = "https://github.com/nvim-tree/nvim-web-devicons/";
   };
