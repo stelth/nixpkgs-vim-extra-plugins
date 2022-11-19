@@ -13,6 +13,17 @@
     };
   };
 
+  arduino = buildGrammar {
+    language = "arduino";
+    version = "c473c09";
+    source = fetchFromGitHub {
+      owner = "ObserverOfTime";
+      repo = "tree-sitter-arduino";
+      rev = "c473c09f23b13d9404ec5208fad3eddea89d70f8";
+      hash = "sha256-aAw1ZgKuMWozQzmENUhkdkHV0BjSGmTdH4Bna7EfDaQ=";
+    };
+  };
+
   astro = buildGrammar {
     language = "astro";
     version = "947e930";
@@ -26,12 +37,12 @@
 
   awk = buildGrammar {
     language = "awk";
-    version = "a799bc5";
+    version = "e559793";
     source = fetchFromGitHub {
       owner = "Beaglefoot";
       repo = "tree-sitter-awk";
-      rev = "a799bc5da7c2a84bc9a06ba5f3540cf1191e4ee3";
-      hash = "sha256-A/mvLYD9+Ms/nBdAebBF2edVkFUkWyz3TiEIt4G5iWc=";
+      rev = "e559793754c60c2cdf00cbb0409842d75f0a41dc";
+      hash = "sha256-qLY8lpeP0jKqhNxoSLwBTOfulK79/0KOjgq/rKWUBSA=";
     };
   };
 
@@ -551,12 +562,12 @@
 
   heex = buildGrammar {
     language = "heex";
-    version = "52b804b";
+    version = "2e1348c";
     source = fetchFromGitHub {
       owner = "connorlay";
       repo = "tree-sitter-heex";
-      rev = "52b804b1cb2d57e58d90090326d3ef9bd19cf16c";
-      hash = "sha256-fuxvX0AM9FEXVdpXu9/H6y7N+S+q6X/QYuLqKdb8PGI=";
+      rev = "2e1348c3cf2c9323e87c2744796cf3f3868aa82a";
+      hash = "sha256-6LREyZhdTDt3YHVRPDyqCaDXqcsPlHOoMFDb2B3+3xM=";
     };
   };
 
@@ -645,6 +656,17 @@
       repo = "tree-sitter-javascript";
       rev = "936d976a782e75395d9b1c8c7c7bf4ba6fe0d86b";
       hash = "sha256-uZW1L9ZE1YSZbwxiqSDiKycWv5mSRG4k4MlWFYoWRbw=";
+    };
+  };
+
+  jq = buildGrammar {
+    language = "jq";
+    version = "13990f5";
+    source = fetchFromGitHub {
+      owner = "flurie";
+      repo = "tree-sitter-jq";
+      rev = "13990f530e8e6709b7978503da9bc8701d366791";
+      hash = "sha256-pek2Vg1osMYAdx6DfVdZhuIDb26op3i2cfvMrf5v3xY=";
     };
   };
 
@@ -1122,12 +1144,12 @@
 
   rego = buildGrammar {
     language = "rego";
-    version = "6174f05";
+    version = "b2667c9";
     source = fetchFromGitHub {
       owner = "FallenAngel97";
       repo = "tree-sitter-rego";
-      rev = "6174f05f58e8c35d8c82323dd8c599b90b3171b3";
-      hash = "sha256-hO89IYKOHDLmuq+JrXJCi3tjxn3zMwjTnWxC6ld09YA=";
+      rev = "b2667c975f07b33be3ceb83bea5cfbad88095866";
+      hash = "sha256-y3w+gfjXb9N8Vf6ZrafP1j50Ap2KPaNfwo5h06EqHKM=";
     };
   };
 
@@ -1243,12 +1265,12 @@
 
   sql = buildGrammar {
     language = "sql";
-    version = "70c5026";
+    version = "4f1b912";
     source = fetchFromGitHub {
       owner = "derekstride";
       repo = "tree-sitter-sql";
-      rev = "70c50264ae022193adb364ffa7a767d765ed9857";
-      hash = "sha256-0HlkjL+Wy82SmVLSPXL7o3Y3l/zSDaPeBygLSvdCRZs=";
+      rev = "4f1b91246b43190e34957d9de9a0f3625879ba33";
+      hash = "sha256-g1dQ897JQwthConYMlGY25hsypr4weDsDCOWyafriw8=";
     };
   };
 

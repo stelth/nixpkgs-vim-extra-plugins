@@ -100,12 +100,12 @@
 
   comment-nvim = buildVimPluginFrom2Nix {
     pname = "comment.nvim";
-    version = "2022-10-14";
+    version = "2022-11-18";
     src = fetchFromGitHub {
       owner = "numtostr";
       repo = "comment.nvim";
-      rev = "ad7ffa8ed2279f1c8a90212c7d3851f9b783a3d6";
-      sha256 = "1gy2caam9g1zhnplj6d943p62n4kqgasi4wwgq1ry7gzlm2gi5v0";
+      rev = "5f01c1a89adafc52bf34e3bf690f80d9d726715d";
+      sha256 = "0qgb1vx5ipzcgglphhk9wck55hdscx6bdh4lr2y7f7wfxg54r3d6";
     };
     meta.homepage = "https://github.com/numtostr/comment.nvim/";
   };
@@ -136,12 +136,12 @@
 
   dressing-nvim = buildVimPluginFrom2Nix {
     pname = "dressing.nvim";
-    version = "2022-11-09";
+    version = "2022-11-18";
     src = fetchFromGitHub {
       owner = "stevearc";
       repo = "dressing.nvim";
-      rev = "8c1500069cafc9cfd93bf5521b17fde060008022";
-      sha256 = "144zpfs26yhj7mnfdigql5mxl32caww46p8y504a98ls4kja7lp7";
+      rev = "7894d5bc504deacf37f0a479a53fa4746fe30a45";
+      sha256 = "1jw8y86lq7k9d1ss4dg3ch1ij8c3b196g8giz881jipdkjy9q7w1";
     };
     meta.homepage = "https://github.com/stevearc/dressing.nvim/";
   };
@@ -725,12 +725,12 @@
 
   nvim-cmp = buildNeovimPluginFrom2Nix {
     pname = "nvim-cmp";
-    version = "2022-11-16";
+    version = "2022-11-18";
     src = fetchFromGitHub {
       owner = "hrsh7th";
       repo = "nvim-cmp";
-      rev = "a188be8559d625049010e3b814ad30a2447095bd";
-      sha256 = "0y0nnyyng2d39ma41al6vl39zws0dxdwdgx1w7qz9cabj0gpzp7p";
+      rev = "8a9e8a89eec87f86b6245d77f313a040a94081c1";
+      sha256 = "1gkm3pl06xvzxl5phk2g2hg8zqdpznn3jd5hjjspjfycgwscxbsx";
     };
     meta.homepage = "https://github.com/hrsh7th/nvim-cmp/";
   };
@@ -809,12 +809,12 @@
 
   nvim-lspconfig = buildVimPluginFrom2Nix {
     pname = "nvim-lspconfig";
-    version = "2022-11-13";
+    version = "2022-11-19";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "nvim-lspconfig";
-      rev = "2b802ab1e94d595ca5cc7c55f9d1fb9b17f9754c";
-      sha256 = "1k4nynkgq9wsx4302mqj3gkz07r0gi0kyzkn9bdczzz4yqr7aldi";
+      rev = "97718bb10260beb5cd22e40a62f890b2288bdb4b";
+      sha256 = "100wy6ahyb063z20lss4j7kaa0k32ylndhwd8724471mw5d6xl99";
     };
     meta.homepage = "https://github.com/neovim/nvim-lspconfig/";
   };
@@ -881,12 +881,12 @@
 
   nvim-treesitter = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter";
-    version = "2022-11-16";
+    version = "2022-11-18";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter";
-      rev = "dc27512e0019dcf4b6fbf0e0d5f285b4c9858308";
-      sha256 = "0r4by55md53d5lrp86k0hv02pvzizy5hdjznywgghr008a3zd6l2";
+      rev = "8a261e32ec50979c367448598844af2be0ed05f7";
+      sha256 = "0d33yg8s2779xrgjyfqzjb1vs4kr6f53q2jsdwjyhmd1639bjd5w";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
   };
@@ -965,12 +965,12 @@
 
   sqlite-lua = buildVimPluginFrom2Nix {
     pname = "sqlite.lua";
-    version = "2022-10-01";
+    version = "2022-11-18";
     src = fetchFromGitHub {
       owner = "kkharji";
       repo = "sqlite.lua";
-      rev = "47685f0adb89928fc1b2a9b812418680f29aaf27";
-      sha256 = "03l86sr766kpggxxk97rc3fy6j4igsprsh19wdq8mzk119nmww0i";
+      rev = "53cac3fdb5f5e4e63e243232b6eccf3c764ae18a";
+      sha256 = "0qp3b6jd6khp8wmc4s8n6sc518p6m44l7f7ln8pr91jz6qh5z30p";
     };
     meta.homepage = "https://github.com/kkharji/sqlite.lua/";
   };
