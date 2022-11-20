@@ -540,12 +540,12 @@
 
   haskell = buildGrammar {
     language = "haskell";
-    version = "bee6b49";
+    version = "aee3725";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-haskell";
-      rev = "bee6b49543e34c2967c6294a4b05e8bd2bf2da59";
-      hash = "sha256-/6WsOONbKS/5xM5xKa5i8LuWWkWiXZiLnOpvayj1Nxk=";
+      rev = "aee3725d02cf3bca5f307b35dd3a96a97e109b4e";
+      hash = "sha256-DmrrRht3g0hG+OsJCHRL+xW4jflLqtG57AuFf7zd26c=";
     };
   };
 
@@ -907,12 +907,12 @@
 
   norg = buildGrammar {
     language = "norg";
-    version = "dfac5ad";
+    version = "8ad2005";
     source = fetchFromGitHub {
       owner = "nvim-neorg";
       repo = "tree-sitter-norg";
-      rev = "dfac5ad2740a79b18ae849590a924e7bad3f1b23";
-      hash = "sha256-nH9Y2mYXRehqvq0kp1DkoI2dIAaCidFAxlKos8wZmks=";
+      rev = "8ad20059c6f128861c4506fff866150ffee1d6f4";
+      hash = "sha256-1cKH3k/nbZhZleINZ91M+glG1m2SlBJR/AP7mz/SAvI=";
     };
   };
 
