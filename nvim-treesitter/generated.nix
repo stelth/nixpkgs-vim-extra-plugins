@@ -415,12 +415,12 @@
 
   gitattributes = buildGrammar {
     language = "gitattributes";
-    version = "cee9f88";
+    version = "577a075";
     source = fetchFromGitHub {
       owner = "ObserverOfTime";
       repo = "tree-sitter-gitattributes";
-      rev = "cee9f8865694b29bb9e85e0b90805f92ad3fc47e";
-      hash = "sha256-Ne9D4c58AWvZz/2ytP0lJzKIss2hJtZFgSKsot9MOJE=";
+      rev = "577a075d46ea109905c5cb6179809df88da61ce9";
+      hash = "sha256-gBfLmNf7aaqMY3yMF7svFuqif43BAmmY1yYkvVcNUhI=";
     };
   };
 
@@ -858,6 +858,17 @@
       repo = "tree-sitter-menhir";
       rev = "db7953acb0d5551f207373c81fa07a57d7b085cb";
       hash = "sha256-w/ibFZ4bMPPRTgTJFLQrAzMecykJFcrjJjekKMXwqSI=";
+    };
+  };
+
+  mermaid = buildGrammar {
+    language = "mermaid";
+    version = "d787c66";
+    source = fetchFromGitHub {
+      owner = "monaqa";
+      repo = "tree-sitter-mermaid";
+      rev = "d787c66276e7e95899230539f556e8b83ee16f6d";
+      hash = "sha256-JwQ3jfwwOvM9eJWP/D3wXUBDysRxpa+mktYFajwA3IA=";
     };
   };
 
