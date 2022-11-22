@@ -1320,14 +1320,14 @@
 
   swift = buildGrammar {
     language = "swift";
-    version = "25f8de3";
+    version = "cff1c9a";
     source = fetchFromGitHub {
       owner = "alex-pinkus";
       repo = "tree-sitter-swift";
       nativeBuildInputs = [ nodejs tree-sitter ];
       postFetch = "pushd $out && tree-sitter generate && popd";
-      rev = "25f8de356e3c33099ed691bd3b8b5c0fe3a11e15";
-      hash = "sha256-KCmEE5O7EAA0uUcYkM/FpeEIn9tOqrJosSpYsBvivOk=";
+      rev = "cff1c9a62df89e8900d53ff48bc42862e6522dcf";
+      hash = "sha256-2Zk3PRO9z6HZYv2zCKx23NFtsbEcMXxONcnwaSkPvBQ=";
     };
   };
 
@@ -1495,12 +1495,12 @@
 
   vim = buildGrammar {
     language = "vim";
-    version = "4ae7bd6";
+    version = "55ff1b0";
     source = fetchFromGitHub {
       owner = "vigoux";
       repo = "tree-sitter-viml";
-      rev = "4ae7bd67706d7e10afed827ce2ded884ab41650f";
-      hash = "sha256-5gNqs6ykt2m48ghFv9y5OxsHDPTWRicdT9eR+DDiXiA=";
+      rev = "55ff1b080c09edeced9b748cf4c16d0b49d17fb9";
+      hash = "sha256-bMh6RPP0+zpNkMS/mpbKTaug9EL6u4kTcztnEXaNGyA=";
     };
   };
 
