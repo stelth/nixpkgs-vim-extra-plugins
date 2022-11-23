@@ -316,12 +316,12 @@
 
   luasnip = buildVimPluginFrom2Nix {
     pname = "luasnip";
-    version = "2022-11-20";
+    version = "2022-11-22";
     src = fetchFromGitHub {
       owner = "l3mon4d3";
       repo = "luasnip";
-      rev = "09ce9a70bd787d4ce188f2de1390f656f119347c";
-      sha256 = "0avs0lmdzh946zxcxz5yqvxqqj0bqpc0aplw87gcaz935m9sfx9r";
+      rev = "79f647218847b1cd204fede7dd89025e43fd00c3";
+      sha256 = "0kazkaf7q85qb8v43nlvx76jiw6dn2gic0j8ckdyxxkgpyxx7myn";
       fetchSubmodules = true;
     };
     meta.homepage = "https://github.com/l3mon4d3/luasnip/";
@@ -881,12 +881,12 @@
 
   nvim-treesitter = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter";
-    version = "2022-11-21";
+    version = "2022-11-22";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter";
-      rev = "be5ed65f7f4a2266447651d480215bcda04b8842";
-      sha256 = "171zq4wxlrslfzbq1mpcwh68bnb20s28b82dwzv0wm9kdnbmb4ij";
+      rev = "4f07518fb9eecb59ca51f168ce5d890d0ad352e6";
+      sha256 = "1cajab94nn5f6s5xdd6d492zx6cfdnnpn7rb6vhv3bg2h2hnd7jl";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
   };
@@ -1097,12 +1097,12 @@
 
   vim-dadbod-completion = buildVimPluginFrom2Nix {
     pname = "vim-dadbod-completion";
-    version = "2022-11-15";
+    version = "2022-11-22";
     src = fetchFromGitHub {
       owner = "kristijanhusak";
       repo = "vim-dadbod-completion";
-      rev = "01c4f7a66786095c6f00f877c616eaf34c425a06";
-      sha256 = "1kyyr6gsghs1h0654xil27acwrc3815mivdh55xvlq8cs350mbjj";
+      rev = "339667d9939d434f9b4496859c077faa88880183";
+      sha256 = "08slydxkahw4w383k4ln6hhz0lq9caxxilp4r9k4xk5dmsi7d2xd";
     };
     meta.homepage = "https://github.com/kristijanhusak/vim-dadbod-completion/";
   };

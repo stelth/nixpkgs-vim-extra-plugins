@@ -573,12 +573,12 @@
 
   help = buildGrammar {
     language = "help";
-    version = "49cdef5";
+    version = "ce20f13";
     source = fetchFromGitHub {
       owner = "neovim";
       repo = "tree-sitter-vimdoc";
-      rev = "49cdef52ded4a886bf34bc474876b09f9270d48f";
-      hash = "sha256-szNY2yw5i9pgF+MpaEAkP8BgSYEe6nrFW+17sbSZ6Yc=";
+      rev = "ce20f13c3f12506185754888feaae3f2ad54c287";
+      hash = "sha256-XklORrP4ToX4klXFYxMv2s63INWugDyjl3mtLDdUHlg=";
     };
   };
 
@@ -1357,12 +1357,12 @@
 
   tiger = buildGrammar {
     language = "tiger";
-    version = "eb1d371";
+    version = "a233ebe";
     source = fetchFromGitHub {
       owner = "ambroisie";
       repo = "tree-sitter-tiger";
-      rev = "eb1d3714998977ae76ca7c6a102b10ee37efc2b5";
-      hash = "sha256-kbwERaTHk5Pj5AfpbXPuRS6speB+xLMfrhRXTVOyMNw=";
+      rev = "a233ebe360a73a92c50978e5c4e9e471bc59ff42";
+      hash = "sha256-lQ3WkA1v3J2FuK2zPUwqahPnHPkAuevpBJrLtrlqaEs=";
     };
   };
 
@@ -1539,12 +1539,12 @@
 
   yang = buildGrammar {
     language = "yang";
-    version = "8e9d175";
+    version = "2c0e6be";
     source = fetchFromGitHub {
       owner = "Hubro";
       repo = "tree-sitter-yang";
-      rev = "8e9d175982afcefa3dac8ca20d40d1643accd2bd";
-      hash = "sha256-QSOy5wLb52hKkfW8bJY827zGrXTsMO5sZtl2NaNLmBA=";
+      rev = "2c0e6be8dd4dcb961c345fa35c309ad4f5bd3502";
+      hash = "sha256-6EIK1EStHrUHBLZBsZqd1LL05ZAJ6PKUyIzBBsTVjO8=";
     };
   };
 
