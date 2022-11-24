@@ -349,12 +349,12 @@
 
   fish = buildGrammar {
     language = "fish";
-    version = "84436cf";
+    version = "6675b56";
     source = fetchFromGitHub {
       owner = "ram02z";
       repo = "tree-sitter-fish";
-      rev = "84436cf24c2b3176bfbb220922a0fdbd0141e406";
-      hash = "sha256-oJuCd+2mTCEP/rNQzweShc7TZiqwKBIDRQqnV8VqQ4s=";
+      rev = "6675b56266b3f615fb112205b6b83a79315309c4";
+      hash = "sha256-hU2QMiNfO5/Drjl0QoUb9ERaK/3ETGaIsDBHMZ70n/A=";
     };
   };
 
@@ -595,12 +595,12 @@
 
   hlsl = buildGrammar {
     language = "hlsl";
-    version = "384b26e";
+    version = "329e3c8";
     source = fetchFromGitHub {
       owner = "theHamsta";
       repo = "tree-sitter-hlsl";
-      rev = "384b26ec65e10f26cf147bfcde772c50ca5ef0d0";
-      hash = "sha256-f6jKhC1vPpNTY0Rv1WMdJMNXRFiLsCApy/kIv7CBesA=";
+      rev = "329e3c8bd6f696a6128e0dccba34b2799dc3037e";
+      hash = "sha256-unxcw0KTlMDtcdjvIZidU/QckjfHBtc+LzAR7SukdU0=";
     };
   };
 
@@ -1133,12 +1133,12 @@
 
   rasi = buildGrammar {
     language = "rasi";
-    version = "1239134";
+    version = "5f04634";
     source = fetchFromGitHub {
       owner = "Fymyte";
       repo = "tree-sitter-rasi";
-      rev = "12391343979463a2484e6353e5afb6dcb8c31e8b";
-      hash = "sha256-JmL2Ei2DZhsZ4jFQ8s6B0ig9bflDs9dLr5/QknDqqRc=";
+      rev = "5f04634dd4e12de4574c4a3dc9d6d5d4da4a2a1b";
+      hash = "sha256-2n8nHinlgtLKBlDLiphu7vqPi7W02brRY1h8BGkcoZc=";
     };
   };
 
