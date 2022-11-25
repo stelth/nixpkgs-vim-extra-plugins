@@ -424,6 +424,17 @@
     };
   };
 
+  gitcommit = buildGrammar {
+    language = "gitcommit";
+    version = "f6e7f24";
+    source = fetchFromGitHub {
+      owner = "gbprod";
+      repo = "tree-sitter-gitcommit";
+      rev = "f6e7f24fd12e1d01f9bf23f7625800ace134030c";
+      hash = "sha256-1MPb2JuBFfckh4sRMxwBWySwS5xHhQSaXx2Sl1Kfuso=";
+    };
+  };
+
   gitignore = buildGrammar {
     language = "gitignore";
     version = "f4685bf";
@@ -461,12 +472,12 @@
 
   glsl = buildGrammar {
     language = "glsl";
-    version = "a743ada";
+    version = "e2c2214";
     source = fetchFromGitHub {
       owner = "theHamsta";
       repo = "tree-sitter-glsl";
-      rev = "a743ada24fa17da9acc5665133f07d56e03530be";
-      hash = "sha256-l2t2U4fZYMMpc1Nkv8JODtDny0/kSUsbiJ/VVD5VyhI=";
+      rev = "e2c2214045de2628b81089b1a739962f59654558";
+      hash = "sha256-GrbheFLeJLAvm3LE4WOfmYnIjVcRkD9pfugJJuIc25A=";
     };
   };
 
@@ -1401,12 +1412,12 @@
 
   tsx = buildGrammar {
     language = "tsx";
-    version = "0ab9d99";
+    version = "0ae3828";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-typescript";
-      rev = "0ab9d99867435a7667c5548a6617a6bf73dbd830";
-      hash = "sha256-Nx+K7Ic/ePKAXPIMlrRn6zELYE59f/FnnZ/LM5ELaU8=";
+      rev = "0ae382803abce0807e90f498105c713b9233e0b2";
+      hash = "sha256-we8jkX8Nl9+eGw8c6ZmH5hW7yfzFaNhQ+WDzRvMMx9A=";
     };
     location = "tsx";
 
@@ -1436,12 +1447,12 @@
 
   typescript = buildGrammar {
     language = "typescript";
-    version = "0ab9d99";
+    version = "0ae3828";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-typescript";
-      rev = "0ab9d99867435a7667c5548a6617a6bf73dbd830";
-      hash = "sha256-Nx+K7Ic/ePKAXPIMlrRn6zELYE59f/FnnZ/LM5ELaU8=";
+      rev = "0ae382803abce0807e90f498105c713b9233e0b2";
+      hash = "sha256-we8jkX8Nl9+eGw8c6ZmH5hW7yfzFaNhQ+WDzRvMMx9A=";
     };
     location = "typescript";
 
