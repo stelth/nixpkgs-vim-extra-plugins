@@ -270,6 +270,19 @@
     };
   };
 
+  ebnf = buildGrammar {
+    language = "ebnf";
+    version = "ef241bc";
+    source = fetchFromGitHub {
+      owner = "RubixDev";
+      repo = "ebnf";
+      rev = "ef241bc09f2f105c35f5e4f2ccd8a522dd99071c";
+      hash = "sha256-N5TGYJnYNjYIdFXspGn+dDRm0wmJymXHY+Io43wSKlI=";
+    };
+    location = "crates/tree-sitter-ebnf";
+
+  };
+
   eex = buildGrammar {
     language = "eex";
     version = "f742f2f";
@@ -426,12 +439,12 @@
 
   gitcommit = buildGrammar {
     language = "gitcommit";
-    version = "f6e7f24";
+    version = "d3c15bd";
     source = fetchFromGitHub {
       owner = "gbprod";
       repo = "tree-sitter-gitcommit";
-      rev = "f6e7f24fd12e1d01f9bf23f7625800ace134030c";
-      hash = "sha256-1MPb2JuBFfckh4sRMxwBWySwS5xHhQSaXx2Sl1Kfuso=";
+      rev = "d3c15bdf0165c89872cc1345c5f8815be3cad9cc";
+      hash = "sha256-3ufluVDeCXLksgj68f7MfK+3QrtvLDoc9Xhbh7xz+t0=";
     };
   };
 
