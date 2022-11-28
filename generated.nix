@@ -975,6 +975,18 @@
     meta.homepage = "https://github.com/kkharji/sqlite.lua/";
   };
 
+  styler-nvim = buildVimPluginFrom2Nix {
+    pname = "styler.nvim";
+    version = "2022-11-16";
+    src = fetchFromGitHub {
+      owner = "folke";
+      repo = "styler.nvim";
+      rev = "791f8ce4bc693a0f6edf6f70ef5c7031f86e3623";
+      sha256 = "0iwzcicsjm65f5nxi69fwzvhj3rpc63w057rmaijl3qhsv5dwzp3";
+    };
+    meta.homepage = "https://github.com/folke/styler.nvim/";
+  };
+
   telescope-file-browser-nvim = buildVimPluginFrom2Nix {
     pname = "telescope-file-browser.nvim";
     version = "2022-10-16";
@@ -1204,16 +1216,16 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
-  styler-nvim = buildVimPluginFrom2Nix {
-    pname = "styler.nvim";
-    version = "2022-11-16";
+  drop-nvim = buildVimPluginFrom2Nix {
+    pname = "drop.nvim";
+    version = "2022-11-10";
     src = fetchFromGitHub {
       owner = "folke";
-      repo = "styler.nvim";
-      rev = "791f8ce4bc693a0f6edf6f70ef5c7031f86e3623";
-      sha256 = "0iwzcicsjm65f5nxi69fwzvhj3rpc63w057rmaijl3qhsv5dwzp3";
+      repo = "drop.nvim";
+      rev = "f0184df8ef6bea132140512a31cfdbce74d78d42";
+      sha256 = "0nww0f6b7pzpqrc23jlc7wq5fy6jzyzsh89l1ykwmyjq8j2kid26";
     };
-    meta.homepage = "https://github.com/folke/styler.nvim/";
+    meta.homepage = "https://github.com/folke/drop.nvim/";
   };
 
   catppuccin = buildVimPluginFrom2Nix {
