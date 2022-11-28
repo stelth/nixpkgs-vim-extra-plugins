@@ -1204,8 +1204,8 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
-  nvim = buildVimPluginFrom2Nix {
-    pname = "nvim";
+  catppuccin = buildVimPluginFrom2Nix {
+    pname = "catppuccin";
     version = "2022-11-28";
     src = fetchFromGitHub {
       owner = "catppuccin";
