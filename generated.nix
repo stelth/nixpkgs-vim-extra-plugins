@@ -146,6 +146,18 @@
     meta.homepage = "https://github.com/stevearc/dressing.nvim/";
   };
 
+  drop-nvim = buildVimPluginFrom2Nix {
+    pname = "drop.nvim";
+    version = "2022-11-10";
+    src = fetchFromGitHub {
+      owner = "folke";
+      repo = "drop.nvim";
+      rev = "f0184df8ef6bea132140512a31cfdbce74d78d42";
+      sha256 = "0nww0f6b7pzpqrc23jlc7wq5fy6jzyzsh89l1ykwmyjq8j2kid26";
+    };
+    meta.homepage = "https://github.com/folke/drop.nvim/";
+  };
+
   fidget-nvim = buildVimPluginFrom2Nix {
     pname = "fidget.nvim";
     version = "2022-11-27";
@@ -753,8 +765,8 @@
     src = fetchFromGitHub {
       owner = "mfussenegger";
       repo = "nvim-dap";
-      rev = "87572115d86302b32b4172eb3ab37a6586f93993";
-      sha256 = "0xw9sm3rq6na44iq6kyy6p3hl6j33lbk3rkyqki9ckqxbjdl787m";
+      rev = "f0573ea26f29702ad9aa1546e102adb2f5b7ac3a";
+      sha256 = "0d5ng7ffamh24bacyr4xgw393cm55x62f3m9cly8rzd38y7glpvi";
     };
     meta.homepage = "https://github.com/mfussenegger/nvim-dap/";
   };
@@ -1216,16 +1228,16 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
-  drop-nvim = buildVimPluginFrom2Nix {
-    pname = "drop.nvim";
-    version = "2022-11-10";
+  nvim-treesitter-context = buildVimPluginFrom2Nix {
+    pname = "nvim-treesitter-context";
+    version = "2022-11-23";
     src = fetchFromGitHub {
-      owner = "folke";
-      repo = "drop.nvim";
-      rev = "f0184df8ef6bea132140512a31cfdbce74d78d42";
-      sha256 = "0nww0f6b7pzpqrc23jlc7wq5fy6jzyzsh89l1ykwmyjq8j2kid26";
+      owner = "nvim-treesitter";
+      repo = "nvim-treesitter-context";
+      rev = "5fda0b9a2a9049ecc9900e2d86d9ddebab95b0c5";
+      sha256 = "084j8bbvs0f1rah92ddbb5qpj4y4m7nq5rn0ga8bsjpyqnx04q7j";
     };
-    meta.homepage = "https://github.com/folke/drop.nvim/";
+    meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter-context/";
   };
 
   catppuccin = buildVimPluginFrom2Nix {
