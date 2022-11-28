@@ -48,12 +48,12 @@
 
   bash = buildGrammar {
     language = "bash";
-    version = "77cf8a7";
+    version = "4488aa4";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-bash";
-      rev = "77cf8a7cab8904baf1a721762e012644ac1d4c7b";
-      hash = "sha256-UPMJ7iL8Y0NkAHtPDrkTjG1qFwr8rXuGqvsG+LTWqEY=";
+      rev = "4488aa41406547e478636a4fcfd24f5bbc3f2f74";
+      hash = "sha256-QkH5rI9/7x6L7e3YIwDMdSbBHOGhhC6LTHfasS7wX9U=";
     };
   };
 
@@ -817,12 +817,12 @@
 
   lua = buildGrammar {
     language = "lua";
-    version = "fb30e8c";
+    version = "f5e84ff";
     source = fetchFromGitHub {
       owner = "MunifTanjim";
       repo = "tree-sitter-lua";
-      rev = "fb30e8cb605e2ebd6c643e6981325a63fbbde320";
-      hash = "sha256-gT2WHH3rkFzb6iER0ryVU7bqVbh36RbTI9HSWMh3DsI=";
+      rev = "f5e84ffc2b06858401e0d2edf5dce009efbe34b3";
+      hash = "sha256-9ig+F2W6MB5uSS3XFUL2OCW9PKYkb4KPpGN2DWKEdhY=";
     };
   };
 
@@ -1449,12 +1449,12 @@
 
   twig = buildGrammar {
     language = "twig";
-    version = "035f549";
+    version = "2457993";
     source = fetchFromGitHub {
       owner = "gbprod";
       repo = "tree-sitter-twig";
-      rev = "035f549ec8c043e734f04341d7ccdc669bb2ba91";
-      hash = "sha256-XSE0E6a9o+WpvmMIXHu0N89VqzaIk9eFHofKAPHtT20=";
+      rev = "2457993b13a06dec2706e6a6c3d5b65bb23024b8";
+      hash = "sha256-8H2luJtjSZt2AWP1L0A64jm+DeEH8cFaC+yvIDLKk4o=";
     };
   };
 

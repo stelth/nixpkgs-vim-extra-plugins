@@ -304,12 +304,12 @@
 
   lualine-nvim = buildVimPluginFrom2Nix {
     pname = "lualine.nvim";
-    version = "2022-11-26";
+    version = "2022-11-28";
     src = fetchFromGitHub {
       owner = "nvim-lualine";
       repo = "lualine.nvim";
-      rev = "b6314ac556098d7abea9bb8cf896d2e3500eca41";
-      sha256 = "0drq91j2dm1mg77sf575ixy6ksqj4qp6fdbwdqq44h5z5sjcbfwx";
+      rev = "bfa0d99ba6f98d077dd91779841f1c88b7b5c165";
+      sha256 = "1yr4p08s0yll3g39k62735g0bz21v0vg5f0vxizwhyy2cx49n90f";
     };
     meta.homepage = "https://github.com/nvim-lualine/lualine.nvim/";
   };
@@ -713,12 +713,12 @@
 
   nvim-autopairs = buildVimPluginFrom2Nix {
     pname = "nvim-autopairs";
-    version = "2022-11-24";
+    version = "2022-11-28";
     src = fetchFromGitHub {
       owner = "windwp";
       repo = "nvim-autopairs";
-      rev = "5d75276fce887c0cf433bb1b9867717907211063";
-      sha256 = "11ivy3iaw672yfgbq92q0xd9s6qijs5rd5464fgdwimqrsac0300";
+      rev = "99f696339266c22e7313d6a85a95bd538c3fc226";
+      sha256 = "1pv3hfaxd7yifx0n9643wcb9skrqrkzx5x545x944y23xvwvv9di";
     };
     meta.homepage = "https://github.com/windwp/nvim-autopairs/";
   };
@@ -881,12 +881,12 @@
 
   nvim-treesitter = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter";
-    version = "2022-11-27";
+    version = "2022-11-28";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter";
-      rev = "8b241181ae573b320ded4c70f4d035e93460038d";
-      sha256 = "020qvk1rhzh2bqjsm16l4m4mlcwyw7j73ya8mw9l0596rw6ljxa8";
+      rev = "1821c656d8e42fd8ce6648af58e64268606e8bec";
+      sha256 = "05ka90vjq18rwrxcy65q1yw5pwcs2xlzg080v7lsnm024q5f7l9n";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
   };
@@ -1202,6 +1202,18 @@
       sha256 = "04i8d7dlxmzgxiysy9jffxkpkw8h3qjkrv3l74z7pfksdmhlbbwz";
     };
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
+  };
+
+  nvim = buildVimPluginFrom2Nix {
+    pname = "nvim";
+    version = "2022-11-28";
+    src = fetchFromGitHub {
+      owner = "catppuccin";
+      repo = "nvim";
+      rev = "e530b4d3bb36777b62ed27f8abd132c2dbac0ee9";
+      sha256 = "05iswjsx297b4fy9s974jkfp8f8cjsxic427hf7fnzayzsn2bd2r";
+    };
+    meta.homepage = "https://github.com/catppuccin/nvim/";
   };
 
 
