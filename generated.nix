@@ -749,12 +749,12 @@
 
   nvim-dap = buildVimPluginFrom2Nix {
     pname = "nvim-dap";
-    version = "2022-11-26";
+    version = "2022-11-28";
     src = fetchFromGitHub {
       owner = "mfussenegger";
       repo = "nvim-dap";
-      rev = "bb6a98781e3a868d6f1de995f52d975396a7f208";
-      sha256 = "0g33d36v6ai6lyinqli9fkgcn79q00hm54r6ifr4zqbkm7m38mwq";
+      rev = "87572115d86302b32b4172eb3ab37a6586f93993";
+      sha256 = "0xw9sm3rq6na44iq6kyy6p3hl6j33lbk3rkyqki9ckqxbjdl787m";
     };
     meta.homepage = "https://github.com/mfussenegger/nvim-dap/";
   };
@@ -1204,14 +1204,26 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
+  styler-nvim = buildVimPluginFrom2Nix {
+    pname = "styler.nvim";
+    version = "2022-11-16";
+    src = fetchFromGitHub {
+      owner = "folke";
+      repo = "styler.nvim";
+      rev = "791f8ce4bc693a0f6edf6f70ef5c7031f86e3623";
+      sha256 = "0iwzcicsjm65f5nxi69fwzvhj3rpc63w057rmaijl3qhsv5dwzp3";
+    };
+    meta.homepage = "https://github.com/folke/styler.nvim/";
+  };
+
   catppuccin = buildVimPluginFrom2Nix {
     pname = "catppuccin";
     version = "2022-11-28";
     src = fetchFromGitHub {
       owner = "catppuccin";
       repo = "nvim";
-      rev = "e530b4d3bb36777b62ed27f8abd132c2dbac0ee9";
-      sha256 = "05iswjsx297b4fy9s974jkfp8f8cjsxic427hf7fnzayzsn2bd2r";
+      rev = "c0f06e4b1114d53adbe52b127147fc0157cfaa65";
+      sha256 = "0s1gfqc43gxj372g0276kdcdbzsihk4bqp69fj7amhpqnqmax7s9";
     };
     meta.homepage = "https://github.com/catppuccin/nvim/";
   };
