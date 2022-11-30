@@ -124,12 +124,12 @@
 
   diffview-nvim = buildVimPluginFrom2Nix {
     pname = "diffview.nvim";
-    version = "2022-11-27";
+    version = "2022-11-29";
     src = fetchFromGitHub {
       owner = "sindrets";
       repo = "diffview.nvim";
-      rev = "73271db79722486dca22be3949e44d44c445a39f";
-      sha256 = "0s60ykc4szd3p3n4j73l06kjklllqnpkajdnxbqsnrhaz89hb8c7";
+      rev = "6a82dfcb59f0af1e814f34bf8344d68afe8618ec";
+      sha256 = "1yggvdb0mzcimpv83jbrvyvp1m6k31i67dq05grwq879dr05igm9";
     };
     meta.homepage = "https://github.com/sindrets/diffview.nvim/";
   };
@@ -677,12 +677,12 @@
 
   noice-nvim = buildVimPluginFrom2Nix {
     pname = "noice.nvim";
-    version = "2022-11-24";
+    version = "2022-11-29";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "fa21685e23cbb72bb573eecf48dd3644bc1513ba";
-      sha256 = "1vbm54fykn6xzndrrrb1bcymbwbmanifnsr693v5647k5hmsjc64";
+      rev = "5ca31af06078d6188de7db1369c2b40d1b606d58";
+      sha256 = "1a3n5341fcvjlkp3lv5x50a81z30zaxxw427dvkpjb7bp93rb8h4";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
@@ -893,12 +893,12 @@
 
   nvim-treesitter = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter";
-    version = "2022-11-28";
+    version = "2022-11-30";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter";
-      rev = "1821c656d8e42fd8ce6648af58e64268606e8bec";
-      sha256 = "05ka90vjq18rwrxcy65q1yw5pwcs2xlzg080v7lsnm024q5f7l9n";
+      rev = "d1eaf23c9ec9aca91e219ed82ae98c96d93dd407";
+      sha256 = "02yhgj6qb86a5wmz827q444j6yxa3nvrm6j3j0j053ha8bbh5qgd";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
   };
@@ -1242,12 +1242,12 @@
 
   catppuccin = buildVimPluginFrom2Nix {
     pname = "catppuccin";
-    version = "2022-11-28";
+    version = "2022-11-30";
     src = fetchFromGitHub {
       owner = "catppuccin";
       repo = "nvim";
-      rev = "c0f06e4b1114d53adbe52b127147fc0157cfaa65";
-      sha256 = "0s1gfqc43gxj372g0276kdcdbzsihk4bqp69fj7amhpqnqmax7s9";
+      rev = "56c96b4061acf95c2fcc7ba3acb1b21f815f77d4";
+      sha256 = "1vjnmpgc4ijpvzl8xmgnc1nmbyw9w03q1b8dh76yd749lgfghaq4";
     };
     meta.homepage = "https://github.com/catppuccin/nvim/";
   };
