@@ -136,12 +136,12 @@
 
   dressing-nvim = buildVimPluginFrom2Nix {
     pname = "dressing.nvim";
-    version = "2022-11-18";
+    version = "2022-12-01";
     src = fetchFromGitHub {
       owner = "stevearc";
       repo = "dressing.nvim";
-      rev = "7894d5bc504deacf37f0a479a53fa4746fe30a45";
-      sha256 = "1jw8y86lq7k9d1ss4dg3ch1ij8c3b196g8giz881jipdkjy9q7w1";
+      rev = "872cc4e5ea32295eb1102141a444d6d83b8f9c25";
+      sha256 = "0a1j076vnvmvdkbinf8f8bb5sv1mz13npdvwlc2bfi4v5swf5rpp";
     };
     meta.homepage = "https://github.com/stevearc/dressing.nvim/";
   };
@@ -328,12 +328,12 @@
 
   luasnip = buildVimPluginFrom2Nix {
     pname = "luasnip";
-    version = "2022-11-27";
+    version = "2022-12-01";
     src = fetchFromGitHub {
       owner = "l3mon4d3";
       repo = "luasnip";
-      rev = "3fa5c8d938e4ed9dcfd3e07d13b587cba4f87e7d";
-      sha256 = "0pf4z4c4iaqzh40gsc4gs55kl6821sjhyp0x8pjahl2spqxm3nn3";
+      rev = "bc9ba285be806cd8f1db9e7dbd50e33a300e11c2";
+      sha256 = "0d1mjx6pp3pn1qmka3hd11n3x1wik6hq7j7rdk0hpw2wrjpr3hhg";
       fetchSubmodules = true;
     };
     meta.homepage = "https://github.com/l3mon4d3/luasnip/";
@@ -677,12 +677,12 @@
 
   noice-nvim = buildVimPluginFrom2Nix {
     pname = "noice.nvim";
-    version = "2022-11-29";
+    version = "2022-12-01";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "5ca31af06078d6188de7db1369c2b40d1b606d58";
-      sha256 = "1a3n5341fcvjlkp3lv5x50a81z30zaxxw427dvkpjb7bp93rb8h4";
+      rev = "66946c72f0a36f37e480b5eae97aac3cdcd5961d";
+      sha256 = "18wrx4avr359ih3sfwchdy2bl4g09jf05k2jvfn9xj2kfd5444wz";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
@@ -713,12 +713,12 @@
 
   null-ls-nvim = buildVimPluginFrom2Nix {
     pname = "null-ls.nvim";
-    version = "2022-11-30";
+    version = "2022-12-01";
     src = fetchFromGitHub {
       owner = "jose-elias-alvarez";
       repo = "null-ls.nvim";
-      rev = "d4254b19e914e6278582d4555c57eb3d2abd9590";
-      sha256 = "03f7m0v5mgpwwvy1qgijiiyvrfzk5n75a1nj5snl0vl8ivancmcs";
+      rev = "3eb0621a315fd3328b364517fa64cddba1334cb1";
+      sha256 = "041wi8039kw63nz98ndz9lb8yd8l20h1a6m5zwgfw0j4l76zdl7p";
     };
     meta.homepage = "https://github.com/jose-elias-alvarez/null-ls.nvim/";
   };
@@ -761,12 +761,12 @@
 
   nvim-dap = buildVimPluginFrom2Nix {
     pname = "nvim-dap";
-    version = "2022-11-28";
+    version = "2022-12-01";
     src = fetchFromGitHub {
       owner = "mfussenegger";
       repo = "nvim-dap";
-      rev = "f0573ea26f29702ad9aa1546e102adb2f5b7ac3a";
-      sha256 = "0d5ng7ffamh24bacyr4xgw393cm55x62f3m9cly8rzd38y7glpvi";
+      rev = "8f396b7836b9bbda9edd9f655f12ca377ae97676";
+      sha256 = "0jbl9ima5q5f0rcjac8p35by96wha3ph2518d1mjbliawfdl23p1";
     };
     meta.homepage = "https://github.com/mfussenegger/nvim-dap/";
   };
@@ -825,8 +825,8 @@
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "nvim-lspconfig";
-      rev = "64c0222dfc9f53292f0789d6afff7432a809ed56";
-      sha256 = "0df2ckmk32yxfq0gaj0qxcfy369vngl2kp6xiz294ipqyvsf6c2n";
+      rev = "334fc86c16be91638b61e25fe89e89c55c5617bf";
+      sha256 = "1vxxgxmm479bwfwqw3j8x3c46d5rmzlrx857nnvlg5wkz0p7fk0d";
     };
     meta.homepage = "https://github.com/neovim/nvim-lspconfig/";
   };
@@ -893,12 +893,12 @@
 
   nvim-treesitter = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter";
-    version = "2022-11-30";
+    version = "2022-12-01";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter";
-      rev = "4b900527045c49af5f43291d2cb13ae27a3bc7be";
-      sha256 = "1ziyflx0k937pv2yb5bz719pz0m6f7bmp03qlyc7n8pl55rjvc0f";
+      rev = "256802258084fcf6c7011dae4c3fbfaaf4b61518";
+      sha256 = "0q2cnivi8sgbvy15dqhvqdgkdg4qm5jrbccfnqr5rjap2w8mv662";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
   };
@@ -1037,12 +1037,12 @@
 
   telescope-nvim = buildVimPluginFrom2Nix {
     pname = "telescope.nvim";
-    version = "2022-11-28";
+    version = "2022-12-01";
     src = fetchFromGitHub {
       owner = "nvim-telescope";
       repo = "telescope.nvim";
-      rev = "3c2e5fb23e9f6ca1aa682ae16bac3319bfe03e38";
-      sha256 = "08r7cjmkqw2pzagyhyv185b86pqrvwk2y6b7g6sjbv3izp4q3krk";
+      rev = "f37c603303925c643056437f31a0998e4cf2232d";
+      sha256 = "0knby1qrp9i9xkwk6lbz4fmrng14527kb9sn871gnsq6sf6b8n4g";
     };
     meta.homepage = "https://github.com/nvim-telescope/telescope.nvim/";
   };

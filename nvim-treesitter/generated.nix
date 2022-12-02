@@ -1300,12 +1300,12 @@
 
   sql = buildGrammar {
     language = "sql";
-    version = "4f1b912";
+    version = "41f1de2";
     source = fetchFromGitHub {
       owner = "derekstride";
       repo = "tree-sitter-sql";
-      rev = "4f1b91246b43190e34957d9de9a0f3625879ba33";
-      hash = "sha256-g1dQ897JQwthConYMlGY25hsypr4weDsDCOWyafriw8=";
+      rev = "41f1de238b7b4a8cc9e118759881aad8585d36ad";
+      hash = "sha256-LORSWO5Ui/Nq1SReERSWZ+BEtxKEJ545LPpA6HbY8Z4=";
     };
   };
 
