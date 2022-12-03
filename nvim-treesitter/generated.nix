@@ -575,12 +575,12 @@
 
   hcl = buildGrammar {
     language = "hcl";
-    version = "45ce22c";
+    version = "6b74f88";
     source = fetchFromGitHub {
       owner = "MichaHoffmann";
       repo = "tree-sitter-hcl";
-      rev = "45ce22c16ec924e34517cf785e23c07952e45893";
-      hash = "sha256-SczU8y70mdqDl2iVKTfD8Taq580x31xMswUhoU48yfE=";
+      rev = "6b74f88b3d396e0f101c93f807e0b3667cd3e3a2";
+      hash = "sha256-/YpP3DkM+rFoRiwdW+D2vbKjOALE91tLSc/jkFgSobY=";
     };
   };
 
@@ -784,12 +784,12 @@
 
   latex = buildGrammar {
     language = "latex";
-    version = "8c75e93";
+    version = "1ec3941";
     source = fetchFromGitHub {
       owner = "latex-lsp";
       repo = "tree-sitter-latex";
-      rev = "8c75e93cd08ccb7ce1ccab22c1fbd6360e3bcea6";
-      hash = "sha256-zkp4De2eBoOsPZRHHT3mIPVWFPYboTvn6AQ4AkwXhFE=";
+      rev = "1ec3941b971dccfa36cb1cd6221a2e4a1cd3e250";
+      hash = "sha256-m/6GWV797gaJnWVU07RvHjfAeRzGT9GZH3M9HkcjUq0=";
     };
   };
 
@@ -1300,12 +1300,14 @@
 
   sql = buildGrammar {
     language = "sql";
-    version = "41f1de2";
+    version = "a6d6d07";
     source = fetchFromGitHub {
       owner = "derekstride";
       repo = "tree-sitter-sql";
-      rev = "41f1de238b7b4a8cc9e118759881aad8585d36ad";
-      hash = "sha256-LORSWO5Ui/Nq1SReERSWZ+BEtxKEJ545LPpA6HbY8Z4=";
+      nativeBuildInputs = [ nodejs tree-sitter ];
+      postFetch = "pushd $out && tree-sitter generate && popd";
+      rev = "a6d6d0799f2c9091436b5b587b451b10e710f9cb";
+      hash = "sha256-PQbjAMFvRvJrosGsdDp86cex8B5XzahO9OwvK56ptbs=";
     };
   };
 
