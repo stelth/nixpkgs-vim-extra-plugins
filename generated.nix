@@ -338,6 +338,18 @@
     meta.homepage = "https://github.com/ggandor/leap-spooky.nvim/";
   };
 
+  leap-nvim = buildVimPluginFrom2Nix {
+    pname = "leap.nvim";
+    version = "2022-11-28";
+    src = fetchFromGitHub {
+      owner = "ggandor";
+      repo = "leap.nvim";
+      rev = "f7391b5fe9771d788816383ee3c75e0be92022af";
+      sha256 = "1xxlpz6y66h8xs8bfl0bq46gkhvdi275vsmrwbac1lwk76v9b8kq";
+    };
+    meta.homepage = "https://github.com/ggandor/leap.nvim/";
+  };
+
   lspkind-nvim = buildVimPluginFrom2Nix {
     pname = "lspkind.nvim";
     version = "2022-09-22";
@@ -1276,16 +1288,16 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
-  leap-nvim = buildVimPluginFrom2Nix {
-    pname = "leap.nvim";
-    version = "2022-11-28";
+  dashboard-nvim = buildVimPluginFrom2Nix {
+    pname = "dashboard-nvim";
+    version = "2022-11-22";
     src = fetchFromGitHub {
-      owner = "ggandor";
-      repo = "leap.nvim";
-      rev = "f7391b5fe9771d788816383ee3c75e0be92022af";
-      sha256 = "1xxlpz6y66h8xs8bfl0bq46gkhvdi275vsmrwbac1lwk76v9b8kq";
+      owner = "glepnir";
+      repo = "dashboard-nvim";
+      rev = "5ccce7b50c8ce81c01956864ff51b455ee6933c4";
+      sha256 = "09zmv2s5fnpvjlkcy5hrjkqq58s5c10d321gx6ip7qhpaps3vgv0";
     };
-    meta.homepage = "https://github.com/ggandor/leap.nvim/";
+    meta.homepage = "https://github.com/glepnir/dashboard-nvim/";
   };
 
   catppuccin = buildVimPluginFrom2Nix {
