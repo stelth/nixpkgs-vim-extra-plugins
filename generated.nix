@@ -170,6 +170,18 @@
     meta.homepage = "https://github.com/j-hui/fidget.nvim/";
   };
 
+  flit-nvim = buildVimPluginFrom2Nix {
+    pname = "flit.nvim";
+    version = "2022-10-14";
+    src = fetchFromGitHub {
+      owner = "ggandor";
+      repo = "flit.nvim";
+      rev = "be110f9814a45788d10537fd59b3c76d956bb7ad";
+      sha256 = "1innhwy2izcw2w7qhp6x7s3q07zy0zxfwqmlqskgl6c75r4akqyn";
+    };
+    meta.homepage = "https://github.com/ggandor/flit.nvim/";
+  };
+
   friendly-snippets = buildVimPluginFrom2Nix {
     pname = "friendly-snippets";
     version = "2022-11-30";
@@ -300,6 +312,30 @@
       sha256 = "111h7zxf6hrsx7253r010rnandqvs7zg2qccarwi6dkyqg9v2dbh";
     };
     meta.homepage = "https://github.com/simrat39/inlay-hints.nvim/";
+  };
+
+  leap-ast-nvim = buildVimPluginFrom2Nix {
+    pname = "leap-ast.nvim";
+    version = "2022-10-10";
+    src = fetchFromGitHub {
+      owner = "ggandor";
+      repo = "leap-ast.nvim";
+      rev = "1a21b70505ebb868a1e196c0d63797e1426b53a5";
+      sha256 = "1jb8rydp4h3b71vfn9hq4ni1fs6ds0kk92vlal4jl9gzs38cx5p9";
+    };
+    meta.homepage = "https://github.com/ggandor/leap-ast.nvim/";
+  };
+
+  leap-spooky-nvim = buildVimPluginFrom2Nix {
+    pname = "leap-spooky.nvim";
+    version = "2022-11-22";
+    src = fetchFromGitHub {
+      owner = "ggandor";
+      repo = "leap-spooky.nvim";
+      rev = "748b2614e859704d8004e86be97401c9f3e28e80";
+      sha256 = "0rhpmxv59s6449k3g2qap55lpnlf3z8vm2vml172ygzfw0l0ilkr";
+    };
+    meta.homepage = "https://github.com/ggandor/leap-spooky.nvim/";
   };
 
   lspkind-nvim = buildVimPluginFrom2Nix {
@@ -1240,40 +1276,16 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
-  flit-nvim = buildVimPluginFrom2Nix {
-    pname = "flit.nvim";
-    version = "2022-10-14";
+  leap-nvim = buildVimPluginFrom2Nix {
+    pname = "leap.nvim";
+    version = "2022-11-28";
     src = fetchFromGitHub {
       owner = "ggandor";
-      repo = "flit.nvim";
-      rev = "be110f9814a45788d10537fd59b3c76d956bb7ad";
-      sha256 = "1innhwy2izcw2w7qhp6x7s3q07zy0zxfwqmlqskgl6c75r4akqyn";
+      repo = "leap.nvim";
+      rev = "f7391b5fe9771d788816383ee3c75e0be92022af";
+      sha256 = "1xxlpz6y66h8xs8bfl0bq46gkhvdi275vsmrwbac1lwk76v9b8kq";
     };
-    meta.homepage = "https://github.com/ggandor/flit.nvim/";
-  };
-
-  leap-spooky-nvim = buildVimPluginFrom2Nix {
-    pname = "leap-spooky.nvim";
-    version = "2022-11-22";
-    src = fetchFromGitHub {
-      owner = "ggandor";
-      repo = "leap-spooky.nvim";
-      rev = "748b2614e859704d8004e86be97401c9f3e28e80";
-      sha256 = "0rhpmxv59s6449k3g2qap55lpnlf3z8vm2vml172ygzfw0l0ilkr";
-    };
-    meta.homepage = "https://github.com/ggandor/leap-spooky.nvim/";
-  };
-
-  leap-ast-nvim = buildVimPluginFrom2Nix {
-    pname = "leap-ast.nvim";
-    version = "2022-10-10";
-    src = fetchFromGitHub {
-      owner = "ggandor";
-      repo = "leap-ast.nvim";
-      rev = "1a21b70505ebb868a1e196c0d63797e1426b53a5";
-      sha256 = "1jb8rydp4h3b71vfn9hq4ni1fs6ds0kk92vlal4jl9gzs38cx5p9";
-    };
-    meta.homepage = "https://github.com/ggandor/leap-ast.nvim/";
+    meta.homepage = "https://github.com/ggandor/leap.nvim/";
   };
 
   catppuccin = buildVimPluginFrom2Nix {
