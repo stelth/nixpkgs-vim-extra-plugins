@@ -32,7 +32,10 @@ final: prev: let
       cmp-dap = [nvim-cmp nvim-dap];
       cmp-git = [nvim-cmp pkgs.curl pkgs.git];
       diffview-nvim = [plenary-nvim];
+      flit-nvim = [leap-nvim];
       glow-nvim = [pkgs.glow];
+      leap-ast-nvim = [leap-nvim nvim-treesitter];
+      leap-spooky-nvim = [leap-nvim];
       neovim-tasks = [plenary-nvim];
       noice-nvim = [nui-nvim nvim-notify];
       null-ls-nvim = [plenary-nvim];
