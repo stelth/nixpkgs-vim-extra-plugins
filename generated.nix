@@ -110,6 +110,18 @@
     meta.homepage = "https://github.com/numtostr/comment.nvim/";
   };
 
+  dashboard-nvim = buildVimPluginFrom2Nix {
+    pname = "dashboard-nvim";
+    version = "2022-11-22";
+    src = fetchFromGitHub {
+      owner = "glepnir";
+      repo = "dashboard-nvim";
+      rev = "5ccce7b50c8ce81c01956864ff51b455ee6933c4";
+      sha256 = "09zmv2s5fnpvjlkcy5hrjkqq58s5c10d321gx6ip7qhpaps3vgv0";
+    };
+    meta.homepage = "https://github.com/glepnir/dashboard-nvim/";
+  };
+
   dial-nvim = buildVimPluginFrom2Nix {
     pname = "dial.nvim";
     version = "2022-10-22";
@@ -1286,18 +1298,6 @@
       sha256 = "04i8d7dlxmzgxiysy9jffxkpkw8h3qjkrv3l74z7pfksdmhlbbwz";
     };
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
-  };
-
-  dashboard-nvim = buildVimPluginFrom2Nix {
-    pname = "dashboard-nvim";
-    version = "2022-11-22";
-    src = fetchFromGitHub {
-      owner = "glepnir";
-      repo = "dashboard-nvim";
-      rev = "5ccce7b50c8ce81c01956864ff51b455ee6933c4";
-      sha256 = "09zmv2s5fnpvjlkcy5hrjkqq58s5c10d321gx6ip7qhpaps3vgv0";
-    };
-    meta.homepage = "https://github.com/glepnir/dashboard-nvim/";
   };
 
   catppuccin = buildVimPluginFrom2Nix {
