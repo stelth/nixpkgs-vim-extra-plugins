@@ -125,12 +125,12 @@
 
   cmake = buildGrammar {
     language = "cmake";
-    version = "6e51463";
+    version = "a322653";
     source = fetchFromGitHub {
       owner = "uyha";
       repo = "tree-sitter-cmake";
-      rev = "6e51463ef3052dd3b328322c22172eda093727ad";
-      hash = "sha256-2xJaDgrCJQ2obGYvhsHk2/2p8lFNwuScjbjdxJihh5I=";
+      rev = "a32265307aa2d31941056d69e8b6633e61750b2f";
+      hash = "sha256-LBd3SMem1dxZr/dOdJdEFTQxI6d+H8uYE46yN02E/6Y=";
     };
   };
 
@@ -575,12 +575,12 @@
 
   hcl = buildGrammar {
     language = "hcl";
-    version = "6b74f88";
+    version = "0ff887f";
     source = fetchFromGitHub {
       owner = "MichaHoffmann";
       repo = "tree-sitter-hcl";
-      rev = "6b74f88b3d396e0f101c93f807e0b3667cd3e3a2";
-      hash = "sha256-/YpP3DkM+rFoRiwdW+D2vbKjOALE91tLSc/jkFgSobY=";
+      rev = "0ff887f2a60a147452d52db060de6b42f42f1441";
+      hash = "sha256-L4B2qtGqrtyLHyUMx1p0t4aKncm72dUE+e19Fv5iqUA=";
     };
   };
 
@@ -751,12 +751,12 @@
 
   julia = buildGrammar {
     language = "julia";
-    version = "6287135";
+    version = "91ba1c3";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-julia";
-      rev = "628713553c42f30595a3b0085bb587e9359b986a";
-      hash = "sha256-vB9HnWQ+659Itu8cvd0meLbbLzn62/dDroA3vB7ZtIs=";
+      rev = "91ba1c3c9b50f388d4b67518c04bc9a003ed3475";
+      hash = "sha256-NLUVDfZUjvTnbYwxwij+f9WL7qhduEGrfAUKvEZh/QU=";
     };
   };
 
@@ -1300,14 +1300,14 @@
 
   sql = buildGrammar {
     language = "sql";
-    version = "a6d6d07";
+    version = "89fac16";
     source = fetchFromGitHub {
       owner = "derekstride";
       repo = "tree-sitter-sql";
       nativeBuildInputs = [ nodejs tree-sitter ];
       postFetch = "pushd $out && tree-sitter generate && popd";
-      rev = "a6d6d0799f2c9091436b5b587b451b10e710f9cb";
-      hash = "sha256-PQbjAMFvRvJrosGsdDp86cex8B5XzahO9OwvK56ptbs=";
+      rev = "89fac16df3deceb79c4424dfa674c0c734290fcc";
+      hash = "sha256-9hZ+UfU76+7S6sC8OjhCr5t+LS9rN0faGM/3CQ9ar60=";
     };
   };
 
