@@ -250,12 +250,12 @@
 
   dockerfile = buildGrammar {
     language = "dockerfile";
-    version = "f913be9";
+    version = "09e316d";
     source = fetchFromGitHub {
       owner = "camdencheek";
       repo = "tree-sitter-dockerfile";
-      rev = "f913be9bb8689af22114605012693146fbe9ddaa";
-      hash = "sha256-EoZDjUyL4dEwE6E9r9KruQ8Kb83bAyyFq7a/NFBdZjU=";
+      rev = "09e316dba307b869831e9399b11a83bbf0f2a24b";
+      hash = "sha256-FffwAt9FJurxFJajLTsQe5tLeZty3nSbXBRkgdjNOJ4=";
     };
   };
 
@@ -373,12 +373,12 @@
 
   foam = buildGrammar {
     language = "foam";
-    version = "fdb7f14";
+    version = "c238f4a";
     source = fetchFromGitHub {
       owner = "FoamScience";
       repo = "tree-sitter-foam";
-      rev = "fdb7f14b885abfc4df57728c9b2a2f2ad24d3cb7";
-      hash = "sha256-E5Fr8185ypZbkaGIDE9lhQ0Vf1Dphx7n5suNkK0AFHU=";
+      rev = "c238f4af9a5723a212cf1a4c9b31dd5c1d5270a2";
+      hash = "sha256-GCVV7kj+5S12jedyMajw2OcFOJ0Wz8hiDCImh/G1ngg=";
     };
   };
 
