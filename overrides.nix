@@ -40,6 +40,7 @@ final: prev: let
       noice-nvim = [nui-nvim nvim-notify];
       null-ls-nvim = [plenary-nvim];
       nvim-dap-python = [nvim-dap];
+      nvim-treesitter-textobjects = [nvim-treesitter];
       peek-nvim = [pkgs.deno];
       telescope-nvim = [plenary-nvim];
       windows-nvim = [middleclass animation-nvim];
