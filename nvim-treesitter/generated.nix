@@ -439,12 +439,12 @@
 
   gitcommit = buildGrammar {
     language = "gitcommit";
-    version = "d3c15bd";
+    version = "f838621";
     source = fetchFromGitHub {
       owner = "gbprod";
       repo = "tree-sitter-gitcommit";
-      rev = "d3c15bdf0165c89872cc1345c5f8815be3cad9cc";
-      hash = "sha256-3ufluVDeCXLksgj68f7MfK+3QrtvLDoc9Xhbh7xz+t0=";
+      rev = "f838621d00831967a39ac8293cd3c23b0f49252e";
+      hash = "sha256-9OulAtUDMP1jKYPOFBfctBVX2TWktkmwPtE3sCh1qD8=";
     };
   };
 
@@ -1146,12 +1146,12 @@
 
   racket = buildGrammar {
     language = "racket";
-    version = "09cb27a";
+    version = "dc9c334";
     source = fetchFromGitHub {
       owner = "6cdh";
       repo = "tree-sitter-racket";
-      rev = "09cb27a06415bce529a26774a842f5a80d50d362";
-      hash = "sha256-+chEzpHh4eBTEpx2+sFXDMco18zNPFUu5HMQ3dB+LwI=";
+      rev = "dc9c33451fefc2d84d226e55c828adc8a66f2e37";
+      hash = "sha256-ie64no94TtAWsSYaBXmic4oyRAA01fMl97+JWcFU1E8=";
     };
   };
 
@@ -1300,14 +1300,14 @@
 
   sql = buildGrammar {
     language = "sql";
-    version = "89fac16";
+    version = "54b363b";
     source = fetchFromGitHub {
       owner = "derekstride";
       repo = "tree-sitter-sql";
       nativeBuildInputs = [ nodejs tree-sitter ];
       postFetch = "pushd $out && tree-sitter generate && popd";
-      rev = "89fac16df3deceb79c4424dfa674c0c734290fcc";
-      hash = "sha256-9hZ+UfU76+7S6sC8OjhCr5t+LS9rN0faGM/3CQ9ar60=";
+      rev = "54b363b87c22787f9dcfabb5d8aa221cb65ace42";
+      hash = "sha256-ku4t3IyPNIIXVt3RvUoCG+TUbe62m7EFtXLUiAPb+pQ=";
     };
   };
 
@@ -1427,12 +1427,12 @@
 
   tsx = buildGrammar {
     language = "tsx";
-    version = "0ae3828";
+    version = "faad909";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-typescript";
-      rev = "0ae382803abce0807e90f498105c713b9233e0b2";
-      hash = "sha256-we8jkX8Nl9+eGw8c6ZmH5hW7yfzFaNhQ+WDzRvMMx9A=";
+      rev = "faad9094f4061a43d4e9005439e9e85c6541ebe7";
+      hash = "sha256-8W/YX2EP3brbDsURZ8YI04KqgLOK6QqXaiFikpwrTV0=";
     };
     location = "tsx";
 
@@ -1462,12 +1462,12 @@
 
   typescript = buildGrammar {
     language = "typescript";
-    version = "0ae3828";
+    version = "faad909";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-typescript";
-      rev = "0ae382803abce0807e90f498105c713b9233e0b2";
-      hash = "sha256-we8jkX8Nl9+eGw8c6ZmH5hW7yfzFaNhQ+WDzRvMMx9A=";
+      rev = "faad9094f4061a43d4e9005439e9e85c6541ebe7";
+      hash = "sha256-8W/YX2EP3brbDsURZ8YI04KqgLOK6QqXaiFikpwrTV0=";
     };
     location = "typescript";
 
