@@ -136,12 +136,12 @@
 
   diffview-nvim = buildVimPluginFrom2Nix {
     pname = "diffview.nvim";
-    version = "2022-12-03";
+    version = "2022-12-06";
     src = fetchFromGitHub {
       owner = "sindrets";
       repo = "diffview.nvim";
-      rev = "bd6c0c2df6c00a72342f631a58e1ea28549b6ac8";
-      sha256 = "1iwjz5ydccwv4jdyc4s6i7ypl16x4mxps2k0862pmd2m89rs8j0n";
+      rev = "e37b2d9aaba408954d0e894e27e6f4dbf939ef95";
+      sha256 = "0a9m0ymjj6y1nmpf0yxzvqnz1j2ppwis43a26iqr94i4n5kva393";
     };
     meta.homepage = "https://github.com/sindrets/diffview.nvim/";
   };
@@ -885,8 +885,8 @@
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "nvim-lspconfig";
-      rev = "394887418e9714c4e4626a16257b15e67dc5d893";
-      sha256 = "0j8w4ak35p7863gx75xk3jkndl5094lzmbs25bbagpgq36h1h488";
+      rev = "8faa599646f482d3ed04e645eb04af94bcd12feb";
+      sha256 = "0b2886a5fkj0nn6mlfgb4z7ri096l0g9md00kd14nfk6lxi9693k";
     };
     meta.homepage = "https://github.com/neovim/nvim-lspconfig/";
   };
@@ -905,12 +905,12 @@
 
   nvim-notify = buildVimPluginFrom2Nix {
     pname = "nvim-notify";
-    version = "2022-12-05";
+    version = "2022-12-06";
     src = fetchFromGitHub {
       owner = "rcarriga";
       repo = "nvim-notify";
-      rev = "e51722ee86bd8e1da02ae1dcd10a1d2e3ee7c062";
-      sha256 = "1lhsx9a69429ixzhbx2i4sk96qiwbn65kqy5hz78fckqh8n5qr2m";
+      rev = "b005821516f1f37801a73067afd1cef2dbc4dfe8";
+      sha256 = "06y5akjhrnnsdkjxbcci7fxar8qj37qsl5i18xyx4lzzslxf7nvy";
     };
     meta.homepage = "https://github.com/rcarriga/nvim-notify/";
   };
@@ -957,8 +957,8 @@
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter";
-      rev = "c744b49f13b7c75ae1604a05d3eadd9373c24e6c";
-      sha256 = "10y8cbcsan772bzizpn1p9cqdm52wdhh8l5ya6i44q18r7anqvj7";
+      rev = "7eb553ce4dc9af6631a823b5e4b5aa33fdc45bfd";
+      sha256 = "1yp2c4lj6vr20aqkzvbm5kazfnm7hdsx4ryxnacrvwzdzqy5rgwl";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
   };
@@ -1133,12 +1133,12 @@
 
   tokyonight-nvim = buildVimPluginFrom2Nix {
     pname = "tokyonight.nvim";
-    version = "2022-12-02";
+    version = "2022-12-06";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "tokyonight.nvim";
-      rev = "171aface9bb47b48fbe71ef98ac5574d04812501";
-      sha256 = "082r5r0vk4ss223mk6qwzsck0spzx0y14lc193zyf8dh4q3vwc1i";
+      rev = "0f7b6a5b6cf232f34cb8f51123a084a6eee96b89";
+      sha256 = "0h7msjgg5zg0zza8fasb2km3pcijlb5w69hlb3vfxxb33kjv8104";
     };
     meta.homepage = "https://github.com/folke/tokyonight.nvim/";
   };
@@ -1298,6 +1298,18 @@
       sha256 = "04i8d7dlxmzgxiysy9jffxkpkw8h3qjkrv3l74z7pfksdmhlbbwz";
     };
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
+  };
+
+  nvim-treesitter-textobjects = buildVimPluginFrom2Nix {
+    pname = "nvim-treesitter-textobjects";
+    version = "2022-11-27";
+    src = fetchFromGitHub {
+      owner = "nvim-treesitter";
+      repo = "nvim-treesitter-textobjects";
+      rev = "98476e7364821989ab9b500e4d20d9ae2c5f6564";
+      sha256 = "1gvksha3l3pripy7rsk1axr9n0wmzsh2xr1461vjz3314sdfikyj";
+    };
+    meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects/";
   };
 
   catppuccin = buildVimPluginFrom2Nix {

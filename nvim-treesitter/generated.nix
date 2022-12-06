@@ -496,12 +496,12 @@
 
   go = buildGrammar {
     language = "go";
-    version = "05900fa";
+    version = "06432b8";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-go";
-      rev = "05900faa3cdb5d2d8c8bd5e77ee698487e0a8611";
-      hash = "sha256-f885YTswEDH/QfRPUxcLp/1E2zXLKl25R9IyTGKb1eM=";
+      rev = "06432b86ffd57f791b7cf3a0441026f6fefbc2f2";
+      hash = "sha256-vsjX4OJsLcKPBrZVu97xWGB06NGEu+K4dJOat0v1SUQ=";
     };
   };
 
@@ -1223,12 +1223,12 @@
 
   rust = buildGrammar {
     language = "rust";
-    version = "0431a2c";
+    version = "f7fb205";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-rust";
-      rev = "0431a2c60828731f27491ee9fdefe25e250ce9c9";
-      hash = "sha256-DnUq8TwLGPtN1GXw0AV2t+tj7UKrU4kU32rjGoCHMpE=";
+      rev = "f7fb205c424b0962de59b26b931fe484e1262b35";
+      hash = "sha256-Onk8i2vGHySsjg/O3OZvl7OlDpg3b5/7481f+jJMPCU=";
     };
   };
 
