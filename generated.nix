@@ -975,6 +975,18 @@
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter-context/";
   };
 
+  nvim-treesitter-textobjects = buildVimPluginFrom2Nix {
+    pname = "nvim-treesitter-textobjects";
+    version = "2022-11-27";
+    src = fetchFromGitHub {
+      owner = "nvim-treesitter";
+      repo = "nvim-treesitter-textobjects";
+      rev = "98476e7364821989ab9b500e4d20d9ae2c5f6564";
+      sha256 = "1gvksha3l3pripy7rsk1axr9n0wmzsh2xr1461vjz3314sdfikyj";
+    };
+    meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects/";
+  };
+
   nvim-ts-context-commentstring = buildVimPluginFrom2Nix {
     pname = "nvim-ts-context-commentstring";
     version = "2022-10-29";
@@ -1300,16 +1312,16 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
-  nvim-treesitter-textobjects = buildVimPluginFrom2Nix {
-    pname = "nvim-treesitter-textobjects";
-    version = "2022-11-27";
+  nvim-treesitter-textsubjects = buildVimPluginFrom2Nix {
+    pname = "nvim-treesitter-textsubjects";
+    version = "2022-12-04";
     src = fetchFromGitHub {
-      owner = "nvim-treesitter";
-      repo = "nvim-treesitter-textobjects";
-      rev = "98476e7364821989ab9b500e4d20d9ae2c5f6564";
-      sha256 = "1gvksha3l3pripy7rsk1axr9n0wmzsh2xr1461vjz3314sdfikyj";
+      owner = "RRethy";
+      repo = "nvim-treesitter-textsubjects";
+      rev = "70f51de4d1b3a72be94a75c727657f53a6296168";
+      sha256 = "06h1dnlkq6yj3k5f7xymg57hpqw343rk8f8gjabpzpg8dzddbmwn";
     };
-    meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects/";
+    meta.homepage = "https://github.com/RRethy/nvim-treesitter-textsubjects/";
   };
 
   catppuccin = buildVimPluginFrom2Nix {
