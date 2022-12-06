@@ -41,6 +41,7 @@ final: prev: let
       null-ls-nvim = [plenary-nvim];
       nvim-dap-python = [nvim-dap];
       nvim-treesitter-textobjects = [nvim-treesitter];
+      nvim-treesitter-textsubjects = [nvim-treesitter];
       peek-nvim = [pkgs.deno];
       telescope-nvim = [plenary-nvim];
       windows-nvim = [middleclass animation-nvim];
