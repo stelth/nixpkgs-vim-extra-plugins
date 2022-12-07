@@ -701,12 +701,12 @@
 
   neodev-nvim = buildVimPluginFrom2Nix {
     pname = "neodev.nvim";
-    version = "2022-12-06";
+    version = "2022-12-07";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "neodev.nvim";
-      rev = "999b00692756253d3a5f00c04ef8ae4cfc4559b7";
-      sha256 = "0i024dwvrgic35dqxsznkk5wjac6jq6s4vbspxrsrc78d8acgsxx";
+      rev = "f353ec5ac10a9e581c92dc0f937025c54e216022";
+      sha256 = "1wmy5hncm1lz5r99vcspg95435yyg0jdzm2kjca79nsmqp613ffl";
     };
     meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
@@ -785,12 +785,12 @@
 
   nvim-autopairs = buildVimPluginFrom2Nix {
     pname = "nvim-autopairs";
-    version = "2022-11-28";
+    version = "2022-12-07";
     src = fetchFromGitHub {
       owner = "windwp";
       repo = "nvim-autopairs";
-      rev = "99f696339266c22e7313d6a85a95bd538c3fc226";
-      sha256 = "1pv3hfaxd7yifx0n9643wcb9skrqrkzx5x545x944y23xvwvv9di";
+      rev = "9fa996123031b4cad100bd5afad04384a622c8a7";
+      sha256 = "0js7snmg9223d54iayadlm3bjn54fs3mzqck26cpn4fa5m1nc295";
     };
     meta.homepage = "https://github.com/windwp/nvim-autopairs/";
   };
@@ -917,12 +917,12 @@
 
   nvim-scrollbar = buildVimPluginFrom2Nix {
     pname = "nvim-scrollbar";
-    version = "2022-11-21";
+    version = "2022-12-07";
     src = fetchFromGitHub {
       owner = "petertriho";
       repo = "nvim-scrollbar";
-      rev = "2cb0a0b36a45118e075699bb3a884ab819a85256";
-      sha256 = "0hmx3fic2cds609a9f4ik79kb9i6hqs9ir1h6x1kamn4fgm4fqcq";
+      rev = "779cf6f5e7ebcd78acf37dff35a240e03f616357";
+      sha256 = "0hz9y3q84azi3grzac7i6dazv982g7di7limd1qajx8x3hbbfvyx";
     };
     meta.homepage = "https://github.com/petertriho/nvim-scrollbar/";
   };
@@ -985,6 +985,18 @@
       sha256 = "1gvksha3l3pripy7rsk1axr9n0wmzsh2xr1461vjz3314sdfikyj";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects/";
+  };
+
+  nvim-treesitter-textsubjects = buildVimPluginFrom2Nix {
+    pname = "nvim-treesitter-textsubjects";
+    version = "2022-12-04";
+    src = fetchFromGitHub {
+      owner = "RRethy";
+      repo = "nvim-treesitter-textsubjects";
+      rev = "70f51de4d1b3a72be94a75c727657f53a6296168";
+      sha256 = "06h1dnlkq6yj3k5f7xymg57hpqw343rk8f8gjabpzpg8dzddbmwn";
+    };
+    meta.homepage = "https://github.com/RRethy/nvim-treesitter-textsubjects/";
   };
 
   nvim-ts-context-commentstring = buildVimPluginFrom2Nix {
@@ -1310,18 +1322,6 @@
       sha256 = "04i8d7dlxmzgxiysy9jffxkpkw8h3qjkrv3l74z7pfksdmhlbbwz";
     };
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
-  };
-
-  nvim-treesitter-textsubjects = buildVimPluginFrom2Nix {
-    pname = "nvim-treesitter-textsubjects";
-    version = "2022-12-04";
-    src = fetchFromGitHub {
-      owner = "RRethy";
-      repo = "nvim-treesitter-textsubjects";
-      rev = "70f51de4d1b3a72be94a75c727657f53a6296168";
-      sha256 = "06h1dnlkq6yj3k5f7xymg57hpqw343rk8f8gjabpzpg8dzddbmwn";
-    };
-    meta.homepage = "https://github.com/RRethy/nvim-treesitter-textsubjects/";
   };
 
   catppuccin = buildVimPluginFrom2Nix {
