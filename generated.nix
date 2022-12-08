@@ -304,12 +304,12 @@
 
   indent-blankline-nvim = buildVimPluginFrom2Nix {
     pname = "indent-blankline.nvim";
-    version = "2022-09-02";
+    version = "2022-12-08";
     src = fetchFromGitHub {
       owner = "lukas-reineke";
       repo = "indent-blankline.nvim";
-      rev = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6";
-      sha256 = "1r9y6zqar0gv8kvqqxlh07ifa16h5yqa24fj22qw63vgnysbxqbp";
+      rev = "c4c203c3e8a595bc333abaf168fcb10c13ed5fb7";
+      sha256 = "1kanfs0c1rbi23dm0vkmyzg4qkxq18hc2jc2izvyqiklbpi49x06";
     };
     meta.homepage = "https://github.com/lukas-reineke/indent-blankline.nvim/";
   };
@@ -881,12 +881,12 @@
 
   nvim-lspconfig = buildVimPluginFrom2Nix {
     pname = "nvim-lspconfig";
-    version = "2022-12-06";
+    version = "2022-12-07";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "nvim-lspconfig";
-      rev = "8faa599646f482d3ed04e645eb04af94bcd12feb";
-      sha256 = "0b2886a5fkj0nn6mlfgb4z7ri096l0g9md00kd14nfk6lxi9693k";
+      rev = "c7206327096bedf2e213788a60624a84b3b7552d";
+      sha256 = "1f310ng3i69mlp429fcq65fqrfigdpmnsixq91qyan964cn1b13r";
     };
     meta.homepage = "https://github.com/neovim/nvim-lspconfig/";
   };
@@ -921,8 +921,8 @@
     src = fetchFromGitHub {
       owner = "petertriho";
       repo = "nvim-scrollbar";
-      rev = "779cf6f5e7ebcd78acf37dff35a240e03f616357";
-      sha256 = "0hz9y3q84azi3grzac7i6dazv982g7di7limd1qajx8x3hbbfvyx";
+      rev = "f45aecbba9c402282dfc99721e0ad4c08710907c";
+      sha256 = "0aga91mvkgm8l2nqk2ng8rcgn2a10f5z4xdk66p7afddc8xzk32p";
     };
     meta.homepage = "https://github.com/petertriho/nvim-scrollbar/";
   };
@@ -953,12 +953,12 @@
 
   nvim-treesitter = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter";
-    version = "2022-12-06";
+    version = "2022-12-07";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter";
-      rev = "7eb553ce4dc9af6631a823b5e4b5aa33fdc45bfd";
-      sha256 = "1yp2c4lj6vr20aqkzvbm5kazfnm7hdsx4ryxnacrvwzdzqy5rgwl";
+      rev = "582e5683fbe88ecbc73396a7bc1431d84ca693e8";
+      sha256 = "19rm1mrxx9m4blcgdsq7rxjfbssk89nd3q51557khwsixzhml5lm";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
   };
@@ -1205,12 +1205,12 @@
 
   vim-dadbod = buildVimPluginFrom2Nix {
     pname = "vim-dadbod";
-    version = "2022-12-03";
+    version = "2022-12-07";
     src = fetchFromGitHub {
       owner = "tpope";
       repo = "vim-dadbod";
-      rev = "b21461d6d0021fb997c29732407ff392370a10fe";
-      sha256 = "1lg6845h86rfqn51v12v8qqcxrm305jnal4j8yvn4ixycsbxw51b";
+      rev = "22d97dcb91e12685caa1b4ec25bbbb6ee48ccdef";
+      sha256 = "069dnk72l903rfaxdg9yjrpjs1wycsqzx2d61xpkajrf4hpf1q1w";
     };
     meta.homepage = "https://github.com/tpope/vim-dadbod/";
   };
@@ -1301,12 +1301,12 @@
 
   yanky-nvim = buildVimPluginFrom2Nix {
     pname = "yanky.nvim";
-    version = "2022-11-11";
+    version = "2022-12-07";
     src = fetchFromGitHub {
       owner = "gbprod";
       repo = "yanky.nvim";
-      rev = "eca407c457ff2c4d04d809045e3f3e9620c1dc2c";
-      sha256 = "0apbhg42fkzd0wg4cp679656nxg8f8rcvishdscch03wr3z9wia0";
+      rev = "303c69a41ae84705b280e2ec5a0f69a479c51181";
+      sha256 = "1d06yix6sp4kq5kisq4358zvlgf62rp2f5qm6k3yz7z2p7kxp4p6";
       fetchSubmodules = true;
     };
     meta.homepage = "https://github.com/gbprod/yanky.nvim/";

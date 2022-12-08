@@ -114,12 +114,12 @@
 
   clojure = buildGrammar {
     language = "clojure";
-    version = "087bac7";
+    version = "8c23e0e";
     source = fetchFromGitHub {
       owner = "sogaiu";
       repo = "tree-sitter-clojure";
-      rev = "087bac78c53fe1387756cd5b8e68a69b3f6d7244";
-      hash = "sha256-KiuSAchtqlVlwyBL4rU+p0fPjm52DrNDPq2ETVXOHQU=";
+      rev = "8c23e0ec078af461ccad43fffbbfc204aa6bc238";
+      hash = "sha256-rbR5/f9Cznl4AFybmpKgEcjKBw4GrUVP67tf4UT6/ZE=";
     };
   };
 
@@ -496,12 +496,12 @@
 
   go = buildGrammar {
     language = "go";
-    version = "06432b8";
+    version = "e34b8a4";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-go";
-      rev = "06432b86ffd57f791b7cf3a0441026f6fefbc2f2";
-      hash = "sha256-vsjX4OJsLcKPBrZVu97xWGB06NGEu+K4dJOat0v1SUQ=";
+      rev = "e34b8a418c33bba8bdf3375e8e55903dff7c68b9";
+      hash = "sha256-Bfp2XsT83x+VPMPB5rHAbSpEkHD7lG0iDq2Yt63Ug8I=";
     };
   };
 
@@ -1091,12 +1091,12 @@
 
   python = buildGrammar {
     language = "python";
-    version = "b14614e";
+    version = "9e53981";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-python";
-      rev = "b14614e2144b8f9ee54deed5a24f3c6f51f9ffa8";
-      hash = "sha256-4TDEK3v7hqinisXtAi/iJL0rUKqII07oVg/Jz3IV2yA=";
+      rev = "9e53981ec31b789ee26162ea335de71f02186003";
+      hash = "sha256-D2++Xg7dRfjGM2r4cxaXGQnBOAX5JBREcEAJeNa7Y9M=";
     };
   };
 
