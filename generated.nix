@@ -196,12 +196,12 @@
 
   friendly-snippets = buildVimPluginFrom2Nix {
     pname = "friendly-snippets";
-    version = "2022-12-05";
+    version = "2022-12-12";
     src = fetchFromGitHub {
       owner = "rafamadriz";
       repo = "friendly-snippets";
-      rev = "9b3e497cf0c3abcf73d791968a9768a22405fa13";
-      sha256 = "14j3w7aqnz62fxkrhyklbip9qpdj0cmfxj3japvxbjksh7iba35b";
+      rev = "6e527e04b003739b67bcf62152282e658de16063";
+      sha256 = "1ji0k854gjvf5qd6brcbwvz7kp9whl12yjmfvnji6cldwhaprx0q";
     };
     meta.homepage = "https://github.com/rafamadriz/friendly-snippets/";
   };
@@ -352,12 +352,12 @@
 
   leap-nvim = buildVimPluginFrom2Nix {
     pname = "leap.nvim";
-    version = "2022-12-05";
+    version = "2022-12-11";
     src = fetchFromGitHub {
       owner = "ggandor";
       repo = "leap.nvim";
-      rev = "f28b1e7c1eee525adb17c24de3cc15a7fa1a6ef9";
-      sha256 = "0b311535cvqybg4m517wm7xpjrc0shi3za56c0v5zs6sjnm0n2vs";
+      rev = "8f0d4a96d888f40ceff4f5a47f01ec06d48cb75a";
+      sha256 = "05mmjpxvics8f7qxjs6syj87ngvx2wqqqgxk3rd2y8cpjxyqiacw";
     };
     meta.homepage = "https://github.com/ggandor/leap.nvim/";
   };
@@ -388,12 +388,12 @@
 
   luasnip = buildVimPluginFrom2Nix {
     pname = "luasnip";
-    version = "2022-12-10";
+    version = "2022-12-11";
     src = fetchFromGitHub {
       owner = "l3mon4d3";
       repo = "luasnip";
-      rev = "40b5c6272384d90365e7149e0fcc73afae5e87cc";
-      sha256 = "1hsp7d9mb877whm7rcbvg4k3l9rjz3p3jfjwsr6n6wpspq9xids1";
+      rev = "8b25e74761eead3dc47ce04b5e017fd23da7ad7e";
+      sha256 = "0jf85bynp91dyg4xx06w4ha0cim6m5v26g5wxpml3flmwglj58fa";
       fetchSubmodules = true;
     };
     meta.homepage = "https://github.com/l3mon4d3/luasnip/";
@@ -449,12 +449,12 @@
 
   mini-base16 = buildVimPluginFrom2Nix {
     pname = "mini.base16";
-    version = "2022-12-10";
+    version = "2022-12-11";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.base16";
-      rev = "2c839b3ce3b74b6be8d6ce51145fea4d0a6d31fc";
-      sha256 = "1ndlzg4p2xvdh3mp7xarlyw1zxdbkjd0fsm8cpf5sv4xlrqw4d5r";
+      rev = "b311b234553c5997cd8ec0a4d01eee6303a8e2f1";
+      sha256 = "0pfqsgndiik5kda1fv3qwnvl8ymp3479sjfpbixqs6lbly7dza6g";
     };
     meta.homepage = "https://github.com/echasnovski/mini.base16/";
   };
@@ -533,12 +533,12 @@
 
   mini-indentscope = buildVimPluginFrom2Nix {
     pname = "mini.indentscope";
-    version = "2022-11-08";
+    version = "2022-12-11";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.indentscope";
-      rev = "528ea2f41abf6e12f74098eb1a7c73b8946cbf13";
-      sha256 = "02mddkhxab4w3pgaa29apf3ikdf1grzhfaags8i6kwhxzcn3kwnb";
+      rev = "30e8b9b933a5001e94a3485b8898343d0d5abb89";
+      sha256 = "1yvrr7jsfcwbqh8i0x5s47x44zy78a0rmqk8xyc2zp5k1jyaj5x0";
     };
     meta.homepage = "https://github.com/echasnovski/mini.indentscope/";
   };
@@ -593,12 +593,12 @@
 
   mini-nvim = buildVimPluginFrom2Nix {
     pname = "mini.nvim";
-    version = "2022-12-10";
+    version = "2022-12-11";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.nvim";
-      rev = "159c2d69520a036f28cf62cda3af184c5f4747b4";
-      sha256 = "0jwzmdv1423yyv0pdvq33i5prnbrm9bnangfnd25c1mchsmkqgwf";
+      rev = "82e04074117635ebe7ae2202953a0c3d78db5146";
+      sha256 = "1rr5xb4nkwm4vjk8v2065dy7d55qgh8wr6fhgash2gzrfjvm7b8a";
     };
     meta.homepage = "https://github.com/echasnovski/mini.nvim/";
   };
@@ -701,12 +701,12 @@
 
   neodev-nvim = buildVimPluginFrom2Nix {
     pname = "neodev.nvim";
-    version = "2022-12-07";
+    version = "2022-12-12";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "neodev.nvim";
-      rev = "f353ec5ac10a9e581c92dc0f937025c54e216022";
-      sha256 = "1wmy5hncm1lz5r99vcspg95435yyg0jdzm2kjca79nsmqp613ffl";
+      rev = "17c6f31af8cb4c561275e89cd93d2cedda896706";
+      sha256 = "0r5d0zfq3ch6l5khrggb7b6c7lammgbq5bl787rscvmvdmcngf6c";
     };
     meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
@@ -881,24 +881,24 @@
 
   nvim-lspconfig = buildVimPluginFrom2Nix {
     pname = "nvim-lspconfig";
-    version = "2022-12-10";
+    version = "2022-12-11";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "nvim-lspconfig";
-      rev = "3bb0c53b1df74d4b3b70d5939a015b19064a5a06";
-      sha256 = "1fjsqxs75ayisj78sznyzy899sk5x0432l5sm9bbynpfc7n9pl1s";
+      rev = "6eb24ef9175d1fa3c7a23e115854b1a2d923d386";
+      sha256 = "0qwc6c1s37vyv913m984yicj3fkich26c06zs86q6pnc1n65cfl9";
     };
     meta.homepage = "https://github.com/neovim/nvim-lspconfig/";
   };
 
   nvim-navic = buildVimPluginFrom2Nix {
     pname = "nvim-navic";
-    version = "2022-11-27";
+    version = "2022-12-11";
     src = fetchFromGitHub {
       owner = "SmiteshP";
       repo = "nvim-navic";
-      rev = "343e07de11b15f93e44ebd47eb98dce6b7da2e6b";
-      sha256 = "14rdzmh8w7qvmvqdv360nba1l2phmmbxs90ifjrxicw21b48jmyi";
+      rev = "7a2b823152fe4de65ee7925b0e32d26ed73bc57c";
+      sha256 = "00hsnlbr6s2ljwzl5ayjw1m2bdm4kmypl7xlg2p8l1yjnnsk4dn4";
     };
     meta.homepage = "https://github.com/SmiteshP/nvim-navic/";
   };
@@ -929,12 +929,12 @@
 
   nvim-surround = buildVimPluginFrom2Nix {
     pname = "nvim-surround";
-    version = "2022-11-24";
+    version = "2022-12-11";
     src = fetchFromGitHub {
       owner = "kylechui";
       repo = "nvim-surround";
-      rev = "6b45fbffdabb2d8cd80d310006c92e59cec8fd74";
-      sha256 = "1qdhyclzsw1inwwzw3kr1jxq3cz0qr358whj93y16x7id3ylsx52";
+      rev = "6cc6b54d3728a17e34bb5c9b9db05c7e5690813d";
+      sha256 = "06sbki4m8za9zsj643fj5wzx44xsa1nv23as1m9ip99cwqrvxqcc";
     };
     meta.homepage = "https://github.com/kylechui/nvim-surround/";
   };
@@ -953,12 +953,12 @@
 
   nvim-treesitter = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter";
-    version = "2022-12-10";
+    version = "2022-12-12";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter";
-      rev = "619f1ace03860d668c7a661332c38480f2db2584";
-      sha256 = "05gj2gxi5bhi2xg6ihgwckjkcspaijdyrgbwzh96hz766s0zz3f3";
+      rev = "ae0317d78a9f6fad78870d6645b60528e13ae6fa";
+      sha256 = "16d70n17fli233y4aigsr4ddm2h6myj85p4lsl2xk5sypd5bkczc";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
   };
@@ -1301,12 +1301,12 @@
 
   yanky-nvim = buildVimPluginFrom2Nix {
     pname = "yanky.nvim";
-    version = "2022-12-09";
+    version = "2022-12-12";
     src = fetchFromGitHub {
       owner = "gbprod";
       repo = "yanky.nvim";
-      rev = "022899d0c30d3a6344344f05df0850574c38ac9c";
-      sha256 = "0zxh3qj7qjrrjaf9rh4snaa4d9h9y9y8hmb0dabl4ck7vw2p87rd";
+      rev = "d852d252a9b6ead592354c3199028bd4d3959a97";
+      sha256 = "1y4cw1wq88szsqckxv03c8bfj3j428477nhzq5x2ycldc5nbkhaw";
       fetchSubmodules = true;
     };
     meta.homepage = "https://github.com/gbprod/yanky.nvim/";
@@ -1326,12 +1326,12 @@
 
   catppuccin = buildVimPluginFrom2Nix {
     pname = "catppuccin";
-    version = "2022-12-10";
+    version = "2022-12-11";
     src = fetchFromGitHub {
       owner = "catppuccin";
       repo = "nvim";
-      rev = "1d22da687d36c37133b13f2b41658c1c989e77e0";
-      sha256 = "1mrdb8l4qpq39fbanwgk55mjhx55j8yif2h9bm4q6f0vqqs0n505";
+      rev = "e7fbf2496ce0f1cdf9883a6b99d86afc2f3efadc";
+      sha256 = "0y7scdkzn3j580vk0m3n4vksnhdnq3fgx6qr9vygk15jn1qxdga8";
     };
     meta.homepage = "https://github.com/catppuccin/nvim/";
   };

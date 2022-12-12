@@ -740,12 +740,12 @@
 
   jsonnet = buildGrammar {
     language = "jsonnet";
-    version = "0475a50";
+    version = "f4e2d85";
     source = fetchFromGitHub {
       owner = "sourcegraph";
       repo = "tree-sitter-jsonnet";
-      rev = "0475a5017ad7dc84845d1d33187f2321abcb261d";
-      hash = "sha256-7LdIA+tsFUIvAk9GoqJwSU5tJDNPtsziv0rbiiLmCLY=";
+      rev = "f4e2d85598cdf43259b68bb396910d3c2b519de3";
+      hash = "sha256-rH0TZTJjd1i6im35XqVRAqFWCneoezCLf2Fl6s8kPM4=";
     };
   };
 
@@ -898,12 +898,12 @@
 
   meson = buildGrammar {
     language = "meson";
-    version = "153d225";
+    version = "6c5f7ef";
     source = fetchFromGitHub {
       owner = "Decodetalkers";
       repo = "tree-sitter-meson";
-      rev = "153d22588fb5c1eee16a165a084f9ea30f29d941";
-      hash = "sha256-q0qcRe94+zFvNzZV6vGGihL5xLl8Vr0lwDZAIYKPq2A=";
+      rev = "6c5f7ef944f9c6ae8a0fc28b9071a4b493652238";
+      hash = "sha256-r/H7v6a1blsendVBxx9Qy4f2i4V3LsxSwe+9/PRbfG8=";
     };
   };
 
@@ -1025,12 +1025,12 @@
 
   php = buildGrammar {
     language = "php";
-    version = "64a2abb";
+    version = "680244a";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-php";
-      rev = "64a2abb98a0cbf2bce23e4af6c05c78f06068886";
-      hash = "sha256-iAi+Cr7bW4mEbFHba+rv0afhY4v1suPGhsCK4IhcMLo=";
+      rev = "680244ac3a8092154125e91145fe8d631cd4583b";
+      hash = "sha256-iK17hOH3fxEZcbgcKRoDM9zu55SG8/Z2hXafe2LbOqM=";
     };
   };
 
@@ -1245,11 +1245,11 @@
 
   scheme = buildGrammar {
     language = "scheme";
-    version = "bdcd2c8";
+    version = "c074132";
     source = fetchFromGitHub {
       owner = "6cdh";
       repo = "tree-sitter-scheme";
-      rev = "bdcd2c8496701153506a9e3e1b76dfed852873ba";
+      rev = "c0741320bfca6b7b5b7a13b5171275951e96a842";
       hash = "sha256-KfcWGE92nx9lrs3V/lKeE0pPqCqFC/mHamkyryrcdoo=";
     };
   };
@@ -1346,14 +1346,14 @@
 
   swift = buildGrammar {
     language = "swift";
-    version = "4443b12";
+    version = "693411c";
     source = fetchFromGitHub {
       owner = "alex-pinkus";
       repo = "tree-sitter-swift";
       nativeBuildInputs = [ nodejs tree-sitter ];
       postFetch = "pushd $out && tree-sitter generate && popd";
-      rev = "4443b125240d7ae7e50d35d8415fae5be61bdaf2";
-      hash = "sha256-3EYVgslvjd13674YSNapJ9EOFCGyxzRtW5TSOtI7Tqo=";
+      rev = "693411cb5a1167311ccd84708348281630562726";
+      hash = "sha256-80BkH2kMSffUebdgiRRbqBClfSbXRMIFIeBwoMZ22Ao=";
     };
   };
 
@@ -1394,12 +1394,12 @@
 
   tlaplus = buildGrammar {
     language = "tlaplus";
-    version = "deaf0e5";
+    version = "27e6d23";
     source = fetchFromGitHub {
       owner = "tlaplus-community";
       repo = "tree-sitter-tlaplus";
-      rev = "deaf0e5c573ad4e2bbfc9a29abb7b6dcb572556e";
-      hash = "sha256-D4A2k14SpVR4iKCMwql403XjHGg7p17EYazvAUiJ2gY=";
+      rev = "27e6d238a5708b0490f43351f6e0baeaab4c9c1f";
+      hash = "sha256-4RwHJN1N2DupVIYqWk2sioiiTtEKBmuLT+t+THr71os=";
     };
   };
 
