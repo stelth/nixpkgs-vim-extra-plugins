@@ -740,12 +740,12 @@
 
   jsonnet = buildGrammar {
     language = "jsonnet";
-    version = "f4e2d85";
+    version = "44c0d58";
     source = fetchFromGitHub {
       owner = "sourcegraph";
       repo = "tree-sitter-jsonnet";
-      rev = "f4e2d85598cdf43259b68bb396910d3c2b519de3";
-      hash = "sha256-rH0TZTJjd1i6im35XqVRAqFWCneoezCLf2Fl6s8kPM4=";
+      rev = "44c0d58dfb523b7f1066ef4013cc543afc696960";
+      hash = "sha256-y7AV/w0W9NOGIoq2rKyCeXLLWY00m7Fbde/nT5SviQo=";
     };
   };
 
@@ -1245,12 +1245,12 @@
 
   scheme = buildGrammar {
     language = "scheme";
-    version = "c074132";
+    version = "16bdcf0";
     source = fetchFromGitHub {
       owner = "6cdh";
       repo = "tree-sitter-scheme";
-      rev = "c0741320bfca6b7b5b7a13b5171275951e96a842";
-      hash = "sha256-KfcWGE92nx9lrs3V/lKeE0pPqCqFC/mHamkyryrcdoo=";
+      rev = "16bdcf0495865e17ae5b995257458e31e8b7f450";
+      hash = "sha256-+K+T5IgcEdTZK4s60AmkPg7L6Aw0mj36FMsWaRxUT0I=";
     };
   };
 
