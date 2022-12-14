@@ -740,23 +740,23 @@
 
   jsonnet = buildGrammar {
     language = "jsonnet";
-    version = "44c0d58";
+    version = "768a384";
     source = fetchFromGitHub {
       owner = "sourcegraph";
       repo = "tree-sitter-jsonnet";
-      rev = "44c0d58dfb523b7f1066ef4013cc543afc696960";
-      hash = "sha256-y7AV/w0W9NOGIoq2rKyCeXLLWY00m7Fbde/nT5SviQo=";
+      rev = "768a384989391237c6d55ff3d878a0d1e0d2b4fa";
+      hash = "sha256-kSG0YwtkzGVz8RIYBrE0ZyUMc6YTtQO8XvHHiwy5GL4=";
     };
   };
 
   julia = buildGrammar {
     language = "julia";
-    version = "91ba1c3";
+    version = "36b099e";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-julia";
-      rev = "91ba1c3c9b50f388d4b67518c04bc9a003ed3475";
-      hash = "sha256-NLUVDfZUjvTnbYwxwij+f9WL7qhduEGrfAUKvEZh/QU=";
+      rev = "36b099e9ea577f64ba53323115028dadd2991d2c";
+      hash = "sha256-sd6Ue7Ur6Juq2kZbuC/E/gK9JJPVG/5UTToQ+5hdTD0=";
     };
   };
 
