@@ -103,12 +103,12 @@
 
   c_sharp = buildGrammar {
     language = "c_sharp";
-    version = "3ef3f7f";
+    version = "8e4ec08";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-c-sharp";
-      rev = "3ef3f7f99e16e528e6689eae44dff35150993307";
-      hash = "sha256-xBRSwuodQTrKHjwx3JVgnwsAkp9EO+6su3hc2d+6DBQ=";
+      rev = "8e4ec08f1dae1d72f082df0f7e1176772f553d47";
+      hash = "sha256-BIqfaFFwco3aE65N9tRtawxFEXvaVwQvoMgM3cg10/k=";
     };
   };
 
@@ -1025,12 +1025,12 @@
 
   php = buildGrammar {
     language = "php";
-    version = "680244a";
+    version = "47dd353";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-php";
-      rev = "680244ac3a8092154125e91145fe8d631cd4583b";
-      hash = "sha256-iK17hOH3fxEZcbgcKRoDM9zu55SG8/Z2hXafe2LbOqM=";
+      rev = "47dd3532df8204a444dd6eb042135f1e7964f9cb";
+      hash = "sha256-YU21aRugPfwlYuj+9xJAFD44Btopnln7QEoxANIlcLs=";
     };
   };
 
@@ -1300,14 +1300,14 @@
 
   sql = buildGrammar {
     language = "sql";
-    version = "a4dd131";
+    version = "8dc7fa0";
     source = fetchFromGitHub {
       owner = "derekstride";
       repo = "tree-sitter-sql";
       nativeBuildInputs = [ nodejs tree-sitter ];
       postFetch = "pushd $out && tree-sitter generate && popd";
-      rev = "a4dd131eeb9fe7f3c9c2ca0f506f6d58d9986a97";
-      hash = "sha256-Z1x1XPecXt3a4mL40Fyt5+1wrD+0L3Hh9aWjI0vIhIc=";
+      rev = "8dc7fa0e51145f0312eedbb5aff9945bd967fb8f";
+      hash = "sha256-L6mur9BnDzA1mgtsWdyMC52IY9sKwt/xDkfPv2VKPPs=";
     };
   };
 
