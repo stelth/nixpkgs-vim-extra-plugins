@@ -953,12 +953,12 @@
 
   ocaml = buildGrammar {
     language = "ocaml";
-    version = "cc26b1e";
+    version = "de07323";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-ocaml";
-      rev = "cc26b1ef111100f26a137bcbcd39fd4e35be9a59";
-      hash = "sha256-gTmRBFFCBrA48Yn1MO2mMQPpa6u3uv5McC4BDuMXKuM=";
+      rev = "de07323343946c32759933cb3b7c78e821098cad";
+      hash = "sha256-JhJSg6Ht3dy94hAP2yy0fg9U/IeYNGaHYoys/++yOwg=";
     };
     location = "ocaml";
 
@@ -966,12 +966,12 @@
 
   ocaml_interface = buildGrammar {
     language = "ocaml_interface";
-    version = "cc26b1e";
+    version = "de07323";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-ocaml";
-      rev = "cc26b1ef111100f26a137bcbcd39fd4e35be9a59";
-      hash = "sha256-gTmRBFFCBrA48Yn1MO2mMQPpa6u3uv5McC4BDuMXKuM=";
+      rev = "de07323343946c32759933cb3b7c78e821098cad";
+      hash = "sha256-JhJSg6Ht3dy94hAP2yy0fg9U/IeYNGaHYoys/++yOwg=";
     };
     location = "interface";
 
