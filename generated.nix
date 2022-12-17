@@ -785,12 +785,12 @@
 
   nvim-autopairs = buildVimPluginFrom2Nix {
     pname = "nvim-autopairs";
-    version = "2022-12-07";
+    version = "2022-12-17";
     src = fetchFromGitHub {
       owner = "windwp";
       repo = "nvim-autopairs";
-      rev = "9fa996123031b4cad100bd5afad04384a622c8a7";
-      sha256 = "0js7snmg9223d54iayadlm3bjn54fs3mzqck26cpn4fa5m1nc295";
+      rev = "b5994e6547d64f781cfca853a1aa6174d238fe0e";
+      sha256 = "0xdyldrhzrva955qzm6ji6z2cs6yhn266x65p932wsl8498zkq1a";
     };
     meta.homepage = "https://github.com/windwp/nvim-autopairs/";
   };
@@ -1119,6 +1119,18 @@
     meta.homepage = "https://github.com/nvim-telescope/telescope-fzf-native.nvim/";
   };
 
+  telescope-undo-nvim = buildVimPluginFrom2Nix {
+    pname = "telescope-undo.nvim";
+    version = "2022-12-16";
+    src = fetchFromGitHub {
+      owner = "debugloop";
+      repo = "telescope-undo.nvim";
+      rev = "309edddf7ee8236afc75634e66dbe5e188bba198";
+      sha256 = "12sx8biki8zbjk3b7nrpybklg3zza0rxh24zgknx24cankz7a5l4";
+    };
+    meta.homepage = "https://github.com/debugloop/telescope-undo.nvim/";
+  };
+
   telescope-nvim = buildVimPluginFrom2Nix {
     pname = "telescope.nvim";
     version = "2022-12-02";
@@ -1324,26 +1336,14 @@
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
   };
 
-  telescope-undo-nvim = buildVimPluginFrom2Nix {
-    pname = "telescope-undo.nvim";
-    version = "2022-12-16";
-    src = fetchFromGitHub {
-      owner = "debugloop";
-      repo = "telescope-undo.nvim";
-      rev = "309edddf7ee8236afc75634e66dbe5e188bba198";
-      sha256 = "12sx8biki8zbjk3b7nrpybklg3zza0rxh24zgknx24cankz7a5l4";
-    };
-    meta.homepage = "https://github.com/debugloop/telescope-undo.nvim/";
-  };
-
   catppuccin = buildVimPluginFrom2Nix {
     pname = "catppuccin";
     version = "2022-12-16";
     src = fetchFromGitHub {
       owner = "catppuccin";
       repo = "nvim";
-      rev = "c12ef01b4949ef40ac318dff6e466809bc130c1d";
-      sha256 = "0ynqwihalk3gkymzpvqh9wndi25qh1h01kkypn3x134nm3fsdanf";
+      rev = "55f43a952856bc0029e6cef066297c6cfab3451d";
+      sha256 = "1y9k2hzykw7m227kihaf2cygbkirwqrha3m40k2807a66nrcjyk3";
     };
     meta.homepage = "https://github.com/catppuccin/nvim/";
   };
