@@ -103,12 +103,12 @@
 
   c_sharp = buildGrammar {
     language = "c_sharp";
-    version = "d83b3c6";
+    version = "f0e31b9";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-c-sharp";
-      rev = "d83b3c661db34fde4dcd80e79ce1653d4524998d";
-      hash = "sha256-JWDtJeTPc9kQVMXXWmZ/TVJ9P/rIGlPA+1TfF0U7uNM=";
+      rev = "f0e31b964d67598da03b54854eb7471f5c2560b5";
+      hash = "sha256-witj3IUmT6IXPMQOLezZHH39jM2fhLZLC8quUmvXIxA=";
     };
   };
 
@@ -740,12 +740,12 @@
 
   jsonnet = buildGrammar {
     language = "jsonnet";
-    version = "768a384";
+    version = "505f5bd";
     source = fetchFromGitHub {
       owner = "sourcegraph";
       repo = "tree-sitter-jsonnet";
-      rev = "768a384989391237c6d55ff3d878a0d1e0d2b4fa";
-      hash = "sha256-kSG0YwtkzGVz8RIYBrE0ZyUMc6YTtQO8XvHHiwy5GL4=";
+      rev = "505f5bd90053ae895aa3d6f2bac8071dd9abd8b2";
+      hash = "sha256-XZqywAzM+UCKto/OFn50hhRpEyFVLpFV7Q1Z0NKoPsI=";
     };
   };
 
@@ -1124,12 +1124,12 @@
 
   query = buildGrammar {
     language = "query";
-    version = "0695cd0";
+    version = "0717de0";
     source = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "tree-sitter-query";
-      rev = "0695cd0760532de7b54f23c667d459b5d1332b44";
-      hash = "sha256-DwhvOvUb3hNmZTTk5HkZ9X1DCWz+G3+YJ0l/PqLVDdU=";
+      rev = "0717de07078a20a8608c98ad5f26c208949d0e15";
+      hash = "sha256-dWWof8rYFTto3A4BfbKTKcNieRbwFdF6xDXW9tQvAqQ=";
     };
   };
 
@@ -1346,14 +1346,14 @@
 
   swift = buildGrammar {
     language = "swift";
-    version = "693411c";
+    version = "f94e1d6";
     source = fetchFromGitHub {
       owner = "alex-pinkus";
       repo = "tree-sitter-swift";
       nativeBuildInputs = [ nodejs tree-sitter ];
       postFetch = "pushd $out && tree-sitter generate && popd";
-      rev = "693411cb5a1167311ccd84708348281630562726";
-      hash = "sha256-80BkH2kMSffUebdgiRRbqBClfSbXRMIFIeBwoMZ22Ao=";
+      rev = "f94e1d6dd8f4df6c7c8aa07da625e498ebb27d09";
+      hash = "sha256-RriQavHna8UDvfe12V9E6dxsZvxDhS/FTTVe1iXLOrU=";
     };
   };
 
