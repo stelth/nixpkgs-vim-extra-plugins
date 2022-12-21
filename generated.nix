@@ -124,12 +124,12 @@
 
   dial-nvim = buildVimPluginFrom2Nix {
     pname = "dial.nvim";
-    version = "2022-12-19";
+    version = "2022-12-20";
     src = fetchFromGitHub {
       owner = "monaqa";
       repo = "dial.nvim";
-      rev = "538c6180d11d45170e69e279347cab70a8e1ee33";
-      sha256 = "09z0lvi165n66qmhpslnb9kq12mppcmdmp48qns2a5hm5z1sryal";
+      rev = "61afb28f61ba090a67a88186f7bc8a94212e509a";
+      sha256 = "0zzmgyl0j9ajmmyiwbpyp5js0ssz8gnlll6kbyk421jybjy17l6n";
     };
     meta.homepage = "https://github.com/monaqa/dial.nvim/";
   };
@@ -388,12 +388,12 @@
 
   luasnip = buildVimPluginFrom2Nix {
     pname = "luasnip";
-    version = "2022-12-11";
+    version = "2022-12-20";
     src = fetchFromGitHub {
       owner = "l3mon4d3";
       repo = "luasnip";
-      rev = "8b25e74761eead3dc47ce04b5e017fd23da7ad7e";
-      sha256 = "0jf85bynp91dyg4xx06w4ha0cim6m5v26g5wxpml3flmwglj58fa";
+      rev = "5570fd797eae0790affb54ea669a150cad76db5d";
+      sha256 = "0052rkqyhniz6djz7gkblmdlndllwv9jhcl6kh973qq23pdb00n4";
       fetchSubmodules = true;
     };
     meta.homepage = "https://github.com/l3mon4d3/luasnip/";
@@ -533,12 +533,12 @@
 
   mini-indentscope = buildVimPluginFrom2Nix {
     pname = "mini.indentscope";
-    version = "2022-12-11";
+    version = "2022-12-20";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.indentscope";
-      rev = "30e8b9b933a5001e94a3485b8898343d0d5abb89";
-      sha256 = "1yvrr7jsfcwbqh8i0x5s47x44zy78a0rmqk8xyc2zp5k1jyaj5x0";
+      rev = "59c73c6965f9fa74cd2c1351339a58778e68e589";
+      sha256 = "1ms1n1in16kdkslpxkcmggk0c51p2fr2whryvq7rk30vd5jks3ji";
     };
     meta.homepage = "https://github.com/echasnovski/mini.indentscope/";
   };
@@ -593,12 +593,12 @@
 
   mini-nvim = buildVimPluginFrom2Nix {
     pname = "mini.nvim";
-    version = "2022-12-11";
+    version = "2022-12-20";
     src = fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.nvim";
-      rev = "82e04074117635ebe7ae2202953a0c3d78db5146";
-      sha256 = "1rr5xb4nkwm4vjk8v2065dy7d55qgh8wr6fhgash2gzrfjvm7b8a";
+      rev = "eb1c4885ca858c2897909fa5131ba1cbf5910523";
+      sha256 = "1j4ih4mfmi9p2x2bar21rfmd9nalpphhg4anas0wihsqsa2m07kr";
     };
     meta.homepage = "https://github.com/echasnovski/mini.nvim/";
   };
@@ -701,12 +701,12 @@
 
   neodev-nvim = buildVimPluginFrom2Nix {
     pname = "neodev.nvim";
-    version = "2022-12-20";
+    version = "2022-12-21";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "neodev.nvim";
-      rev = "f8b17d3b74aa3ead1e532d33f987b3f5f6e95138";
-      sha256 = "1vdmjk5pss44flmdp6rljy0s5qqhwpvd5ihz54w1b6hb5rvgqa65";
+      rev = "c5f0a814abf89b5b1e3cfed95322813939bdc0c5";
+      sha256 = "0aji887c2rmn9286jdx5wf1nj4gpyr0n1aar7rwx77k4va5fm06a";
     };
     meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
@@ -761,12 +761,12 @@
 
   nui-nvim = buildVimPluginFrom2Nix {
     pname = "nui.nvim";
-    version = "2022-12-17";
+    version = "2022-12-21";
     src = fetchFromGitHub {
       owner = "MunifTanjim";
       repo = "nui.nvim";
-      rev = "37e0511f189cd19eabd0e71841f10c3a39bbb62d";
-      sha256 = "08xf4kmrgvm4hp8dg196qcdnyrgi0vdkx8jw5dlrc81fm2jcck8r";
+      rev = "b12db5321c194c10eb34e610fb76ce2c058853fc";
+      sha256 = "02ysv50p7vrq85k50zshylzj0nn10arypkivbs239c97b73lhpq7";
     };
     meta.homepage = "https://github.com/MunifTanjim/nui.nvim/";
   };
@@ -797,12 +797,12 @@
 
   nvim-cmp = buildNeovimPluginFrom2Nix {
     pname = "nvim-cmp";
-    version = "2022-12-15";
+    version = "2022-12-20";
     src = fetchFromGitHub {
       owner = "hrsh7th";
       repo = "nvim-cmp";
-      rev = "8bbaeda725d5db6e4e1be2867a64b43bf547cf06";
-      sha256 = "1ldbvspz6aam78d47ldpa7bv4z419bzsk5nhli75mz0vzidfvrw5";
+      rev = "8868cf9a09e5f3c2612a22ccb82dcc6d9f0d0d35";
+      sha256 = "06vx7ynv7dxllli90fy13m27g3pqp5sp6sj19agf9ksal5gv6glr";
     };
     meta.homepage = "https://github.com/hrsh7th/nvim-cmp/";
   };
@@ -881,12 +881,12 @@
 
   nvim-lspconfig = buildVimPluginFrom2Nix {
     pname = "nvim-lspconfig";
-    version = "2022-12-20";
+    version = "2022-12-21";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "nvim-lspconfig";
-      rev = "d597b0f3605f43526f1b6948c6d7ca2919ea32ac";
-      sha256 = "11115qsgs0iakdfx5c24b906bskx1h2gaz830psgnd4mf3zdqra5";
+      rev = "5292d60976b3084a987bf5634150f6201830ac18";
+      sha256 = "1vcbagrrkah6k249pl1ch906pxn4ldk5d2qlv7hzmyqams9hsdcm";
     };
     meta.homepage = "https://github.com/neovim/nvim-lspconfig/";
   };
@@ -1125,20 +1125,20 @@
     src = fetchFromGitHub {
       owner = "debugloop";
       repo = "telescope-undo.nvim";
-      rev = "fb6aae8b1d4c62d35fea34608ac1715275056fb6";
-      sha256 = "0i39y9b647x59gzghqz8mqgy6lk2v3wpl7sn07r6zy58mjii2a6g";
+      rev = "3be830694f2d8c9705f6cf40a5ffee8a0c2aa6e5";
+      sha256 = "01b2ff1z38ghv3rmhl0h1jbx39fvsr6jb6lph5anvkapsm3ig1lg";
     };
     meta.homepage = "https://github.com/debugloop/telescope-undo.nvim/";
   };
 
   telescope-nvim = buildVimPluginFrom2Nix {
     pname = "telescope.nvim";
-    version = "2022-12-02";
+    version = "2022-12-21";
     src = fetchFromGitHub {
       owner = "nvim-telescope";
       repo = "telescope.nvim";
-      rev = "cabf991b1d3996fa6f3232327fc649bbdf676496";
-      sha256 = "04h9hsy6az1hm0bcg8vf8vsj9hqbf0fi3q5fksdjpqpcf2m04j75";
+      rev = "d16581ef7d86d027915a81acb89cf4637f238305";
+      sha256 = "0flsdj9g5riad7rpzz4rcg2qcq9qr3a4w0sqykf58xqgm9scbf06";
     };
     meta.homepage = "https://github.com/nvim-telescope/telescope.nvim/";
   };
@@ -1169,12 +1169,12 @@
 
   tokyonight-nvim = buildVimPluginFrom2Nix {
     pname = "tokyonight.nvim";
-    version = "2022-12-16";
+    version = "2022-12-20";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "tokyonight.nvim";
-      rev = "14ab22b51d0f54de3402bd706e9e91836de39a92";
-      sha256 = "08c150qxcx24dz5dyjcd14ckj18ilc1z7myh0f8ja1xibqi8gfl7";
+      rev = "8b55a47165348dd1d811f9e1f867bb17bb35a360";
+      sha256 = "0glhl3dm4ispxcy1x9g495by6xfdqmvlyhcywjx10kqmi192cwxs";
     };
     meta.homepage = "https://github.com/folke/tokyonight.nvim/";
   };
