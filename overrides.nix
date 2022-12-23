@@ -46,6 +46,7 @@ final: prev: let
       telescope-nvim = [plenary-nvim];
       windows-nvim = [middleclass animation-nvim];
       yanky-nvim = [sqlite-lua];
+      zen-mode-nvim = [twilight-nvim];
     });
 
   /*
