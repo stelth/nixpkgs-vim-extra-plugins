@@ -134,7 +134,7 @@ def main():
         "-p",
         dest="proc",
         type=int,
-        default=30,
+        default=1,
         help="Number of concurrent processes to spawn.",
     )
 
