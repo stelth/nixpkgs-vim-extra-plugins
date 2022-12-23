@@ -103,6 +103,10 @@ def generate_grammar(item):
     location = "{location}";
 """
 
+        if info.get("requires_generate_from_grammar"):
+            generated += f"""
+            generate = true;"""
+
     generated += """
   };
 """
@@ -134,7 +138,7 @@ def main():
         "-p",
         dest="proc",
         type=int,
-        default=1,
+        default=30,
         help="Number of concurrent processes to spawn.",
     )
 
