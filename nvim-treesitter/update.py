@@ -77,38 +77,25 @@ def generate_grammar(item):
             generated += f"""fetchgit {{
       url = "{url}";"""
 
-    if info.get("requires_generate_from_grammar"):
-        cmd += [
-            "--arg",
-            "nativeBuildInputs",
-            "[ nodejs tree-sitter ]",
-            "--postFetch",
-            "pushd $out && tree-sitter generate && popd",
-        ]
-
-        generated += """
-      nativeBuildInputs = [ nodejs tree-sitter ];
-      postFetch = "pushd $out && tree-sitter generate && popd";"""
-
-    hash_code = subprocess.check_output(cmd, text=True).strip()
+    hash = subprocess.check_output(cmd, text=True).strip()
 
     generated += f"""
       rev = "{rev}";
-      hash = "{hash_code}";
+      hash = "{hash}";
     }};"""
 
     location = info.get("location")
     if location:
         generated += f"""
-    location = "{location}";
-"""
+    location = "{location}";"""
 
-        if info.get("requires_generate_from_grammar"):
-            generated += f"""
-            generate = true;"""
+    if info.get("requires_generate_from_grammar"):
+        generated += """
+    generate = true;"""
 
-    generated += """
-  };
+    generated += f"""
+    meta.homepage = "{url}";
+  }};
 """
 
     return generated
