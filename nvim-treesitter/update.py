@@ -77,7 +77,6 @@ def generate_grammar(item):
             generated += f"""fetchgit {{
       url = "{url}";"""
 
-    print(cmd)
     hash_code = subprocess.check_output(cmd, text=True).strip()
 
     generated += f"""
