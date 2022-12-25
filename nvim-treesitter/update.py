@@ -94,6 +94,7 @@ def generate_grammar(item):
     generate = true;"""
 
     generated += f"""
+    meta.homepage = "{url}";
   }};
 """
 
