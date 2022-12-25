@@ -6,7 +6,7 @@
   runCommand,
 }: self: super: let
   generatedGrammars = callPackage ./generated.nix {
-    buildGrammar = callPackage ./grammar.nix;
+    buildGrammar = callPackage ./grammar.nix {};
   };
 
   generatedDerivations = lib.filterAttrs (_: lib.isDerivation) generatedGrammars;
