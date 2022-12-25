@@ -5,15 +5,22 @@
   neovim,
   runCommand,
 }: self: super: let
-  generatedGrammars = callPackage ./generated.nix;
-  buildGrammar = callPackage ./grammar.nix {};
+  generatedGrammars = callPackage ./generated.nix {
+    buildGrammar = callPackage ./grammar.nix;
+  };
 
   generatedDerivations = lib.filterAttrs (_: lib.isDerivation) generatedGrammars;
 
+  # add aliases so grammars from `tree-sitter` are overwritten in `withPlugins`
+  # for example, for ocaml_interface, the following aliases will be added
+  #   ocaml-interface
+  #   tree-sitter-ocaml-interface
+  #   tree-sitter-ocaml_interface
   builtGrammars =
     generatedGrammars
-    // lib.concatMapAttrs (k: v: let
-      replaced = lib.replateStrings ["_"] ["-"] k;
+    // lib.concatMapAttrs
+    (k: v: let
+      replaced = lib.replaceStrings ["_"] ["-"] k;
     in
       {
         "tree-sitter-${k}" = v;
@@ -75,20 +82,21 @@ in {
         CI = true;
       }
       ''
-                  touch $out
-                  export HOME=$(mktemp -d)
-                  ln -s ${withAllGrammars}/CONTRIBUTING.md
+        touch $out
+        export HOME=$(mktemp -d)
+        ln -s ${withAllGrammars}/CONTRIBUTING.md .
 
         nvim --headless "+luafile ${withAllGrammars}/scripts/check-queries.lua" | tee log
-                  if grep -q Warning log; then
-                    echo "Error: warnings were emitted by the check"
-                    exit 1
-                  fi
+
+        if grep -q Warning log; then
+          echo "Error: warnings were emitted by the check"
+          exit 1
+        fi
       '';
   };
 
   meta = with lib;
-    (super.nvim-treestter.meta or {})
+    (super.nvim-treesitter.meta or {})
     // {
       license = licenses.asl20;
     };
