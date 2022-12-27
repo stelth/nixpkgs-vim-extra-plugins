@@ -1,19 +1,14 @@
 name: Update plugins
 
 on:
-  push:
-    paths:
-      - vim-plugin-names
-    branches:
-      - main
   schedule:
-    - cron: "0 8 * * *"
+    - cron: "15 8 * * *"
   workflow_dispatch:
 
 jobs:
   update-plugins:
     runs-on: ubuntu-latest
-    name: Update plugins
+    name: Update treesitter grammars
     steps:
       - uses: actions/checkout@v3
         with:
@@ -23,7 +18,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
           extra_nix_config: |
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
-      - run: nix run .#update-vim-plugins -- --no-commit --input vim-plugin-names --out ./generated.nix
+      - run: nix run .#update-treesitter-grammars -- --out ./nvim-treesitter/generated.nix
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: stefanzweifel/git-auto-commit-action@v4
@@ -31,5 +26,5 @@ jobs:
           commit_user_name: pluginbot
           commit_user_email: pluginbot@users.noreply.github.com
           commit_author: Jason Cox <steel300@gmail.com>
-          commit_message: "chore(plugins): auto update plugins"
+          commit_message: "chore(grammars): auto update treesitter grammars"
           push_options: "--force"
