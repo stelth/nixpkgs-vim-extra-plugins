@@ -701,12 +701,12 @@
 
   neodev-nvim = buildVimPluginFrom2Nix {
     pname = "neodev.nvim";
-    version = "2022-12-21";
+    version = "2022-12-27";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "neodev.nvim";
-      rev = "c5f0a814abf89b5b1e3cfed95322813939bdc0c5";
-      sha256 = "0aji887c2rmn9286jdx5wf1nj4gpyr0n1aar7rwx77k4va5fm06a";
+      rev = "f6ee1a7651280ac476403c0b70bbfb419fa720ab";
+      sha256 = "141vlfiixvbfnmhwi5xjk0xags06n8sdvsj5a2qryyc8n64pckf6";
     };
     meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
@@ -797,12 +797,12 @@
 
   nvim-cmp = buildNeovimPluginFrom2Nix {
     pname = "nvim-cmp";
-    version = "2022-12-23";
+    version = "2022-12-27";
     src = fetchFromGitHub {
       owner = "hrsh7th";
       repo = "nvim-cmp";
-      rev = "d09b0c396aaa078cdfe78316ec06940971136e85";
-      sha256 = "1vf1j10mibc3jdz3d1skw9gy14vg5fnpzzlgvfcd7fgh3gm6lj7h";
+      rev = "e55033fce468c9c578b946948807f2ac48a6ee08";
+      sha256 = "078d1py8q38ffrncd6p0wczalr7x47kxd5fihn4hdn8hyb7qnbbf";
     };
     meta.homepage = "https://github.com/hrsh7th/nvim-cmp/";
   };
@@ -881,12 +881,12 @@
 
   nvim-lspconfig = buildVimPluginFrom2Nix {
     pname = "nvim-lspconfig";
-    version = "2022-12-26";
+    version = "2022-12-27";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "nvim-lspconfig";
-      rev = "a63d2c75c6880d45209baff596939343e8a431fd";
-      sha256 = "0knxy8gq26skrrr2p9rnjnbsgwnrrjvsm75cpl5byaw4h3mzlmy5";
+      rev = "42ca8ce0f2252be795da4789fadfa91f6c3f7464";
+      sha256 = "13hcq1w25g62k8cbkipwxlcicpq3ys8isk2yj9ibmr92i93bqmk6";
     };
     meta.homepage = "https://github.com/neovim/nvim-lspconfig/";
   };
