@@ -73,7 +73,7 @@ def generate_grammar(item):
       repo = "{repo}";"""
 
         case _:
-            cmd += ["fetchgit", "url"]
+            cmd += ["fetchgit", "--url", url]
             generated += f"""fetchgit {{
       url = "{url}";"""
 
