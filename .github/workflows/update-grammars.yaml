@@ -1,4 +1,4 @@
-name: Update plugins
+name: Update grammars
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-plugins:
+  update-grammars:
     runs-on: ubuntu-latest
     name: Update treesitter grammars
     steps:
