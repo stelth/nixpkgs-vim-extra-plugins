@@ -447,6 +447,18 @@
     meta.homepage = "https://github.com/echasnovski/mini.align/";
   };
 
+  mini-animate = buildVimPluginFrom2Nix {
+    pname = "mini.animate";
+    version = "2022-12-27";
+    src = fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.animate";
+      rev = "c2b9dd7b70389213d6f5cbcbc2942d5bbdaea69a";
+      sha256 = "06h7qlgh0445zz9wl9jh5nhrplxah14sgq2x5di4i3nai90l8mcq";
+    };
+    meta.homepage = "https://github.com/echasnovski/mini.animate/";
+  };
+
   mini-base16 = buildVimPluginFrom2Nix {
     pname = "mini.base16";
     version = "2022-12-25";
@@ -1334,18 +1346,6 @@
       sha256 = "04i8d7dlxmzgxiysy9jffxkpkw8h3qjkrv3l74z7pfksdmhlbbwz";
     };
     meta.homepage = "https://github.com/folke/zen-mode.nvim/";
-  };
-
-  mini-animate = buildVimPluginFrom2Nix {
-    pname = "mini.animate";
-    version = "2022-12-27";
-    src = fetchFromGitHub {
-      owner = "echasnovski";
-      repo = "mini.animate";
-      rev = "c2b9dd7b70389213d6f5cbcbc2942d5bbdaea69a";
-      sha256 = "06h7qlgh0445zz9wl9jh5nhrplxah14sgq2x5di4i3nai90l8mcq";
-    };
-    meta.homepage = "https://github.com/echasnovski/mini.animate/";
   };
 
   catppuccin = buildVimPluginFrom2Nix {
