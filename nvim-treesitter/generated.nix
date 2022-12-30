@@ -40,12 +40,12 @@
 
   astro = buildGrammar {
     language = "astro";
-    version = "22697b0";
+    version = "a1f66bf";
     source = fetchFromGitHub {
       owner = "virchau13";
       repo = "tree-sitter-astro";
-      rev = "22697b0e2413464b7abaea9269c5e83a59e39a83";
-      hash = "sha256-vp2VjkfBEYEUwUCjBlbVjPIB49QIikdFAITzzFLZX+U=";
+      rev = "a1f66bf72ed68b87f779bce9a52e5c6521fc867e";
+      hash = "sha256-Q+nOJQAAHqvyH8PVckh38q0TJ6b9jjb/pZHC/U2Hs5Q=";
     };
     meta.homepage = "https://github.com/virchau13/tree-sitter-astro";
   };
@@ -1043,12 +1043,12 @@
 
   ocaml = buildGrammar {
     language = "ocaml";
-    version = "de07323";
+    version = "f1106bf";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-ocaml";
-      rev = "de07323343946c32759933cb3b7c78e821098cad";
-      hash = "sha256-JhJSg6Ht3dy94hAP2yy0fg9U/IeYNGaHYoys/++yOwg=";
+      rev = "f1106bf834703f1f2f795da1a3b5f8f40174ffcc";
+      hash = "sha256-5X2c2Deb8xNlp0LPQKFWIT3jwxKuuKdFlp9b3iA818Y=";
     };
     location = "ocaml";
     meta.homepage = "https://github.com/tree-sitter/tree-sitter-ocaml";
@@ -1056,12 +1056,12 @@
 
   ocaml_interface = buildGrammar {
     language = "ocaml_interface";
-    version = "de07323";
+    version = "f1106bf";
     source = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "tree-sitter-ocaml";
-      rev = "de07323343946c32759933cb3b7c78e821098cad";
-      hash = "sha256-JhJSg6Ht3dy94hAP2yy0fg9U/IeYNGaHYoys/++yOwg=";
+      rev = "f1106bf834703f1f2f795da1a3b5f8f40174ffcc";
+      hash = "sha256-5X2c2Deb8xNlp0LPQKFWIT3jwxKuuKdFlp9b3iA818Y=";
     };
     location = "interface";
     meta.homepage = "https://github.com/tree-sitter/tree-sitter-ocaml";
@@ -1512,6 +1512,19 @@
     };
     generate = true;
     meta.homepage = "https://github.com/euclidianAce/tree-sitter-teal";
+  };
+
+  terraform = buildGrammar {
+    language = "terraform";
+    version = "0ff887f";
+    source = fetchFromGitHub {
+      owner = "MichaHoffmann";
+      repo = "tree-sitter-hcl";
+      rev = "0ff887f2a60a147452d52db060de6b42f42f1441";
+      hash = "sha256-L4B2qtGqrtyLHyUMx1p0t4aKncm72dUE+e19Fv5iqUA=";
+    };
+    location = "dialects/terraform";
+    meta.homepage = "https://github.com/MichaHoffmann/tree-sitter-hcl";
   };
 
   tiger = buildGrammar {
