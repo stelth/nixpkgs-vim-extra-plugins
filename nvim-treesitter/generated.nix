@@ -1214,12 +1214,12 @@
 
   qmljs = buildGrammar {
     language = "qmljs";
-    version = "0b2b25b";
+    version = "ab75be9";
     source = fetchFromGitHub {
       owner = "yuja";
       repo = "tree-sitter-qmljs";
-      rev = "0b2b25bcaa7d4925d5f0dda16f6a99c588a437f1";
-      hash = "sha256-Hf8LfrN3YjN9hpGtTVmK3ZjJ/b/fsRCg9FG7hSSj/mk=";
+      rev = "ab75be9750e6f2f804638824d1790034286a830c";
+      hash = "sha256-UP/+svGOSMlUOMmNMpXKtDDPY9ZIldjWF5sM+PMbE9M=";
     };
     meta.homepage = "https://github.com/yuja/tree-sitter-qmljs";
   };
@@ -1708,6 +1708,18 @@
       hash = "sha256-dSWQAJN9+EyqPbGZv9wTR8upsK56ZWu9jOpJkJtkabs=";
     };
     meta.homepage = "https://github.com/szebniok/tree-sitter-wgsl";
+  };
+
+  wgsl_bevy = buildGrammar {
+    language = "wgsl_bevy";
+    version = "c81dc77";
+    source = fetchFromGitHub {
+      owner = "theHamsta";
+      repo = "tree-sitter-wgsl-bevy";
+      rev = "c81dc770310795caea5e00996505deba024ec698";
+      hash = "sha256-CNEZ8GKfcT5YOdlrqEFE8q2FF0Zs+GsWisd1DA6mnUk=";
+    };
+    meta.homepage = "https://github.com/theHamsta/tree-sitter-wgsl-bevy";
   };
 
   yaml = buildGrammar {
