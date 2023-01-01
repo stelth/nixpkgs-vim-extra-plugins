@@ -749,12 +749,12 @@
 
   noice-nvim = buildVimPluginFrom2Nix {
     pname = "noice.nvim";
-    version = "2022-12-30";
+    version = "2022-12-31";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "6aa6585da8cf9ffa44575b320b4d64d50f3c13a2";
-      sha256 = "1hdn5149wp9vx45kznxqcmymd4104hslcs3sp95a868fd45vxgpn";
+      rev = "661495acc1cc29f53d2defd1c18c87da1cc8f850";
+      sha256 = "1cbk9961j2rrshc2947idpb8dc9ypgfmbzg7a66ab7sk1wgk1a4i";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
@@ -833,12 +833,12 @@
 
   nvim-dap = buildVimPluginFrom2Nix {
     pname = "nvim-dap";
-    version = "2022-12-21";
+    version = "2022-12-31";
     src = fetchFromGitHub {
       owner = "mfussenegger";
       repo = "nvim-dap";
-      rev = "6f2ea9e33b48a51849ec93c6c38148a5372018e4";
-      sha256 = "0bjzqwvxn57n3rpx3sjk4cqdx876cgrbw744d86pzd1lrzdjixqm";
+      rev = "69b7c684cd42e60b48875c580e616a70bccfdbe7";
+      sha256 = "13sv9r9s3kh7m11kvdhr6zhnjh2qawi7vz1dz9v0bnigf8x6v9f4";
     };
     meta.homepage = "https://github.com/mfussenegger/nvim-dap/";
   };
@@ -965,12 +965,12 @@
 
   nvim-treesitter = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter";
-    version = "2022-12-29";
+    version = "2022-12-31";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter";
-      rev = "ee3e9f4dc0e5ee9e2bfb1ee47638375840b8fe0f";
-      sha256 = "0bs0a7f6l1gyh29d2zc1a8brj6qik3kic7xljvyfr05x7av62955";
+      rev = "b019eb30323635d680aa2f32e498a1831676ebb1";
+      sha256 = "1n9yqlvs1dxhh2wj5c6zmw6jp0sph40spb7ha5yixamw6qy6pm08";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
   };
@@ -989,12 +989,12 @@
 
   nvim-treesitter-textobjects = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter-textobjects";
-    version = "2022-12-27";
+    version = "2022-12-31";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter-textobjects";
-      rev = "247e392a8beb28c5d43a1375f93f8f90f1cc11ad";
-      sha256 = "145aaxfrrabvyjmndcr0sdqsrnwca9qhmk96gq58awhbsv8fq6pc";
+      rev = "d816761ec1ea4a605689bc5f4111088459cf74d4";
+      sha256 = "0h60nhvwn81q83nvg5cj2j4jwglpa2wbvlyk1fy1l09zjrjpzm8x";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects/";
   };
@@ -1109,12 +1109,12 @@
 
   telescope-file-browser-nvim = buildVimPluginFrom2Nix {
     pname = "telescope-file-browser.nvim";
-    version = "2022-12-28";
+    version = "2022-12-31";
     src = fetchFromGitHub {
       owner = "nvim-telescope";
       repo = "telescope-file-browser.nvim";
-      rev = "eb4f026735f781ea5749331a5059021328d6eee8";
-      sha256 = "0paxhhys9yns4p2hq4q2x25lcl2xzn4m5s14q6s74x289myra4vz";
+      rev = "304508fb7bea78e3c0eeddd88c4837501e403ae8";
+      sha256 = "0hyy1fwp06748qy7rs7gf27p7904xfrr53v1sbrmqhlxinlsyp0m";
     };
     meta.homepage = "https://github.com/nvim-telescope/telescope-file-browser.nvim/";
   };
