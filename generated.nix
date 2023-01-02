@@ -713,12 +713,12 @@
 
   neodev-nvim = buildVimPluginFrom2Nix {
     pname = "neodev.nvim";
-    version = "2022-12-28";
+    version = "2023-01-02";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "neodev.nvim";
-      rev = "8e06acf88e0621badd9499cfcafbce5ca97dfe8e";
-      sha256 = "1s09id5l0580ckrn7srkq8d2n0mg75dph3zknwb5wig3k11yajhz";
+      rev = "c045c0fe93b1f9c78443d0f3b88660fffbcf64a7";
+      sha256 = "1zw7shzfcjnclv1bj4agkbqv0jswpz3bv9amj9397ypjlafm25wc";
     };
     meta.homepage = "https://github.com/folke/neodev.nvim/";
   };
@@ -749,12 +749,12 @@
 
   noice-nvim = buildVimPluginFrom2Nix {
     pname = "noice.nvim";
-    version = "2022-12-31";
+    version = "2023-01-01";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "noice.nvim";
-      rev = "661495acc1cc29f53d2defd1c18c87da1cc8f850";
-      sha256 = "1cbk9961j2rrshc2947idpb8dc9ypgfmbzg7a66ab7sk1wgk1a4i";
+      rev = "256ec7318e227d4a0879f3776bfbe3955f5d2eef";
+      sha256 = "1fqi4vw0q50prs2n0gxxw9kdg752hlamb4b0axkp8k067x3lpa2r";
     };
     meta.homepage = "https://github.com/folke/noice.nvim/";
   };
@@ -785,12 +785,12 @@
 
   null-ls-nvim = buildVimPluginFrom2Nix {
     pname = "null-ls.nvim";
-    version = "2022-12-28";
+    version = "2023-01-01";
     src = fetchFromGitHub {
       owner = "jose-elias-alvarez";
       repo = "null-ls.nvim";
-      rev = "647a1eeeefc43ce15d941972642210637c370471";
-      sha256 = "1zpkvqp8hcc952a72q4vxhnkw8spfzznn6qysc8wyf8sinpwvh92";
+      rev = "d09d7d82cc26d63673cef85cb62895dd68aab6d8";
+      sha256 = "1wvjn2q2b5g989hdki9gs9miww20kc8650li2k380g9x8x7sqkhz";
     };
     meta.homepage = "https://github.com/jose-elias-alvarez/null-ls.nvim/";
   };
@@ -941,12 +941,12 @@
 
   nvim-surround = buildVimPluginFrom2Nix {
     pname = "nvim-surround";
-    version = "2022-12-30";
+    version = "2023-01-01";
     src = fetchFromGitHub {
       owner = "kylechui";
       repo = "nvim-surround";
-      rev = "64e21061953102b19bbb22e824fbb96054782799";
-      sha256 = "11m62i66gicv7spz6bcsxpdqshi19v0306bh69lcmbyawbwyli4a";
+      rev = "ad56e6234bf42fb7f7e4dccc7752e25abd5ec80e";
+      sha256 = "1fi5lk3iacjdbq1p4wm0bia93awwqfn7jiy019vpg4gngi41azrz";
     };
     meta.homepage = "https://github.com/kylechui/nvim-surround/";
   };
@@ -965,12 +965,12 @@
 
   nvim-treesitter = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter";
-    version = "2022-12-31";
+    version = "2023-01-01";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter";
-      rev = "b019eb30323635d680aa2f32e498a1831676ebb1";
-      sha256 = "1n9yqlvs1dxhh2wj5c6zmw6jp0sph40spb7ha5yixamw6qy6pm08";
+      rev = "b67822bf58b0fbf0c496ae21a177d02fa8388edf";
+      sha256 = "01l1sl39pia8fa2b7ld0rdi76yjlrnh82rlxvgfqjivppq23k0zm";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
   };
