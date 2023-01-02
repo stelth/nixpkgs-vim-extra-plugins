@@ -861,12 +861,12 @@
 
   latex = buildGrammar {
     language = "latex";
-    version = "1ec3941";
+    version = "6b7ea83";
     source = fetchFromGitHub {
       owner = "latex-lsp";
       repo = "tree-sitter-latex";
-      rev = "1ec3941b971dccfa36cb1cd6221a2e4a1cd3e250";
-      hash = "sha256-m/6GWV797gaJnWVU07RvHjfAeRzGT9GZH3M9HkcjUq0=";
+      rev = "6b7ea839307670e6bda011f888717d3a882ecc09";
+      hash = "sha256-fmMm6HM9ZCnTyDxKmouoKFPYWkbrM//gHwVEFsICzUs=";
     };
     meta.homepage = "https://github.com/latex-lsp/tree-sitter-latex";
   };
