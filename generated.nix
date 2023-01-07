@@ -713,12 +713,12 @@
 
   neoconf-nvim = buildVimPluginFrom2Nix {
     pname = "neoconf.nvim";
-    version = "2023-01-04";
+    version = "2023-01-07";
     src = fetchFromGitHub {
       owner = "folke";
       repo = "neoconf.nvim";
-      rev = "3e3294631ef23599b9fccb87dee2592c73d11c60";
-      sha256 = "1c0ihfhw7jg4abks9b58cqzlrvmvkkm48hssygc6azblpxybz5jg";
+      rev = "2b873a75159ec0c8d160da029392b1c4e31e1927";
+      sha256 = "0mvgwysgb78hxa80zik7nxfbagvhm6gwkclaq62vr7iyjsy4ranx";
     };
     meta.homepage = "https://github.com/folke/neoconf.nvim/";
   };
@@ -737,12 +737,12 @@
 
   neogen = buildVimPluginFrom2Nix {
     pname = "neogen";
-    version = "2023-01-03";
+    version = "2023-01-06";
     src = fetchFromGitHub {
       owner = "danymat";
       repo = "neogen";
-      rev = "71f16ffb485a3b3faf4dd91116516ce8e7552e3d";
-      sha256 = "0vdl929zj106c9f1sw66gr9sahqzzidfksajqh0n95s3p7jrdfaq";
+      rev = "2961b48f7263769953ac18fe4afa4df71b321341";
+      sha256 = "1mq78vnkcay1mif64bhjdmdabrv10x7hxx6n5y5xckzd7v0fr9cv";
     };
     meta.homepage = "https://github.com/danymat/neogen/";
   };
@@ -977,24 +977,24 @@
 
   nvim-treesitter = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter";
-    version = "2023-01-05";
+    version = "2023-01-07";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter";
-      rev = "68e8181dbcf29330716d380e5669f2cd838eadb5";
-      sha256 = "1ai2h0083vcd23znia74qrycqbcyf711vkwf5m9kv11jrwa718bl";
+      rev = "0922634d371d45c344a559119ed398f91e399085";
+      sha256 = "1k5i1w1955qys365hdxr3l3wfsqzanjcmp4nji50lx8gclwimr10";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
   };
 
   nvim-treesitter-context = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter-context";
-    version = "2023-01-03";
+    version = "2023-01-06";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter-context";
-      rev = "4842abe5bd1a0dc8b67387cc187edbabc40925ba";
-      sha256 = "1q72ryzvzzqcl96vr1550qm0zgdmz0mafkhc4yn2bcr0bzkj73qr";
+      rev = "cacee4828152dd3a83736169ae61bbcd29a3d213";
+      sha256 = "0d9j5wz1fqk8ipf2x8vym0m3zpydslivwsnha8h1qz6yp6zyq5hc";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter-context/";
   };
@@ -1037,12 +1037,12 @@
 
   nvim-web-devicons = buildVimPluginFrom2Nix {
     pname = "nvim-web-devicons";
-    version = "2022-12-09";
+    version = "2023-01-06";
     src = fetchFromGitHub {
       owner = "nvim-tree";
       repo = "nvim-web-devicons";
-      rev = "05e1072f63f6c194ac6e867b567e6b437d3d4622";
-      sha256 = "1b53nrmzga6bkf6cdck3hdwjyrlslyrsa7jv55198jy153y8qq2z";
+      rev = "7f55bc36eddec87597167a97de5b690997edaf7d";
+      sha256 = "00vzb60399h45rykgs0fma7nxqs24z0bi7q6wqvzbb3ggmyin43k";
     };
     meta.homepage = "https://github.com/nvim-tree/nvim-web-devicons/";
   };
@@ -1061,12 +1061,12 @@
 
   plenary-nvim = buildNeovimPluginFrom2Nix {
     pname = "plenary.nvim";
-    version = "2023-01-03";
+    version = "2023-01-06";
     src = fetchFromGitHub {
       owner = "nvim-lua";
       repo = "plenary.nvim";
-      rev = "bb444796dc5746d969f0718913a31c8075741e36";
-      sha256 = "1sfvaj4g31p7z13ds81hx410xl6vzrf5lsxxlknvkcn6fxglgv6a";
+      rev = "9d81624fbcedd3dd43b38d7e13a1e7b3f873d8cd";
+      sha256 = "0y3qn0rwlwp720517lwg35f09b30b591hprbvb6hgvn1waw2ljzc";
     };
     meta.homepage = "https://github.com/nvim-lua/plenary.nvim/";
   };
@@ -1157,12 +1157,12 @@
 
   telescope-nvim = buildVimPluginFrom2Nix {
     pname = "telescope.nvim";
-    version = "2022-12-28";
+    version = "2023-01-06";
     src = fetchFromGitHub {
       owner = "nvim-telescope";
       repo = "telescope.nvim";
-      rev = "a606bd10c79ec5989c76c49cc6f736e88b63f0da";
-      sha256 = "07sv43k6nfg1irhybi7s361nz8ic795wd2wafi405sq5vnz4jz36";
+      rev = "cd67e819e453643b818363e6b573484c8e2e41b0";
+      sha256 = "0fl9rb3awkrfhjgnpm9mjnj8jkcr78nx0nqs7xgshxs2m42wg3pm";
     };
     meta.homepage = "https://github.com/nvim-telescope/telescope.nvim/";
   };
@@ -1265,12 +1265,12 @@
 
   vim-dadbod-ui = buildVimPluginFrom2Nix {
     pname = "vim-dadbod-ui";
-    version = "2022-12-27";
+    version = "2023-01-06";
     src = fetchFromGitHub {
       owner = "kristijanhusak";
       repo = "vim-dadbod-ui";
-      rev = "ecf07480687a13fe1bd3899270a6c9c99de51f4b";
-      sha256 = "0ahynkl4nilvkqqfhf625l5js33bjya6acqq1qn7cnhr0xhriyhd";
+      rev = "f4ead480930a37dd2b0cf917a8c387ed36c2d86a";
+      sha256 = "00nmcsna4z1p8i5k74jykzci16by2ga2lf904f1aya0yhwpwrjg2";
     };
     meta.homepage = "https://github.com/kristijanhusak/vim-dadbod-ui/";
   };
